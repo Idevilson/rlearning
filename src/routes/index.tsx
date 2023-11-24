@@ -11,9 +11,6 @@ export function Routes(){
     const { user } = useAuth();
 
 
-    console.log("User in Routes:", user);
-
-
     return(
         <NavigationContainer>
           {user === undefined ?  <AuthRoutes /> : <AppRoutes /> }

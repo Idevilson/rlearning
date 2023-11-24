@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Platform } from "react-native";
 
 import {
     Container,
@@ -39,7 +40,9 @@ import Check from '../../assets/check.svg';
 import Error from '../../assets/error.svg';
 import { AppStackParamList } from '../../routes/app.routes';
 
+import { Image } from 'expo-image';
 export function QuizReport() {
+
     const navigation = useNavigation();
 
     const route = useRoute<RouteProp<AppStackParamList, 'QuizReport'>>();
@@ -82,15 +85,26 @@ export function QuizReport() {
                     </BackButtonContainer>
                 </HeaderContainer>
 
-                <LottieView
+                {Platform.OS === 'ios' ? (
+                    <LottieView
                     autoPlay
                     style={{
-                        width:  210,
+                        width: 210,
                         height: 210,
-                        marginTop: -20
+                        marginTop: -20,
                     }}
                     source={require('./report.json')}
-                />
+                    />
+                ) : (
+                    <Image
+                    source={require('./dash.png')}
+                    style={{
+                        width: 170,
+                        height: 170,
+                        marginTop: -20,
+                    }}
+                    />
+                )}
             </Header>
 
             <Footer>
@@ -153,7 +167,7 @@ export function QuizReport() {
                                 </LabelWrongInfo>
                             </WorngCountAndBalelContainer>
                         </WorngContainer>
-                    </QuestionsInfoContainer>
+                    </QuestionsInfoContainer> 
                 </DashboardCardContainer>
 
                 <CompetencyContainer> 
@@ -184,7 +198,7 @@ export function QuizReport() {
                         ))
                     }  
                     
-                </CompetencyContainer>
+                </CompetencyContainer> 
             </Footer>
         </Container>
     );

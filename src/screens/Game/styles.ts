@@ -95,6 +95,8 @@ export const QuestionIncatorText = styled.Text`
 
 export const QuizContainer = styled.View`
     flex: 1;
+
+    margin-bottom: 20px;
 `;
 
 export const QuestionText = styled.Text`

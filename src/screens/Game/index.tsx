@@ -45,7 +45,7 @@ import { questionsDB } from '../../hooks/questions';
 import Toast from 'react-native-toast-message';
 import { Clock } from '../../components/Clock';
 import { StackNavigationProp } from '@react-navigation/stack';
-import { useAuthentication } from '../../hooks/auth';
+import { useAuth } from '../../hooks/auth';
 import { doc, getFirestore, setDoc } from 'firebase/firestore';
 import { app } from '../../services/firebase';
 import { RFValue } from 'react-native-responsive-fontsize';
@@ -157,20 +157,35 @@ export function Game() {
         return () => {};
     }, []);
 
-    const { user } = useAuthentication();
+    const { user } = useAuth();
 
     const db = getFirestore(app);
 
     const calcularResultados = async () => {
+        const todasQuestoesRespondidas = userAnswers.every(
+            (resposta) => resposta?.answered === true
+        );
+    
+        const tamanhoValido = userAnswers.length === questionsDB.length;
+
+        if (!todasQuestoesRespondidas || !tamanhoValido) {
+            Toast.show({
+                type: 'error',
+                text1: 'ATENÇÃO',
+                text2: 'POR FAVOR, RESPONDA TODAS AS QUESTÕES ANTES DE FINALIZAR.⚠️'
+            });
+            return;
+        }
+
         let questoesCorretas = 0;
         let questoesIncorretas = 0;
       
      
         userAnswers.forEach((resposta) => {
-          if (resposta.answered && resposta.isCorrect) {
+          if (resposta?.answered && resposta?.isCorrect) {
             
             questoesCorretas++;
-          } else if (resposta.answered && !resposta.isCorrect) {
+          } else if (resposta?.answered && !resposta?.isCorrect) {
        
             questoesIncorretas++;
           }
@@ -180,6 +195,7 @@ export function Game() {
         const tempoDecorridoEmSegundos = timestamp ? Math.floor((new Date().getTime() - timestamp) / 1000) : 0;
 
         try {
+
             await setDoc(doc(db, "relatorios", String(user?.email)), {
                 email: user?.email,
                 questoesCorretas: questoesCorretas,
@@ -194,6 +210,8 @@ export function Game() {
                 text1: 'ATENÇÃO',
                 text2: 'OS DADOS FORAM ENVIADOS PARA O SERVIDOR'
             })
+
+            console.log("ir para outra tela")
 
             setTimeout(() => {
                 navigation.push('QuizReport', {
@@ -464,8 +482,8 @@ export function Game() {
                             currentIndex === questionsDB.length - 1 ? 
                                 <TouchableOpacity 
                                     onPress={() => {
-                                        setModalImageVisible(!isModalImageVisible)
                                         calcularResultados()
+                                        setModalVisible(!isModalVisible)
                                     }}
                                     style={{
                                         width: 200,

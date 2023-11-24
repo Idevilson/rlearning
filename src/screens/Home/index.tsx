@@ -28,11 +28,7 @@ import { RFValue } from 'react-native-responsive-fontsize';
 export function Home() {
     const [isModalLogoutVisible, setModalLogoutVisible] = useState(false);
 
-    const { user, signOut } = useAuth();
-
-    useEffect(() => {
-        console.log("renderizou", user)
-    }, [user])
+    const { signOut } = useAuth();
 
     const { navigate } = useNavigation();
 

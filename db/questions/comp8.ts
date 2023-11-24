@@ -25,7 +25,7 @@ export const comp8 = {
         },
         {
             "title": "Em relação a Otite Média Aguda e Otite Externa,  assinale a incorreta:",
-            "imagePath": false,
+            "imagePath": null,
             "alternatives": [
                 {
                     "option": "A otite secretora compõe a evolução clínica  da Otite Média Aguda.",
