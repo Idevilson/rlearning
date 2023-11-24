@@ -1,20 +1,30 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import 'intl';
+import 'intl/locale-data/jsonp/pt-BR';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+
+import React from 'react';
+import { StatusBar } from 'react-native';
+import { ThemeProvider } from 'styled-components'
+
+import { Routes } from './src/routes'
+
+import theme from './src/global/theme';
+
+import "./src/services/firebase";
+
+import { AuthProvider } from './src/hooks/auth';
 
 export default function App() {
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+      <ThemeProvider theme={theme}>
+         <StatusBar barStyle="light-content"/>
+         
+            <GestureHandlerRootView style={{ flex: 1 }}>
+               <AuthProvider>
+                   <Routes />
+               </AuthProvider>
+            </GestureHandlerRootView>
+      </ThemeProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
