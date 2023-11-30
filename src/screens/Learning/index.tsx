@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Text, TouchableOpacity, StyleSheet, View, ActivityIndicator } from 'react-native';
+import { Text, TouchableOpacity, StyleSheet, View, ActivityIndicator, Platform } from 'react-native';
 
 import Animated, {
     useSharedValue,
@@ -404,14 +404,18 @@ export function Learning() {
                         }}>
                             <Text style={{ fontSize: 25, textAlign: 'center', fontWeight: 'bold' }}>{`PARABÉNS \nVOCÊ CHEGOU AO FINAL!`}</Text>
 
-                            <LottieView
-                                autoPlay
-                                style={{
-                                    width: RFValue(250),
-                                    height: RFValue(250),
-                                }}
-                                source={require('./green.json')}
-                            />
+                            {
+                                Platform.OS === "android" ? null : 
+                                <LottieView
+                                    autoPlay
+                                    style={{
+                                        width: RFValue(250),
+                                        height: RFValue(250),
+                                    }}
+                                    source={require('./green.json')}
+                                />
+                            }
+                           
                          </View>
                     }
                     </Footer> 

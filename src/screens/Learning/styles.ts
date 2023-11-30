@@ -44,7 +44,7 @@ export const BackButton = styled.TouchableOpacity``;
 
 export const Footer = styled.View`
     width: 100%;
-    height: 90%;
+    height: 87%;
 
     margin-top: -25px;
 
