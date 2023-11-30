@@ -2,15 +2,15 @@
 export const comp12 = {
     "lioto": [
         {
-            "title": "Homem de 25 anos com cefaléia, febre (38,5ºC), rinorreia mucóide, congestão nasal e hiposmia há 20 dias, com história de resfriado recente e rinite alérgica persistente moderada sem tratamento atual. Relacionado a achados de  TC de seios paranasais, assinale.",
+            "title": "Homem de 25 anos com cefaléia, febre (38,5ºC), rinorreia mucóide, congestão nasal e hiposmia há 20 dias. Tem antecedente de resfriado recente e rinite alérgica persistente moderada sem tratamento. Baseado nos achados de  TC de seios paranasais abaixo, assinale.",
             "imagePath": require('./comp12/1.jpg'),
             "alternatives": [
                 {
-                    "option": "Trata-se de Rinossinusite aguda viral sendo orientado uso de sintomáticos",
+                    "option": "Trata-se de rinossinusite aguda viral, é indicado o uso de sintomáticos.",
                     "isTrue": false
                 },
                 {
-                    "option": "Trata- se de rinossinusite aguda com sinais de sinusopatia crônica sendo orientado antibioticoterapia.",
+                    "option": "Trata-se de rinossinusite aguda com sinais tomográfico de sinusopatia crônica, é indicado uso de antibioticoterapia e corticoterapia tópica nasal.",
                     "isTrue": true
                 },
                 {
@@ -68,7 +68,7 @@ export const comp12 = {
             ]
         },
         {
-            "title": "O tratamento das rinites envolve medidas não farmacológicas e farmacológicas. As diretrizes visam atualizar os conhecimentos sobre a doença e os cuidados com os pacientes. Baseado nisso, assinale a afirmativa correta. ",
+            "title": "O tratamento das rinites envolve medidas não farmacológicas e farmacológicas. As diretrizes visam atualizar os conhecimentos sobre a doença e os cuidados com os pacientes. Neste contexto, assinale a correta.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -80,7 +80,7 @@ export const comp12 = {
                     "isTrue": false
                 },
                 {
-                    "option": "O início da ação dos corticosteroides nasais ocorre em sete a doze horas após sua administração; os pacientes devem ser orientados de que o efeito terapêutico final pode demorar até quatorze dias para ser atingido.",
+                    "option": "O início da ação dos corticosteróides nasais ocorre em sete a doze horas após sua administração, vale ressaltar aos pacientes quanto efeito terapêutico final que será atingido com tempo mais prolongado de uso.",
                     "isTrue": true
                 },
                 {
@@ -90,7 +90,7 @@ export const comp12 = {
             ]
         },
         {
-            "title": "Relacionada a etiologia da Rinossinusite Aguda em crianças, qual alternativa  é sugestiva de infecção  bacteriana.",
+            "title": "Relacionada a Rinossinusite Aguda em crianças, qual alternativa fortemente sugere infecção  bacteriana.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -98,7 +98,7 @@ export const comp12 = {
                     "isTrue": true
                 },
                 {
-                    "option": "Dor facial intensa",
+                    "option": "Dor facial intensa.",
                     "isTrue": false
                 },
                 {
@@ -134,51 +134,51 @@ export const comp12 = {
             ]
         },
         {
-            "title": "Na rinossinusite aguda na infância, a sintomatologia geralmente se manifesta como:",
+            "title": "Em rinossinusite aguda na infância, a sintomatologia geralmente se manifesta com:",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Febre,  hiposmia e obstrução nasal",
+                    "option": "Febre,  hiposmia e obstrução nasal.",
                     "isTrue": false
                 },
                 {
-                    "option": "Rinorreia hialina, odontalgia e hiposmia",
+                    "option": "Rinorreia hialina, odontalgia e hiposmia.",
                     "isTrue": false
                 },
                 {
-                    "option": "Rinorreia, tosse e hiposmia",
+                    "option": "Rinorreia, tosse e hiposmia.",
                     "isTrue": false
                 },
                 {
-                    "option": "Rinorreia, obstrução nasal e tosse",
+                    "option": "Rinorreia, obstrução nasal e tosse.",
                     "isTrue": true
                 }
             ]
         },
         {
-            "title": "Assinale a alternativa incorreta, em relação às complicações de rinossinusite:",
+            "title": "Relacionado às complicações de rinossinusite, assinale a alternativa incorreta:",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "A investigação com tomografia computadorizada deve ser realizada somente se o paciente não responder a 48h de antibioticoterapia",
+                    "option": "A investigação com tomografia computadorizada deve ser realizada somente se o paciente não responder a 48h de antibioticoterapia.",
                     "isTrue": true
                 },
                 {
-                    "option": "A realização de tomografia computadorizada é obrigatória para todos os casos com complicações orbitárias e o tratamento deve ser conduzido sempre junto com o oftalmologista",
+                    "option": "A realização de tomografia computadorizada é obrigatória para todos os casos com complicações orbitárias e o tratamento deve ser conduzido sempre junto com o oftalmologista.",
                     "isTrue": false
                 },
                 {
-                    "option": "O abscesso orbitário é a complicação orbitária mais grave e pode levar a amaurose em poucas horas",
+                    "option": "O abscesso orbitário é a complicação orbitária mais grave e pode levar a amaurose em poucas horas.",
                     "isTrue": false
                 },
                 {
-                    "option": "A celulite orbitária é a complicação da sinusite mais comum na adolescência",
+                    "option": "A celulite orbitária é a complicação da sinusite mais comum na adolescência.",
                     "isTrue": false
                 }
             ]
         },
         {
-            "title": "Qual é a indicação de encaminhamento para atendimento especializado de um paciente com suspeita de rinossinusite aguda?",
+            "title": "Qual a indicação de encaminhamento para atendimento especializado de um paciente com suspeita de rinossinusite aguda?",
             "imagePath": null,
             "alternatives": [
                 {

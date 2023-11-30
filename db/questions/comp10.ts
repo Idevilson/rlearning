@@ -24,7 +24,7 @@ export const comp10 = {
             ]
         },
         {
-            "title": "Mulher 67 anos realizou audiometria tonal que evidenciou limiares auditivos presentes em 50dBNA, sugerindo:",
+            "title": "Mulher 67 anos tem audiometria tonal compatível com limiares auditivos presentes em 50dBNA, sugerindo:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -90,19 +90,19 @@ export const comp10 = {
             ]
         },
         {
-            "title": "Mulher de 65 anos com queixa de hipoacusia bilateral progressiva, zumbido e dificuldade de compreensão da fala. Nega tontura. Otoscopia sem alterações significativas. Assinale principal hipótese diagnóstica.",
+            "title": "Mulher de 65 anos hipoacusia bilateral progressiva, zumbido e dificuldade na compreensão de fala. Otoscopia preservada. Assinale principal hipótese diagnóstica.",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Presbiacusia",
+                    "option": "Presbiacusia.",
                     "isTrue": true
                 },
                 {
-                    "option": "Otoesclerose",
+                    "option": "Otoesclerose.",
                     "isTrue": false
                 },
                 {
-                    "option": "Colesteatoma",
+                    "option": "Colesteatoma.",
                     "isTrue": false
                 },
                 {
@@ -112,11 +112,11 @@ export const comp10 = {
             ]
         },
         {
-            "title": "Mulher 72 anos queixa-se de hipoacusia progressiva bilateral e dificuldade de compreensão da fala. Refere isolamento do convívio social e humor deprimido. Nega outras queixas e sintomas. Assinale a principal hipótese diagnóstica.",
+            "title": "Mulher 72 anos com hipoacusia progressiva bilateral e dificuldade de compreensão da fala. Refere humor deprimido e isolamento social. Assinale a principal hipótese diagnóstica.",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Cerumen impactado",
+                    "option": "Cerumen impactado.",
                     "isTrue": false
                 },
                 {
@@ -124,7 +124,7 @@ export const comp10 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Presbiacusia",
+                    "option": "Presbiacusia.",
                     "isTrue": true
                 },
                 {
@@ -134,7 +134,7 @@ export const comp10 = {
             ]
         },
         {
-            "title": "Homem 63 anos relata que filhos tem reclamado de sua dificuldade de compreensão. Refere que os episódios iniciaram há alguns anos, nos dois ouvidos e tem zumbido associado. Possui antecedentes de diabetes, cardiopatia e exposição à ruídos sonoros ao longo da vida pela profissão na construção civil. Otoscopia sem alterações. Qual a melhor conduta?",
+            "title": "Homem 63 anos relata hipoacusia bilateral progressiva e zumbido. Tem antecedentes pessoais de diabetes. Otoscopia sem alterações. Qual a melhor conduta?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -156,7 +156,7 @@ export const comp10 = {
             ]
         },
         {
-            "title": "Homem 69 anos queixa-se de diminuição da audição e dificuldade na compreensão da fala, principalmente em ambientes barulhentos. Informa zumbido bilateral associado. História de depressão, isolamento e transtorno cognitivo leve desde início dos sintomas. Audiometria prévia com perda auditiva leve em frequências agudas. Otoscopia normal. Exame atual com perda auditiva sensorial moderada bilateralmente. Qual a conduta mais adequada?",
+            "title": "Homem 69 anos queixa-se de hipoacusia bilateral associado a zumbido. Tem história de depressão, isolamento social e transtorno cognitivo leve. Otoscopia normal. Audiometria com perda auditiva sensorial moderada bilateralmente. Qual a conduta mais adequada?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -178,7 +178,7 @@ export const comp10 = {
             ]
         },
         {
-            "title": "A presbiacusia é uma perda auditiva que ocorre:",
+            "title": "A presbiacusia trata-se de perda auditiva que ocorre:",
             "imagePath": null,
             "alternatives": [
                 {

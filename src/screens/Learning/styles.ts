@@ -9,7 +9,7 @@ export const Header = styled.View`
     width: 100%;
     height: 15%;
 
-    background-color: #B843F2; 
+    background-color: #c77dff; 
 
     justify-content: center;
 `;
@@ -102,57 +102,32 @@ export const FlashCardContainer = styled.View`
     padding: 20px;
 `;
 
-export const FooterWarning = styled.View`
+export const FooterContainer = styled.View`
     width: 100%;
     height: ${RFValue(40)}px;
 
-    align-items: center;
-    justify-content: center;
-`;
-
-export const WarningText = styled.Text`
-    font-size: 25px;
-    color: red;
-`;
-
-export const NextCardbutton = styled.TouchableOpacity`
-    width: ${RFValue(150)}px;
-    height: ${RFValue(40)}px;
-
-    background-color: #B843F2;
+    flex-direction: row;
 
     align-items: center;
     justify-content: center;
 
-    border-radius: 10px;
-
-    bottom: -38%;
+    justify-content: space-between;
 `;
 
-export const NextCardButtonText = styled.Text`
-    font-size: ${RFValue(15)}px;
+export const FooterButton = styled.TouchableOpacity`
+    width: ${RFValue(85)}px;
+    height: ${RFValue(35)}px;
 
-    color: #fff;
-    font-weight: bold;
-`;
+    border-color: #B843F2;
+    border-width: 2px;
 
-export const OpemModalPhotoButton = styled.TouchableOpacity`
-    width: ${RFValue(200)}px;
-    height: ${RFValue(30)}px;
-
-    background-color: #ffc300;
+    border-radius: 20px;
 
     align-items: center;
     justify-content: center;
-
-    align-self: center; 
-    
-    border-radius: 10px;
-    margin-top: ${RFValue(300)}px;
-
 `;
 
-export const TextPhotoModal = styled.Text`
-    font-size: ${RFValue(20)}px;
-    font-weight: bold;
+export const FooterButtonText = styled.Text`
+    font-size: 20px;
+    color: #B843F2;
 `;

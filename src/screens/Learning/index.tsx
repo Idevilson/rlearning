@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Text, TouchableOpacity, StyleSheet, View } from 'react-native';
+import { Text, TouchableOpacity, StyleSheet, View, ActivityIndicator } from 'react-native';
 
 import Animated, {
     useSharedValue,
@@ -22,12 +22,9 @@ import {
     QuestionIncatorText,
     QuestionIncator,
     FlashCardContainer,
-    FooterWarning,
-    WarningText,
-    NextCardbutton,
-    NextCardButtonText,
-    OpemModalPhotoButton,
-    TextPhotoModal,
+    FooterContainer,
+    FooterButton,
+    FooterButtonText,
 } from './styles';
 
 import { useNavigation } from '@react-navigation/native';
@@ -35,17 +32,19 @@ import ArrowBack from '../../assets/arrow-back-white.svg'
 
 import { ScrollView } from 'react-native';
 
-import { cardsDB } from '../../hooks/cards';
+import { CardDB, getRandomCards } from '../../hooks/cards';
 import { Clock } from '../../components/Clock';
 import { StackNavigationProp } from '@react-navigation/stack';
 
 import { Image } from 'expo-image';
 import { RFValue } from 'react-native-responsive-fontsize';
-import Modal from 'react-native-modal/dist/modal';
 import Toast from 'react-native-toast-message';
 
+import LottieView from 'lottie-react-native';
 
 export function Learning() {
+    const [isLoadingQuestions, setLoadingQuestions] = useState(true);
+    const [cardsDB, setNewCards] = useState<CardDB>([]);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [timestamp, setTimestamp] = useState(0);
     const [isModalImageVisible, setModalImageVisible] = useState(false);
@@ -56,6 +55,17 @@ export function Learning() {
     const navigation = useNavigation<StackNavigationProp<any>>();
 
     const scrollViewRef = useRef<ScrollView>(null);
+
+    useEffect(() => {
+        const fetchQuestions = async () => {
+          const newCards = getRandomCards();
+          setNewCards(newCards);
+          setLoadingQuestions(false);
+        };
+      
+        fetchQuestions();
+    }, []);
+
 
     useEffect(() => {
         if (scrollViewRef.current) {
@@ -106,6 +116,23 @@ export function Learning() {
         };
     });
 
+    const handlePressCorrectAnswer = () => {
+        // Sortear um índice aleatório com base no tamanho atual de cardsDB
+        const randomIndex = Math.floor(Math.random() * (cardsDB.length -1));
+    
+        // Atualizar o estado com o índice sorteado
+        setNewCards((prevCards) => prevCards.slice(1));
+        setCurrentIndex(randomIndex);
+        handlePress();
+    };
+
+    const setCurrentIndexRandom = () => {
+        const randomIndex = Math.floor(Math.random() * (cardsDB.length -1));
+        setCurrentIndex(randomIndex);
+    }
+
+    console.log(cardsDB.length)
+
     return(
         <Container>
             <Header>
@@ -130,78 +157,196 @@ export function Learning() {
                 </HeaderContainer>
             </Header>
 
-            <Footer>
-                <ProgressIndicatorContainer>
-                    <ScrollView
-                        horizontal
-                        contentContainerStyle={{
-                            alignItems: 'center',
-                        }}
-                        ref={scrollViewRef}
-                    >
-                        {cardsDB.map((item, index) => {
-
-                            return (
-                                <QuestionIncator
-                                    key={index}
-                                    isActive={index === currentIndex}
-                                >
-                                <QuestionIncatorText>
-                                    {index + 1}
-                                </QuestionIncatorText>
-                                </QuestionIncator>
-                            );
-                        })}
-                    </ScrollView>
-                </ProgressIndicatorContainer>
-
-                <FlashCardContainer>   
-                    <TouchableOpacity style={styles.container} onPress={handlePress}>
-                        <Animated.View style={[styles.card, frontCardStyle]}>
-                            <Image 
-                                style={{
-                                    width: RFValue(180),
-                                    height: RFValue(180),
-                                    opacity: 0.6,
-                                    position: 'absolute'
-                                }}
-                                source={require('../../assets/logoGrey.png')}
-                            />
-                            <Text style={styles.cardText}>{cardsDB[currentIndex].frente}</Text>  
-
-                            <View>
-                            { 
-                                cardsDB[currentIndex].imagePath === null ? null : 
-                                        <OpemModalPhotoButton
-                                            onPress={() => setModalImageVisible(!isModalImageVisible)}
-                                        >
-                                            <TextPhotoModal>
-                                                 ABRIR IMAGEM
-                                            </TextPhotoModal>
-                                        </OpemModalPhotoButton>
-                            }  
-                            </View>
-                            
-                        </Animated.View>
-
-
-                        {
-                                isFlipped === true ? 
-
-                                <Animated.View style={[styles.card, styles.backCard, backCardStyle]}>
-                                <Image 
-                                    style={{
-                                        width: RFValue(180),
-                                        height: RFValue(180),
-                                        opacity: 0.2,
-                                        position: 'absolute'
+            {isLoadingQuestions ? (
+                // Renderize um indicador de carregamento aqui
+                <ActivityIndicator size="large" color="#0000ff" />
+                ) : (
+                    <Footer>
+                        { cardsDB.length !== 0 ?   
+                            <ProgressIndicatorContainer>
+                                <ScrollView
+                                    horizontal
+                                    contentContainerStyle={{
+                                        alignItems: 'center',
                                     }}
-                                    source={require('../../assets/logoPurple.png')}
-                                />
-                                <Text style={[styles.cardText, { color: '#000' }]}>{cardsDB[currentIndex].verso}</Text>
-                                <Text style={{ bottom: '38%' }}>VERSO</Text>
+                                    ref={scrollViewRef}
+                                >
+                                    {cardsDB.map((item, index) => {
 
-                                <NextCardbutton
+                                        return (
+                                            <QuestionIncator
+                                                key={index}
+                                                isActive={index === currentIndex}
+                                            >
+                                            <QuestionIncatorText>
+                                                {index + 1}
+                                            </QuestionIncatorText>
+                                            </QuestionIncator>
+                                        );
+                                    })}
+                                </ScrollView>
+                            </ProgressIndicatorContainer>
+                            : null
+                        }
+
+                    { cardsDB.length !== 0 ?   
+                        <>
+                            <FlashCardContainer>   
+                                <TouchableOpacity style={styles.container} onPress={handlePress}>
+                                    <Animated.View style={[styles.card, frontCardStyle]}>
+                                        <View style={{
+                                            width: '100%',
+                                            height: RFValue(50),
+                                            flexDirection: 'row',
+                                            justifyContent: 'space-between',
+                                            alignItems: 'center',
+                                            paddingLeft: 5,
+                                            paddingRight: 5
+                                        }}>
+                                            <Text style={{ fontWeight: '900', color: "#fff", fontSize: RFValue(15) }}>PERGUNTA</Text>
+
+                                            <View style={{
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                height: RFValue(40),
+                                                width: RFValue(40),
+                                                backgroundColor: '#fff',
+                                                borderRadius: RFValue(20)
+                                            }}>
+                                                
+                                                <Image 
+                                                    style={{
+                                                        width: RFValue(30),
+                                                        height: RFValue(30),
+                                                        borderRadius: RFValue(25)
+                                                    }}
+                                                    source={require('../../assets/logoGrey.png')}
+                                                />
+                                            </View>
+                                        </View>
+
+                                        <View style={{
+                                            flex: 1,
+                                            alignItems: 'center',
+                                            justifyContent: 'center'
+                                        }}>
+                                            <Text style={styles.cardText}>{cardsDB[currentIndex].frente}</Text>  
+
+                                            {
+                                                cardsDB[currentIndex].imagePath === null ? null :
+                                                    isFlipped === false ? 
+                                                        <Image 
+                                                            transition={1000}
+                                                            style={{
+                                                                width: RFValue(200),
+                                                                height: RFValue(200),
+                                                                marginTop: 20
+                                                            }}
+                                                            source={cardsDB[currentIndex].imagePath}
+                                                        />
+                                                    : null
+                                            
+                                            }
+
+                                        </View>
+                                    </Animated.View>
+
+
+                                    {
+                                            isFlipped === true ? 
+
+                                        <Animated.View style={[styles.card, styles.backCard, backCardStyle]}>
+                                                <View style={{
+                                                    width: '100%',
+                                                    height: RFValue(50),
+                                                    flexDirection: 'row',
+                                                    justifyContent: 'space-between',
+                                                    alignItems: 'center',
+                                                    paddingLeft: 5,
+                                                    paddingRight: 5
+                                                }}>
+                                                    <View style={{
+                                                        alignItems: 'center',
+                                                        justifyContent: 'center',
+                                                        height: RFValue(40),
+                                                        width: RFValue(40),
+                                                        backgroundColor: '#fff',
+                                                        borderRadius: RFValue(20)
+                                                    }}>
+                                                        
+                                                        <Image 
+                                                            style={{
+                                                                width: RFValue(30),
+                                                                height: RFValue(30),
+                                                                borderRadius: RFValue(25)
+                                                            }}
+                                                            source={require('../../assets/logoGrey.png')}
+                                                        />
+                                                    </View>
+                                                <Text style={{ fontWeight: '900', color: "#000", fontSize: RFValue(15) }}>RESPOSTA</Text>
+                                            </View>
+
+                                            <View style={{
+                                                flex: 1,
+                                                alignItems: 'center',
+                                                justifyContent: 'center'
+                                            }}>
+                                                <Text style={styles.cardTextBack}>{cardsDB[currentIndex].verso}</Text>  
+                                            </View>
+
+                                            
+                                            <View style={{
+                                                width: '100%',
+                                                height: RFValue(50),
+                                                flexDirection: 'row',
+                                                paddingLeft: 5,
+                                                paddingRight: 5,
+                                                alignItems: 'center',
+                                                justifyContent: 'center'
+                                            }}>
+                                                <Image 
+                                                    style={{
+                                                        width: RFValue(15),
+                                                        height: RFValue(15),
+                                                        marginRight: 10
+                                                    }}
+                                                    source={require('../../assets/refresh-arrow.png')}
+                                                />
+                                                <Text
+                                                    style={{
+                                                        fontWeight: '600',
+                                                        marginRight: 10
+                                                    }}
+                                                >
+                                                    REVER PERGUNTA
+                                                </Text>
+                                            </View>
+                                        </Animated.View>
+                                        : null
+                                    }                    
+                                </TouchableOpacity>
+                            </FlashCardContainer>
+
+                            <FooterContainer>
+                                <FooterButton
+                                    onPress={() => {
+                                        if(!isFlipped) {
+                                            Toast.show({
+                                                type: 'error',
+                                                text1: 'ATENÇÃO',
+                                                text2: 'O CARD PRECISA ESTAR VIRADO'
+                                            })
+                                        } else if (isFlipped) {
+                                            handlePressCorrectAnswer()
+                                        }
+                                    }}
+                                >
+                                    <FooterButtonText>
+                                        Acertei
+                                    </FooterButtonText>
+                                </FooterButton>
+
+                                <FooterButton
                                     onPress={() => {
                                         if(cardsDB.length === currentIndex + 1){
                                             Toast.show({
@@ -209,80 +354,68 @@ export function Learning() {
                                                 text1: 'ATENÇÃO',
                                                 text2: 'FINALIZADO! TOQUE NO BOTÃO HOME PARA VOLTAR'
                                             })
+                                        } else if (!isFlipped) {
+                                            Toast.show({
+                                                type: 'error',
+                                                text1: 'ATENÇÃO',
+                                                text2: 'O CARD PRECISA ESTAR VIRADO'
+                                            })
                                         } else if (isFlipped) {
-                                        setCurrentIndex(currentIndex + 1);
+                                            setCurrentIndexRandom();
                                             handlePress();
                                         }
-
                                     }}
                                 >
-                                    <NextCardButtonText>
-                                        Próximo
-                                    </NextCardButtonText>
-                                </NextCardbutton>
-                            </Animated.View>
-                            : null
-                        }
+                                    <FooterButtonText>
+                                        Parcial
+                                    </FooterButtonText>
+                                </FooterButton>
 
-                        
-                    </TouchableOpacity>
-                </FlashCardContainer>
-
-                <FooterWarning>
-                    <WarningText>
-                        TOQUE NO CARD
-                    </WarningText>
-                </FooterWarning>
-
-                <Modal 
-                    isVisible={isModalImageVisible}
-                    style={{
-                        alignItems: 'center'
-                    }}
-                >
-                   
-                        <View style={{ 
-                            width: RFValue(250),
-                            height: RFValue(300), 
-                            borderRadius: 10,
-                            backgroundColor: '#fff',
-                            padding: 20,
+                                <FooterButton
+                                    onPress={() => {
+                                        if(cardsDB.length === currentIndex + 1){
+                                            Toast.show({
+                                                type: 'success',
+                                                text1: 'ATENÇÃO',
+                                                text2: 'FINALIZADO! TOQUE NO BOTÃO HOME PARA VOLTAR'
+                                            })
+                                        } else if (!isFlipped) {
+                                            Toast.show({
+                                                type: 'error',
+                                                text1: 'ATENÇÃO',
+                                                text2: 'O CARD PRECISA ESTAR VIRADO'
+                                            })
+                                        } else if (isFlipped) {
+                                            setCurrentIndexRandom();
+                                            handlePress();
+                                        }
+                                    }}
+                                >
+                                    <FooterButtonText>
+                                        Errei
+                                    </FooterButtonText>
+                                </FooterButton>
+                            </FooterContainer>
+                        </>
+                        : <View style={{
+                            flex: 1,
                             alignItems: 'center',
-                            justifyContent: 'space-between'
+                            justifyContent: 'center'
                         }}>
+                            <Text style={{ fontSize: 25, textAlign: 'center', fontWeight: 'bold' }}>{`PARABÉNS \nVOCÊ CHEGOU AO FINAL!`}</Text>
 
-                    <Image 
-                        style={{
-                            width: RFValue(200),
-                            height: RFValue(200)
-                        }}
-                        source={cardsDB[currentIndex].imagePath}
-                    />
-
-
-                        <TouchableOpacity 
-                            onPress={() => setModalImageVisible(!isModalImageVisible)}
-                            style={{
-                                width: 200,
-                                height: 45,
-                                borderRadius: 10,
-                                backgroundColor: '#B843F2',
-                                alignItems: 'center',
-                                justifyContent: 'center'
-                            }}
-                        >
-                            <Text
+                            <LottieView
+                                autoPlay
                                 style={{
-                                    color: '#fff',
-                                    fontWeight: 'bold'
+                                    width: RFValue(250),
+                                    height: RFValue(250),
                                 }}
-                            >
-                                FECHAR
-                            </Text>
-                        </TouchableOpacity>
-                    </View>
-                </Modal> 
-            </Footer>
+                                source={require('./green.json')}
+                            />
+                         </View>
+                    }
+                    </Footer> 
+            )}
         </Container>
     );
 };
@@ -296,9 +429,7 @@ const styles = StyleSheet.create({
     card: {
         width: '100%',
         aspectRatio: 0.6,
-        backgroundColor: '#B843F2',
-        justifyContent: 'center',
-        alignItems: 'center',
+        backgroundColor: '#c77dff',
         padding: 20,
         backfaceVisibility: 'hidden',
         borderRadius: 10,
@@ -310,6 +441,7 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.5,
         shadowRadius: 8,
         elevation: 5, 
+        justifyContent: 'space-between'
     },
     backCard: {
       backgroundColor: '#fff',
@@ -320,7 +452,12 @@ const styles = StyleSheet.create({
       fontSize: 22,
       fontWeight: '700',
       textAlign: 'center',
-      position: 'absolute'
     },
+    cardTextBack: {
+        color: '#000',
+        fontSize: 22,
+        fontWeight: '700',
+        textAlign: 'center',
+      },
 });
   

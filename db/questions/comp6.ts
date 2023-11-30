@@ -23,7 +23,7 @@ export const comp6 ={
             ]
         },
         {
-            "title": "Paciente com epistaxes recorrentes e obstrução nasal a direita, qual melhor conduta a ser adotada na unidade básica de saúde ?",
+            "title": "Paciente com epistaxes recorrentes e obstrução nasal à direita, qual melhor conduta a ser adotada na unidade básica de saúde?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -49,7 +49,7 @@ export const comp6 ={
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Lavagem nasal",
+                    "option": "Lavagem nasal.",
                     "isTrue": false
                 },
                 {
@@ -71,11 +71,11 @@ export const comp6 ={
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Alterações anatômicas",
+                    "option": "Alterações anatômicas.",
                     "isTrue": false
                 },
                 {
-                    "option": "Neoplasias hematológicas",
+                    "option": "Neoplasias hematológicas.",
                     "isTrue": false
                 },
                 {
@@ -89,7 +89,7 @@ export const comp6 ={
             ]
         },
         {
-            "title": "A estrutura vascular responsável pela maior parte dos casos de epistaxe de grande monta de origem posterior é: ",
+            "title": "A estrutura vascular responsável pela maior parte dos casos de epistaxe de grande monta de origem posterior é:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -109,7 +109,7 @@ export const comp6 ={
                     "isTrue": false
                 },
                 {
-                    "option": "Artéria etmoidal posterior",
+                    "option": "Artéria etmoidal posterior.",
                     "isTrue": false
                 }
             ]
@@ -137,7 +137,7 @@ export const comp6 ={
             ]
         },
         {
-            "title": "Criança com sangramento nasal intenso que iniciou poucas horas após trauma em cabeça. Ao exame físico: sangramento volumoso e ativo, de origem posterior. Médico plantonista solicitou TC de crânio que evidenciou fratura de base de crânio e acometimento do esfenoide. Qual conduta?",
+            "title": "Criança com sangramento nasal intenso que iniciou poucas horas após trauma em cabeça. Ao exame físico: sangramento volumoso e ativo, de origem posterior. Médico plantonista solicitou TC de crânio que evidenciou fratura de base de crânio e acometimento do esfenóide. Qual conduta?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -186,10 +186,6 @@ export const comp6 ={
             "alternatives": [
                 {
                     "option": "As epistaxes anteriores ocorrem no Plexo de Kiesselbach.",
-                    "isTrue": false
-                },
-                {
-                    "option": "No atendimento de um paciente com epistaxe, deve ser aplicado o algoritmo do Advanced Trauma Life Support (ATLS).",
                     "isTrue": false
                 },
                 {

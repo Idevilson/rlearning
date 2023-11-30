@@ -60,11 +60,11 @@ export const AnimationContainer = styled.View`
 export const BackButton = styled.TouchableOpacity``;
 
 export const Footer = styled.View`
-    width: 100%;
-    height: 90%;
+    height: 67%;
 
     padding-left: 20px;
     padding-right: 20px;
+
 `;
 
 export const DashboardCardContainer = styled.View`
@@ -218,11 +218,12 @@ export const WrongQuestionsInfo = styled.Text`
 export const CompetencyContainer = styled.ScrollView`
     width: 100%;
 
-    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 `;
 
 
-export const Competency = styled.View`
+export const Competency = styled.TouchableOpacity`
     height: ${RFValue(50)}px;
     width: 100%;
 

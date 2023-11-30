@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "game",
-    "slug": "game",
+    "name": "RLearning",
+    "slug": "rlearning",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +15,24 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.idejunior.rlearning"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.idejunior.rlearning"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "e434a5c9-49ac-4cba-869b-f770eab22696"
+      }
+    },
+    "owner": "idejunior"
   }
 }

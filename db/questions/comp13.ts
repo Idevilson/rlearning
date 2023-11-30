@@ -2,11 +2,11 @@
 export const comp13 = {
     "lioto": [
         {
-            "title": "Assinale a correta. A rinite ______________, também chamada de rinite vasomotora, é a forma mais comum de rinite não alérgica e seus fatores desencadeantes são inespecíficos. O tratamento é feito com corticosteroide _______. Em casos mais graves de obstrução nasal, pode ser necessário a utilização de corticosteroide ___________ .",
+            "title": "A rinite ______________, também chamada de rinite vasomotora, é a forma mais comum de rinite não alérgica e seus fatores desencadeantes são inespecíficos. O tratamento é feito com corticosteróide _______. Em casos mais graves de obstrução nasal, pode ser necessário a utilização de corticosteróide ___________ .",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Medicamentosa – oral – tópico",
+                    "option": "Inflamatória – oral – tópico",
                     "isTrue": false
                 },
                 {
@@ -18,13 +18,13 @@ export const comp13 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Idiopática – tópico - oral.",
+                    "option": "Idiopática – tópico - oral",
                     "isTrue": true
                 }
             ]
         },
         {
-            "title": "Clara de 6 anos apresenta espirros frequentes, obstrução e prurido nasal e coriza. Diz que o quadro é frequente acontecendo por mais de 4 dias durante a semana, gerando poucas vezes dificuldades no sono. Rinoscopia anterior : conchas nasais inferiores hipertrofiadas 2+/4+, hipocoradas com presença de secreção hialina. Diante do quadro qual principal hipótese diagnóstica e tratamento? ",
+            "title": "Clara, 6 anos, apresenta espirros, obstrução, prurido nasal e coriza. Mãe informa sintomas frequentes com duração de 2 dias por semana, sem repercussões durante o sono. Rinoscopia anterior com palidez e hipertrofia leve de conchas nasais inferiores. Assinale principal hipótese diagnóstica e tratamento",
             "imagePath": null,
             "alternatives": [
                 {
@@ -46,7 +46,7 @@ export const comp13 = {
             ]
         },
         {
-            "title": "Menina de 9 anos, com queixa de tosse noturna, obstrução nasal, prurido, coriza e espirros. Mãe refere que criança apresenta roncos e despertares noturnos o que relaciona a dificuldade de concentração nas atividades escolares. Tem antecedente de asma, em uso frequente de salbutamol de resgate. Rinoscopia anterior com conchas nasais inferiores hipertrofiadas 3+/4+, hipocoradas, com presença de secreção hialina. Qual melhor conduta a  indicar? ",
+            "title": "Menina, 9 anos, com queixa de tosse noturna, obstrução nasal, prurido, coriza e espirros. Mãe refere que a criança apresenta roncos e despertares noturnos com dificuldade de concentração nas atividades escolares. Tem antecedente de asma, em uso frequente de salbutamol de resgate. Rinoscopia anterior com conchas nasais inferiores hipertrofiadas 3+/4+, hipocoradas, com presença de secreção hialina. Qual melhor conduta a indicar? ",
             "imagePath": null,
             "alternatives": [
                 {
@@ -62,17 +62,16 @@ export const comp13 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Iniciar anti- histaminico e encaminha para médico especialista.",
+                    "option": "Iniciar anti-histaminico e encaminha para médico especialista.",
                     "isTrue": true
                 }
             ]
         },
         {
-            "title": "Mulher 40 anos, portadora de rinite alérgica apresenta queixa de plenitude aural e hipoacusia discreta à direita há cerca de 30 dias. Otoscopia: membrana timpânica direita íntegra, com discreta retração. Suspeitou-se de disfunção tubária, sobre esta hipótese, assinale a correta. I. A retração da membrana timpânica se deve ao aumento da pressão na orelha média por disfunção da tuba auditiva, podendo ser relacionada a rinite alérgica. II. Na impedanciometria espera-se  uma curva tipo D. Está correto o que se afirma apenas em: ",
-            "imagePath": null,
+            "title": "Mulher 40 anos, queixa-se de plenitude aural e hipoacusia discreta à direita há cerca de 30 dias. Tem antecedente de rinite alérgica. Otoscopia com membrana timpânica direita íntegra, com discreta retração. Suspeitou-se de disfunção tubária, sobre esta hipótese, assinale a correta. I. A retração da membrana timpânica se deve ao aumento da pressão na orelha média por disfunção da tuba auditiva, podendo ser relacionada a rinite alérgica. II. Na impedanciometria espera-se  uma curva tipo D.",            "imagePath": null,
             "alternatives": [
                 {
-                    "option": "V e V ",
+                    "option": "V e V",
                     "isTrue": false
                 },
                 {
@@ -90,7 +89,7 @@ export const comp13 = {
             ]
         },
         {
-            "title": "Sobre o tratamento de Rinites Alérgicas, assinale: ",
+            "title": "Sobre o tratamento de Rinites Alérgicas, assinale:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -102,7 +101,7 @@ export const comp13 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Associar corticoide tópico nasal com anti-histamínicos orais é efetivo nos casos persistentes moderados-graves.",
+                    "option": "Associar corticóide tópico nasal com anti-histamínicos orais é efetivo nos casos persistentes moderados-graves.",
                     "isTrue": true
                 },
                 {
@@ -112,7 +111,7 @@ export const comp13 = {
             ]
         },
         {
-            "title": "Qual justificativa para sonolência provocada no uso dos Anti-histamínicos de 1ª geração?",
+            "title": "A sonolência excessiva referida ao uso dos Anti-histamínicos de 1ª geração, deve-se: ",
             "imagePath": null,
             "alternatives": [
                 {
@@ -134,7 +133,7 @@ export const comp13 = {
             ]
         },
         {
-            "title": "Menino de 5 anos de idade com história d rinorreia hialina, prurido nasal e ocular, espirros em salva e obstrução nasal; com duração média de cinco dias na semana, há seis semanas. Mãe refere que criança acorda à noite pela obstrução nasal, o que pode acredita prejudicar seu desempenho escolar. Assinale hipótese diagnóstica.",
+            "title": "Menino, 5 anos, com rinorreia hialina, prurido nasal e ocular, espirros em salva e obstrução nasal. Queixas perduram em média 5 dias na semana, há seis semanas. A mãe refere despertares noturnos pela obstrução nasal, prejudicando seu desempenho escolar. Assinale hipótese diagnóstica.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -168,11 +167,11 @@ export const comp13 = {
                     "isTrue": false
                 },
                 {
-                    "option": "A imunoterapia é uma alternativa no tratamento da Rinite Alérgica não controlada.s",
+                    "option": "A imunoterapia é uma alternativa no tratamento da Rinite Alérgica não controlada.",
                     "isTrue": true
                 },
                 {
-                    "option": "O uso de anti-histamínico tópico nasal é contraindicado no tratamento do Idoso.",
+                    "option": "O uso de anti-histamínico tópico nasal é contraindicado no tratamento do idoso.",
                     "isTrue": false
                 }
             ]

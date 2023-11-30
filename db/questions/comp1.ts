@@ -5,11 +5,11 @@ export const comp1 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Como o diagnóstico é clínico, você agenda para a lavagem auricular para algumas horas depois.",
+                    "option": "Como o diagnóstico é clínico, você agenda a lavagem auricular para algumas horas depois.",
                     "isTrue": false
                 },
                 {
-                    "option": "Se à otoscopia visualizada perfuração timpânica, faz-se necessária a lavagem auricular com urgência.",
+                    "option": "Se a otoscopia visualiza perfuração timpânica, faz-se necessária a lavagem auricular com urgência.",
                     "isTrue": false
                 },
                 {
@@ -27,23 +27,23 @@ export const comp1 = {
             ]
         },
         {
-            "title": "Cerumem impactado é comum na atenção primária, podendo ocorre em todas faixas etárias, principalmente em idosos. A remoção é indicada, exceto:",
+            "title": "Cerume impactado é comum na atenção primária, podendo ocorrer em todas faixas etárias, principalmente em idosos. A remoção é indicada, exceto:",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Plenitude aural ",
+                    "option": "Plenitude aural.",
                     "isTrue": false
                 },
                 {
-                    "option": "Hipoacusia",
+                    "option": "Hipoacusia.",
                     "isTrue": false
                 },
                 {
-                    "option": "Zumbido",
+                    "option": "Zumbido.",
                     "isTrue": false
                 },
                 {
-                    "option": "Dor intensa",
+                    "option": "Dor intensa.",
                     "isTrue": true
                 }
             ]
@@ -71,7 +71,7 @@ export const comp1 = {
             ]
         },
         {
-            "title": "A lavagem auricular é dos procedimentos otorrinolaringológicos realizados na atenção básica quando há profissionais capacitados, materiais disponíveis e aceitação do paciente (BRASIL, 2011).",
+            "title": "Sobre a lavagem auricular, assinale:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -97,19 +97,19 @@ export const comp1 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Crianças",
+                    "option": "Crianças.",
                     "isTrue": false
                 },
                 {
-                    "option": "Adultos",
+                    "option": "Adultos.",
                     "isTrue": false
                 },
                 {
-                    "option": "Idosos",
+                    "option": "Idosos.",
                     "isTrue": true
                 },
                 {
-                    "option": "Lactentes",
+                    "option": "Lactentes.",
                     "isTrue": false
                 }
             ]
@@ -159,7 +159,7 @@ export const comp1 = {
             ]
         },
         {
-            "title": "Tecnica de remoção de cerume mais segura em pacientes com membrana timpânica intacta?",
+            "title": "Técnica de remoção de cerume mais segura em pacientes com membrana timpânica intacta?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -167,7 +167,7 @@ export const comp1 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Remoção de cerumem com pinça anatômica.",
+                    "option": "Remoção de cerume com pinça anatômica.",
                     "isTrue": false
                 },
                 {

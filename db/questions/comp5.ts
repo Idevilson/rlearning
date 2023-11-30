@@ -1,7 +1,7 @@
 export const comp5 = {
     "lioto": [
         {
-            "title": "Assinale a alternativa incorreta relacionada às ações preventivas da atenção primária  no câncer de orofaringe",
+            "title": "Assinale a alternativa incorreta relacionada às ações preventivas na atenção primária  do câncer de orofaringe:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -23,7 +23,7 @@ export const comp5 = {
             ]
         },
         {
-            "title": "São medidas preventivas para câncer de boca e laringe, exceto: ",
+            "title": "São medidas preventivas para câncer de boca e laringe, exceto:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -39,21 +39,21 @@ export const comp5 = {
                     "isTrue": true
                 },
                 {
-                    "option": "Fatores de risco importantes do câncer de boca são passíveis de mudanças, como cessar o tabaco e álcool.",
+                    "option": "Avaliação precoce de lesões suspeitas.",
                     "isTrue": false
                 }
             ]
         },
         {
-            "title": "Localização mais frequente do câncer da laringe?",
+            "title": "Localização mais frequente do câncer de laringe?",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Subglote",
+                    "option": "Subglote.",
                     "isTrue": false
                 },
                 {
-                    "option": "Pregas vocais ",
+                    "option": "Pregas vocais.",
                     "isTrue": true
                 },
                 {
@@ -75,7 +75,7 @@ export const comp5 = {
                     "isTrue": false
                 },
                 {
-                    "option": "A prática de sexo oral sem cuidado adequado permite infecção pelos vírus  HPV 17 e 18 principais causadores deste câncer",
+                    "option": "A prática de sexo oral sem cuidado adequado permite infecção pelos vírus  HPV 17 e 18 principais causadores deste câncer.",
                     "isTrue": true
                 },
                 {
@@ -83,7 +83,7 @@ export const comp5 = {
                     "isTrue": false
                 },
                 {
-                    "option": "As mudanças sociais com a redução hábitos de fumar corroboram com o aumento da proporção deste câncer HPV -relacionado.",
+                    "option": "As mudanças sociais com a redução dos hábitos de fumar corroboram com o aumento da proporção deste câncer HPV relacionado.",
                     "isTrue": false
                 }
             ]
@@ -93,7 +93,7 @@ export const comp5 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "São associados ao consumo de tabaco e álcool",
+                    "option": "Sempre estão associados ao consumo de tabaco e álcool.",
                     "isTrue": false
                 },
                 {
@@ -115,7 +115,7 @@ export const comp5 = {
             ]
         },
         {
-            "title": "Assinale a incorreta quanto ao câncer de orofaringe:",
+            "title": "Assinale a INCORRETA quanto ao câncer de orofaringe:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -185,7 +185,7 @@ export const comp5 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Prevenção primária: realizar ligadura de varizes esofágica.",
+                    "option": "Prevenção primária: realizar ligadura de varizes esofágicas.",
                     "isTrue": false
                 },
                 {

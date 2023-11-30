@@ -1,5 +1,6 @@
 import 'intl';
 import 'intl/locale-data/jsonp/pt-BR';
+import 'expo-dev-client';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import React from 'react';

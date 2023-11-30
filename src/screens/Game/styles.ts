@@ -102,6 +102,7 @@ export const QuizContainer = styled.View`
 export const QuestionText = styled.Text`
     font-size: 17px;
     font-weight: bold;
+    text-align: justify;
 `;
 
 interface quizOptionProps {

@@ -1,5 +1,13 @@
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
-import { createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, UserCredential, User as firebaseUser} from 'firebase/auth';
+import { 
+  createUserWithEmailAndPassword, 
+  onAuthStateChanged, 
+  signInWithEmailAndPassword, 
+  UserCredential, 
+  User as firebaseUser,
+} from 'firebase/auth';
+import { FirebaseError } from 'firebase/app';
+
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { auth } from '../services/firebase';
 import Toast from 'react-native-toast-message';
@@ -60,13 +68,14 @@ export function AuthProvider({ children }: AuthProviderProps) {
         try {
           await AsyncStorage.setItem('user', JSON.stringify(firebaseUser));
         } catch (error) {
+         
           console.error('Erro ao salvar usuário no AsyncStorage:', error);
         }
       }
 
       return true;
     } catch (error) {
-      handleAuthError(error);
+      handleAuthError(error as FirebaseError);
       return false;
     }
   };
@@ -76,7 +85,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
       await createUserWithEmailAndPassword(auth, email, password);
       return true;
     } catch (error) {
-      handleAuthError(error);
+      handleAuthError(error as FirebaseError);
       return false;
     }
   };
@@ -92,16 +101,17 @@ export function AuthProvider({ children }: AuthProviderProps) {
     }
   };
 
-  const handleAuthError = (error: any) => {
+  const handleAuthError = (error: FirebaseError) => {
     const errorCode = error.code;
-    console.log({ errorCode });
 
-    if (errorCode === 'auth/user-not-found' || errorCode === 'auth/wrong-password') {
+    if (errorCode === 'auth/user-not-found' || errorCode === 'auth/wrong-password' || errorCode === 'auth/invalid-login-credentials') {
       Toast.show({
         type: 'error',
         text1: 'ATENÇÃO',
         text2: 'EMAIL OU SENHA INVÁLIDOS.⚠️',
       });
+
+      return;
     }
 
     const errorMessage = error.message;

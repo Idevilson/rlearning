@@ -2,7 +2,7 @@
 export const comp11 = {
     "lioto": [
         {
-            "title": "Menor de 10 anos com história de infecções respiratórias de repetição, refere 5 episódios nos últimos 6 meses. Na UBS apresenta febre baixa, sintomas obstrutivos nasais e rinorreia hialina. Mãe informa respira oral e roncos. A partir de exame complementar, assinale alternativa correta:",
+            "title": "Menor de 10 anos com história de infecções respiratórias de repetição, com 5 episódios nos últimos 6 meses. Mãe informa respiração oral e roncos. Assinale melhor descrição para exame complementar solicitado:",
             "imagePath": require('./comp11/1.png'),
             "alternatives": [
                 {
@@ -18,13 +18,13 @@ export const comp11 = {
                     "isTrue": true
                 },
                 {
-                    "option": "Rx de seios da face com presenca de hipertrofia adenoideana obstruindo mais de 70% do rinofaringe",
+                    "option": "Rx de seios da face com presenca de hipertrofia adenoideana obstruindo mais de 70% do rinofaringe.",
                     "isTrue": false
                 }
             ]
         },
         {
-            "title": "Homem 28 anos comparece a  UBS com queixa de amigdalite recorrente, halitose e ronco. Otoscopia e rinoscopia sem alterações. Relacionada ao exame das amigdalas, qual classificação de Brodsky ? ",
+            "title": "Homem 28 anos comparece a  UBS com queixa de amigdalite recorrente, halitose e ronco. Otoscopia e rinoscopia sem alterações. Relacionada ao exame das amigdalas, qual classificação de Brodsky ?",
             "imagePath": require('./comp11/2.png'),
             "alternatives": [
                 {
@@ -46,7 +46,7 @@ export const comp11 = {
             ]
         },
         {
-            "title": "Criança de cinco anos de idade, com histórico de ronco e apneia ao dormir, apresentou, em radiografia do cavum: redução acentuada da coluna aérea por hipertrofia das adenoides. Nesta situação a criança tem indicação de tratamento cirúrgico com adenoidectomia.",
+            "title": "Criança de cinco anos de idade, com histórico de ronco e apneia obstrutiva do sono, tem radiografia do cavum com redução acentuada da coluna aérea por hipertrofia das adenoides tem indicação de adenoidectomia.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -60,7 +60,7 @@ export const comp11 = {
             ]
         },
         {
-            "title": "Hipertrofia adenoamigdaliana, desvio septal e rinopatias inflamatórias, a exemplo da rinite alergia,  são causa de obstrutivas nasais.",
+            "title": "Hipertrofia adenoamigdaliana, desvio septal e rinopatias inflamatórias são causas de sintomas obstrutivos nasais.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -74,7 +74,7 @@ export const comp11 = {
             ]
         },
         {
-            "title": "Na seguinte oroscopia, assinale estrutura em destaque e sua descrição .",
+            "title": "Na oroscopia, assinale a estrutura em destaque e sua descrição .",
             "imagePath": require('./comp11/7.jpg'),
             "alternatives": [
                 {
@@ -96,7 +96,7 @@ export const comp11 = {
             ]
         },
         {
-            "title": "Que exames pode auxiliar na confirmação da hipertrofia de adenoideana? ",
+            "title": "Qual principal exame indicado na confirmação da hipertrofia de adenoideana?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -118,7 +118,7 @@ export const comp11 = {
             ]
         },
         {
-            "title": "Assinale indicação mais frequente do tratamento cirúrgico de pacientes com hipertrofia de adenóide? ",
+            "title": "Assinale a indicação mais frequente do tratamento cirúrgico em pacientes com hipertrofia de adenóide?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -140,7 +140,7 @@ export const comp11 = {
             ]
         },
         {
-            "title": "Exame complementar utilizado na avaliação de hipertrofia adenoideana em crianças respiradoras orais: ",
+            "title": "Exame complementar utilizado na avaliação de hipertrofia adenoideana em crianças respiradoras orais:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -166,7 +166,7 @@ export const comp11 = {
             ]
         },
         {
-            "title": "Assinale quadro comumente relacionado à hipertrofia de amígdalas em crianças",
+            "title": "Assinale diagnóstico comumente relacionado à hipertrofia amigdaliana em crianças:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -178,11 +178,11 @@ export const comp11 = {
                     "isTrue": false,
                 },
                 {
-                    "option": "Apneia obstrutiva do sono..",
+                    "option": "Apneia obstrutiva do sono.",
                     "isTrue": true,
                 },
                 {
-                    "option": "Faringite bacteriana recorrente..",
+                    "option": "Faringite bacteriana recorrente.",
                     "isTrue": false,
                 },
             ]

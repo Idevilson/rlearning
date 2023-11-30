@@ -2,7 +2,7 @@
 export const comp7 = {
     "lioto": [
         {
-            "title": "Qual a classificação da perfuração  Tímpânica abaixo:",
+            "title": "Qual a classificação da perfuração  Timpânica abaixo:",
             "imagePath": require('./comp7/1.png'),
             "alternatives": [
                 {
@@ -28,33 +28,33 @@ export const comp7 = {
             "imagePath": require('./comp7/2.png'),
             "alternatives": [
                 {
-                    "option": "Póstero superior",
+                    "option": "Póstero-superior",
                     "isTrue": false
                 },
                 {
-                    "option": "Postero inferior ",
+                    "option": "Postero-inferior ",
                     "isTrue": true
                 },
                 {
-                    "option": "Antero inferior ",
+                    "option": "Antero-inferior ",
                     "isTrue": false
                 },
                 {
-                    "option": "Antero superior",
+                    "option": "Antero-superior",
                     "isTrue": false
                 }
             ]
         },
         {
-            "title": "Na otoscopia com presença de perfuração timpânica, pode- se encontrar os seguintes achados, exceto:",
+            "title": "Na otoscopia com presença de perfuração timpânica, pode- se encontrar os seguintes achados, EXCETO:",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Membrana timpânica com mobilidade abolida",
+                    "option": "Membrana timpânica com mobilidade abolida.",
                     "isTrue": false
                 },
                 {
-                    "option": "Menbrana timpânica com mobilidade preservada.",
+                    "option": "Membrana timpânica com mobilidade preservada.",
                     "isTrue": true
                 },
                 {
@@ -68,7 +68,7 @@ export const comp7 = {
             ]
         },
         {
-            "title": "Podem estar associado a perfuração timpânica, exceto:",
+            "title": "Podem estar associado a perfuração timpânica, EXCETO:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -90,7 +90,7 @@ export const comp7 = {
             ]
         },
         {
-            "title": "Em relação a perfuração da membrana timpânica, assinale a  incorreta: ",
+            "title": "Em relação a perfuração da membrana timpânica, assinale a  INCORRETA:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -112,7 +112,7 @@ export const comp7 = {
             ]
         },
         {
-            "title": "Quanto a perfuração-retração, assinale a alternativa incorreta:",
+            "title": "Quanto a perfuração-retração, assinale a alternativa INCORRETA:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -134,7 +134,7 @@ export const comp7 = {
             ]
         },
         {
-            "title": "JRN, 25 anos, masculino, com queixa de  otologia, otorreia e perda auditiva que iniciou há 15 dias após banho de imersão. Assinale o achado da otoscopia:",
+            "title": "JRN, 25 anos, masculino, com queixa de  otalgia, otorreia e perda auditiva que iniciou há 15 dias após banho de imersão. Assinale o achado da otoscopia:",
             "imagePath": require('./comp7/7.jpg'),
             "alternatives": [
                 {
@@ -142,15 +142,15 @@ export const comp7 = {
                     "isTrue": true
                 },
                 {
-                    "option": "Edema de conduto auditivo externo",
+                    "option": "Edema de conduto auditivo externo.",
                     "isTrue": false
                 },
                 {
-                    "option": "Corpo estranho",
+                    "option": "Corpo estranho.",
                     "isTrue": false
                 },
                 {
-                    "option": "Timpanoesclerose",
+                    "option": "Timpanoesclerose.",
                     "isTrue": false
                 }
             ]
@@ -164,37 +164,37 @@ export const comp7 = {
                     "isTrue": true
                 },
                 {
-                    "option": "Timpanoesclerose",
+                    "option": "Timpanoesclerose.",
                     "isTrue": false
                 },
                 {
-                    "option": "Corpo estranho",
+                    "option": "Corpo estranho.",
                     "isTrue": false
                 },
                 {
-                    "option": "Colesteatoma",
+                    "option": "Colesteatoma.",
                     "isTrue": false
                 }
             ]
         },
         {
-            "title": "Assinale principal estrutura avaliada na otoscopia de rotina?",
+            "title": "Assinale a principal estrutura avaliada na otoscopia de rotina?",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Membrana timpânica",
+                    "option": "Membrana timpânica.",
                     "isTrue": true
                 },
                 {
-                    "option": "Tubo auditivo",
+                    "option": "Tubo auditivo.",
                     "isTrue": false
                 },
                 {
-                    "option": "Células mastoidianas",
+                    "option": "Células mastoidianas.",
                     "isTrue": false
                 },
                 {
-                    "option": "Caixa média",
+                    "option": "Caixa média.",
                     "isTrue": false
                 },
             ]

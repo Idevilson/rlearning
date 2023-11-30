@@ -13,7 +13,7 @@ export const comp4 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Pôde-se indicar terapia de adaptação ao zumbido em algumas situações. ",
+                    "option": "Pôde-se indicar terapia de adaptação ao zumbido em algumas situações.",
                     "isTrue": false
                 },
                 {
@@ -27,7 +27,7 @@ export const comp4 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Pode ser contínuo ou flutuante, sincrônico ou assincrônico, uni ou bilateral.  ",
+                    "option": "Pode ser contínuo ou flutuante, sincrônico ou assincrônico, uni ou bilateral.",
                     "isTrue": false
                 },
                 {
@@ -36,16 +36,16 @@ export const comp4 = {
                 },
                 {
                     "option": "Pode ser idiopático, primário (neurossensorial) ou secundário, associado a alguma causa orgânica.",
-                    "isTrue": true
+                    "isTrue": false
                 },
                 {
                     "option": "O zumbido pulsátil é sempre associado à hipertensão intracraniana.",
-                    "isTrue": false
+                    "isTrue": true
                 }
             ]
         },
         {
-            "title": "(CESPE/UnB – SESA/ES/2013) Paciente de 12 anos com queixa de zumbido não pulsátil. A mãe relatou que criança apresentava esse sintoma há muitos anos e geralmente era provocado pela fala, deglutição e movimentos da cabeça.  Relacionado ao diagnóstico e possível  causa,  assinale:",
+            "title": "Paciente de 12 anos com queixa de zumbido não pulsátil. A mãe relatou que a criança apresentava esse sintoma há muitos anos e geralmente era provocado pela fala, deglutição e movimentos da cabeça.  Relacionado ao diagnóstico e possível  causa,  assinale:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -79,11 +79,11 @@ export const comp4 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Otossífilis",
+                    "option": "Otossífilis.",
                     "isTrue": false
                 },
                 {
-                    "option": "Otite média secretora",
+                    "option": "Otite média secretora.",
                     "isTrue": false
                 },
                 {
@@ -105,7 +105,7 @@ export const comp4 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Orientar a paciente sobre causas de zumbido, proceder com investigação laboratorial e audiometrico.",
+                    "option": "Orientar a paciente sobre causas de zumbido, proceder com investigação laboratorial e audiométrica.",
                     "isTrue": true
                 },
                 {
@@ -119,7 +119,7 @@ export const comp4 = {
             ]
         },
         {
-            "title": "Mulher, 32 anos, caucasiana, comparece a atendimento com audiometria compatível a perda auditiva mista pior à esquerda. Refere  zumbido persistente. Otoscopia e exame neurológico de aspecto preservado. Esta em investigação para doença autoimune. Qual melhor hipótese diagnóstica e  exame complementar?",
+            "title": "Mulher, 32 anos, caucasiana, comparece a atendimento com audiometria compatível a perda auditiva mista pior à esquerda. Refere  zumbido persistente. Otoscopia e exame neurológico de aspecto preservado. Está em investigação para doença autoimune. Qual melhor hipótese diagnóstica e  exame complementar?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -177,7 +177,7 @@ export const comp4 = {
             ]
         },
         {
-            "title": "Qual exame indicado na avaliação inicial de zumbido na atenção primária?",
+            "title": "Qual exame é indicado na avaliação inicial de zumbido na atenção primária?",
             "imagePath": null,
             "alternatives": [
                 {

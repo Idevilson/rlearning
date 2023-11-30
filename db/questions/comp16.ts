@@ -2,7 +2,7 @@
 export const comp16 = {
     "lioto": [
         {
-            "title": "São queixas comuns na Otite média por efusão em crianças. ",
+            "title": "Queixa comum na Otite média por efusão em crianças:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -24,8 +24,8 @@ export const comp16 = {
             ]
         },
         {
-            "title": "A  Otoscopia abaixo  é compatível com: ",
-            "imagePath": require('./comp16/3.jpg'),
+            "title": "A  Otoscopia abaixo é compatível com: ",
+            "imagePath": require('./comp16/4.jpg'),
             "alternatives": [
                 {
                     "option": "Otite Média Aguda.",
@@ -46,8 +46,8 @@ export const comp16 = {
             ]
         },
         {
-            "title": "Homem 30 anos comparece UBS com queixa de plenitude auricular, autofonia e zumbido.  De acordo com otoscopia abaixo qual conduta indicada?", 
-            "imagePath": require('./comp16/4.jpg'),
+            "title": "Homem, 30 anos, comparece a UBS com queixa de plenitude auricular, autofonia e zumbido.  De acordo com otoscopia abaixo, qual conduta indicada?", 
+            "imagePath": require('./comp16/3.jpg'),
             "alternatives": [
                 {
                     "option": "Encaminhar para avaliação do especialista.",
@@ -68,15 +68,37 @@ export const comp16 = {
             ]
         },
         {
+            "title": "Menino, 9 anos, apresentando otalgia leve e hipoacusia após episódio de infecção de via aérea superior. Qual provável diagnóstico com base na otoscopia abaixo ?",
+            "imagePath": null,
+            "alternatives": [
+                {
+                    "option": "Otite externa",
+                    "isTrue": false
+                },
+                {
+                    "option": "Otite Média Secretora.",
+                    "isTrue": true
+                },
+                {
+                    "option": "Otite Média Agudao.",
+                    "isTrue": false
+                },
+                {
+                    "option": "Otite Média Crônica Simples.",
+                    "isTrue": false
+                }
+            ]
+        },
+        {
             "title": "Relacionado a Otite Média com Efusão, assinale a incorreta:",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "A plenitude aural é comumente referida",
+                    "option": "A plenitude aural é comumente referida.",
                     "isTrue": false
                 },
                 {
-                    "option": "Pode ter associação com atrasos na linguagem",
+                    "option": "Pode ter associação com atrasos na linguagem.",
                     "isTrue": false
                 },
                 {
@@ -94,11 +116,11 @@ export const comp16 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Audiometria comportamental ",
+                    "option": "Audiometria comportamental.",
                     "isTrue": false
                 },
                 {
-                    "option": "Rx de osso mastoídeo",
+                    "option": "Rx de osso mastoídeo.",
                     "isTrue": false
                 },
                 {
@@ -116,19 +138,19 @@ export const comp16 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Otalgia intensa ",
+                    "option": "Otalgia intensa.",
                     "isTrue": false
                 },
                 {
-                    "option": "Otorreia",
+                    "option": "Otorreia.",
                     "isTrue": false
                 },
                 {
-                    "option": "Otorragia",
+                    "option": "Otorragia.",
                     "isTrue": false
                 },
                 {
-                    "option": "Hipoacusia ",
+                    "option": "Hipoacusia.",
                     "isTrue": true
                 }
             ]

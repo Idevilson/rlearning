@@ -16,7 +16,7 @@ export const comp17 = {
             ]
         },
         {
-            "title": "Os desvios septais localizados na regiã anterior estão  associados a um maior grau de obstrução nasal",
+            "title": "Os desvios septais localizados na região anterior estão  comumente associados a queixas obstrutivas nasais.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -30,11 +30,11 @@ export const comp17 = {
             ]
         },
         {
-            "title": "Adolescente de 16 anos, sexo feminino, comparece a UBS com queixa  de despertares noturnos recorrentes, cansaço durante o dia e respiração bucal. Em rinoscopia anterior obeservou-se desvio septal em fossa nasal direita tocando corneto nasal inferior ipsilateral. Assinale a conduta adequada?", 
+            "title": "Adolescente de 16 anos, sexo feminino, comparece a UBS com queixa  de despertares noturnos recorrentes, sonolência diurna e respiração bucal. Rinoscopia anterior com desvio septal em fossa nasal direita tocando corneto nasal inferior ipsilateral. Assinale a conduta adequada?", 
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Encaminhamento para serviço especializado com avaliação para  septoplastia.",
+                    "option": "Encaminhamento para serviço especializado com avaliação para septoplastia.",
                     "isTrue": true
                 },
                 {
@@ -52,7 +52,7 @@ export const comp17 = {
             ]
         },
         {
-            "title": "Homem de 22 anos, comparece a UBS com queixa de obstrução nasal, associada a rinorreia hialina.  Ao exame físico observa-se dorso nasal desviado para a direita, traz TC de seios paranasais representado abaixo. Com base no exposto, qual o possível  diagnóstico:",
+            "title": "Homem de 22 anos, comparece a UBS com queixa de obstrução nasal, associada a rinorreia hialina.  Ao exame físico nota-se dorso nasal desviado para a direita. Com base na história e em TC de seios paranasais, assinale o provavel  diagnóstico: ",
             "imagePath": require('./comp17/5.png'),
             "alternatives": [
                 {
@@ -74,7 +74,7 @@ export const comp17 = {
             ]
         },
         {
-            "title": "Assinale melhor relação  para sintoma obstrutrivos nasal.",
+            "title": "Assinale a melhor relação para os sintomas obstrutivos nasais.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -96,28 +96,28 @@ export const comp17 = {
             ]
         },
         {
-            "title": "O desvio obstrutivo de septo nasal pode afetar a respiração:",
+            "title": "O desvio obstrutivo de septo nasal gerar sintoma:",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Somente durante o sono",
+                    "option": "Somente durante o sono.",
                     "isTrue": false
                 },
                 {
-                    "option": "Somente durante a prática de exercícios físicos",
+                    "option": "Somente durante a prática de exercícios físicos.",
                     "isTrue": false
                 },
                 {
-                    "option": "Somente em climas específicos",
+                    "option": "Somente em climas específicos.",
                     "isTrue": false
                 },
                 {
-                    "option": "Durante todo o tempo, incluindo repouso e atividades diárias ",
+                    "option": "Durante todo o tempo, incluindo repouso e atividades diárias.",
                     "isTrue": true
                 }
             ]
         }, {
-            "title": "Que sontoma comumente são referidos em paciente com desvio de septo nasal obstrutivo?",
+            "title": "Assinale sintoma comumente referido em paciente com desvio moderado do septo nasal.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -139,59 +139,37 @@ export const comp17 = {
             ]
         },
         {
-            "title": "Homem 35 anos com sintomas de obstrução nasal unilateral persistente e congestão nasal. Após realizar uma avaliação médica, é diagnosticado com desvio obstrutivo do septo nasal. Assinale complicação mais temida no em septoplastias?",
+            "title": "Homem de 28 anos com queixa de ronco refere história de desvio do septo nasal para direita não obstrutivo. Paciente refere que o sintoma não impacta significativamente na sua qualidade de vida. Como médico assistente, qual melhor conduta para o caso?",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Hemorragia nasal",
+                    "option": "Uso de descongestionantes nasais tópicos.",
                     "isTrue": false
                 },
                 {
-                    "option": "Infecção pós-operatória",
+                    "option": "Encaminhamento para especialista com indicação de septoplastia.",
                     "isTrue": false
                 },
                 {
-                    "option": "Dor crônica no local da cirurgia",
+                    "option": "Corticoide oral e nasal.",
                     "isTrue": false
                 },
                 {
-                    "option": "Fístula liquórica",
+                    "option": "Observação clínica e avaliação do ronco pelo especialista.",
                     "isTrue": true
                 }
             ]
         },
         {
-            "title": "Homem de 28 anos apresenta sintomas de roncos durante o sono. Após uma avaliação clínica  destaca-se presença de desvio do septo nasal para direita não obstrutivo. O paciente relata que queixa não impacta significativamente sua qualidade de vida. Qual melhor conduta para esse caso?",
+            "title": "Mulher 45 anos com obstrução nasal e despertares noturnos, refere roncos e sonolência diurna excessiva. Na rinoscopia anterior é observado desvio de septo nasal obstrutivo para a esquerda. Neste caso, qual conduta indicada ?",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Uso de descongestionantes nasais tópicos ",
+                    "option": "Prescrever descongestionantes nasais tópicos e observar ambulatorialmente.",
                     "isTrue": false
                 },
                 {
-                    "option": "Encaminhamento para especialista com indicação de septoplastia",
-                    "isTrue": false
-                },
-                {
-                    "option": "Corticoide oral e nasal",
-                    "isTrue": false
-                },
-                {
-                    "option": "Observação clínica e avaliação ronco pelo especialista. ",
-                    "isTrue": true
-                }
-            ]
-        },
-        {
-            "title": "Mulher 45 anos com obstrução nasal, com prejuízo  no sono, referindo roncos e sonolência diurna excessiva. Na rinoscopia anterior é observado um desvio de septo nasal obstrutivo para a esquerda. Qual é a conduta mais adequada para esse caso?",
-            "imagePath": null,
-            "alternatives": [
-                {
-                    "option": "Prescrever descongestionantes nasais tópicos e observar ambulatorialmente",
-                    "isTrue": false
-                },
-                {
-                    "option": "Encaminhar para a otorrinolaringologista para avaliar  indicação de septoplastia",
+                    "option": "Encaminhar ao otorrinolaringologista para avaliar  indicação de septoplastia.",
                     "isTrue": true
                 },
                 {
@@ -199,13 +177,35 @@ export const comp17 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Realizar fisioterapia respiratória, já que provavelmente foi uma obstrução secundária à idade",
+                    "option": "Realizar fisioterapia respiratória, já que provavelmente foi uma obstrução secundária à idade.",
                     "isTrue": false
                 }
             ]
         },
         {
-            "title": "A septoplastia na infância conssiste na primeira opção de tratamento para correção de desvios septais.",
+            "title": "Mulher 45 anos com obstrução nasal e despertares noturnos, refere roncos e sonolência diurna excessiva. Na rinoscopia anterior é observado desvio de septo nasal obstrutivo para a esquerda. Neste caso, qual conduta indicada ?",
+            "imagePath": null,
+            "alternatives": [
+                {
+                    "option": "Prescrever descongestionantes nasais tópicos e observar ambulatorialmente",
+                    "isTrue": false
+                },
+                {
+                    "option": "Encaminhar ao otorrinolaringologista para avaliar  indicação de septoplastia.",
+                    "isTrue": true
+                },
+                {
+                    "option": "Indicar o uso de sprays nasais de corticosteroides, pois a obstrução tende a diminuir no primeiro mês.",
+                    "isTrue": false
+                },
+                {
+                    "option": "Realizar fisioterapia respiratória, já que provavelmente foi uma obstrução secundária à idade.",
+                    "isTrue": false
+                }
+            ]
+        },
+        {
+            "title": "A septoplastia na infância consiste na primeira opção de tratamento para correção de desvios septais leves a moderados.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -219,7 +219,7 @@ export const comp17 = {
             ]
         },
         {
-            "title": "Homem de 40 anos apresenta queixa de obstrução nasal unilateral e hiosmia. No exame físico, é observado pequeno desvio de septo nasal, sem obstrução significativa. Qual das seguintes afirmações é verdadeira sobre esta alteração ?",
+            "title": "Homem de 40 anos apresenta queixa de obstrução nasal e hiposmia. No exame físico, é observado discreta sinuosidade do septo nasal para esquerda. Nesta situação, assinale alternativa correta.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -227,7 +227,7 @@ export const comp17 = {
                     "isTrue": false
                 },
                 {
-                    "option": "O desvio de septo nasal não parece se tratar da causa principal dos sintomas, havendo necessidade de exame endoscópico para melhor investigação.",
+                    "option": "O desvio de septo nasal não parece se tratar da causa principal dos sintomas, havendo necessidade de exame endoscópico para melhor investigação",
                     "isTrue": true
                 },
                 {

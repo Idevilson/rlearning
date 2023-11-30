@@ -24,7 +24,7 @@ export const comp8 = {
             ]
         },
         {
-            "title": "Em relação a Otite Média Aguda e Otite Externa,  assinale a incorreta:",
+            "title": "Em relação a Otite Média Aguda e Otite Externa,  assinale a INCORRETA:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -76,25 +76,25 @@ export const comp8 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Abaulamento, opacidade e hiperemia da membrana timpânica",
+                    "option": "Abaulamento, opacidade e hiperemia da membrana timpânica.",
                     "isTrue": true
                 },
                 {
-                    "option": "Meato acústico edemaciado, estreitado, úmido, pálido e hipersensível",
+                    "option": "Meato acústico edemaciado, estreitado, úmido, pálido e hipersensível.",
                     "isTrue": false
                 },
                 {
-                    "option": "Meato acústico hiperemiado",
+                    "option": "Meato acústico hiperemiado.",
                     "isTrue": false
                 },
                 {
-                    "option": "Dor à movimentação do pavilhão auricular",
-                    "isTrue": true
+                    "option": "Dor à movimentação do pavilhão auricular.",
+                    "isTrue": false
                 }
             ]
         },
         {
-            "title": "Relacionada  otite externa necrotizant corresponde ao agente etiológico e a população com  maior incidência, respectivamente:",
+            "title": "Relacionada otite externa necrotizante corresponde ao agente etiológico e a população com  maior incidência, respectivamente:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -120,7 +120,7 @@ export const comp8 = {
             ]
         },
         {
-            "title": "Criança com  otite média serosa e perda condutiva moderada em orelha esquerda. Responda.",
+            "title": "Criança com otite média serosa e perda condutiva moderada em orelha esquerda. Responda.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -216,7 +216,7 @@ export const comp8 = {
             ]
         },
         {
-            "title": "Homem com otalgia na orelha direita há 2 dias após banho de imersão, nega febre e sintomas nasais associado. No exame físico, apresenta dor à mobilização da orelha, hiperemia e edema do conduto auditivo externo, com presença de secreção. Assinale a hipótese diagnóstica e o tratamento, respectivamente:",
+            "title": "Homem com otalgia na orelha direita há 2 dias após banho de imersão, nega febre e sintomas nasais associados. No exame físico, apresenta dor à mobilização da orelha, hiperemia e edema do conduto auditivo externo, com presença de secreção. Assinale a hipótese diagnóstica e o tratamento, respectivamente:",
             "imagePath": null,
             "alternatives": [
                 {

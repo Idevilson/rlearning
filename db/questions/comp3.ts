@@ -17,7 +17,7 @@ export const comp3 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Vertigem postural paroxística benigna",
+                    "option": "Vertigem postural paroxística benigna.",
                     "isTrue": false
                 }
             ]
@@ -49,7 +49,7 @@ export const comp3 = {
             ]
         },
         {
-            "title": "A vertigem postural paroxística benigna (VVPB) é caracterizada pelo aparecimento de vertigem rotatória com duração de segundos, desencadeada por determinados movimentos da cabeça, acomete principalmente o canal semicircular anterior, sendo diagnósticada  com  a manobra de Epley",
+            "title": "A vertigem postural paroxística benigna (VPPB) é caracterizada pelo aparecimento de vertigem rotatória com duração de segundos, desencadeada por determinados movimentos da cabeça, acomete principalmente o canal semicircular anterior, sendo diagnosticada  com  a manobra de Epley.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -67,25 +67,25 @@ export const comp3 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Vestibulopatia concomitante",
+                    "option": "Vestibulopatia concomitante.",
                     "isTrue": false
                 },
                 {
-                    "option": "Deficiência de vitamina D",
+                    "option": "Deficiência de vitamina D.",
                     "isTrue": false
                 },
                 {
-                    "option": "Canalith Jam",
+                    "option": "Canalith Jam.",
                     "isTrue": false
                 },
                 {
-                    "option": "Otorragia ",
+                    "option": "Otorragia.",
                     "isTrue": true
                 }
             ]
         },
         {
-            "title": "A manobra de Dix - Hallpike é realizada para diagnóstico de VPPB de canal semicircular posterior sendo considerada positiva com a presença de tontura e/ou nistagmo durante a execução da mesma neste canal de lado acometido",
+            "title": "A manobra de Dix - Hallpike é realizada para diagnóstico de VPPB de canal semicircular posterior sendo considerada positiva com a presença de tontura e/ou nistagmo durante a execução da mesma neste canal do lado acometido.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -93,7 +93,7 @@ export const comp3 = {
                     "isTrue": true
                 },
                 {
-                    "option": "Falso",
+                    "option": "Falso.",
                     "isTrue": false
                 }
             ]
@@ -111,7 +111,7 @@ export const comp3 = {
                     "isTrue": false
                 },
                 {
-                    "option": "O diagnóstico é clínico e audiometrico.",
+                    "option": "O diagnóstico é clínico e audiométrico.",
                     "isTrue": false
                 },
                 {
@@ -169,7 +169,7 @@ export const comp3 = {
             ]
         },
         {
-            "title": "Homem, 45 anos, branco queixa-se de vertigem intensa com duração de três dias. Os episódios duram minutos ou poucas horas, com náuseas associadas. Não se  intensificam com as movimentos cefálicos e estão associadas ao sintoma de plenitude e hipoacusia. É  portador de doença autoim. No exame físico nota-se nistagmo. Sugeriu-se diagnóstico de Síndrome de Ménière por doença autoimune. Médico iniciou tratamento da causa base, com restrição dietética de sódio, cafeína e anticolinérgico. Porém sem melhora. Qual a conduta indicada?",
+            "title": "Homem, 45 anos, branco queixa-se de vertigem intensa com duração de três dias. Os episódios duram minutos ou poucas horas, com náuseas associadas. Não se  intensificam com movimentos cefálicos e estão associadas ao sintoma de plenitude e hipoacusia. É  portador de doença autoimune. No exame físico nota-se nistagmo. Médico iniciou tratamento da causa base, com restrição dietética de sódio, cafeína e anticolinérgico. Porém sem melhora. Qual a conduta indicada?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -181,7 +181,7 @@ export const comp3 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Encaminha para investigação  com o especialista.",
+                    "option": "Encaminhar para investigação  com o especialista.",
                     "isTrue": true
                 },
                 {
@@ -195,19 +195,19 @@ export const comp3 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Dix-Hallpike",
+                    "option": "Dix-Hallpike.",
                     "isTrue": true
                 },
                 {
-                    "option": "Rinne-Weber",
+                    "option": "Rinne-Weber.",
                     "isTrue": false
                 },
                 {
-                    "option": "Romberg",
+                    "option": "Romberg.",
                     "isTrue": true
                 },
                 {
-                    "option": "Rechaço (Stewart-Holmes)",
+                    "option": "Rechaço (Stewart-Holmes).",
                     "isTrue": false
                 }
             ]

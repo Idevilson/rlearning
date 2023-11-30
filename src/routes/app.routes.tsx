@@ -12,6 +12,7 @@ interface userAnswersProps {
     isCorrect: boolean;
     answered: boolean;
     chosenOption: number | null;
+    description: string;
 }
 
 export type AppStackParamList = {

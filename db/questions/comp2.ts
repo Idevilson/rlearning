@@ -5,11 +5,11 @@ export const comp2 ={
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Verdadeiro",
+                    "option": "Verdadeiro.",
                     "isTrue": false
                 },
                 {
-                    "option": "Falso",
+                    "option": "Falso.",
                     "isTrue": true
                 }
             ]
@@ -45,11 +45,11 @@ export const comp2 ={
                     "isTrue": false
                 },
                 {
-                    "option": "A presença do cerume geralmente é assintomática, mas acúmulo indevido pode  gerar perda auditiva, dor e interferir na avaliação da membrana timpânico.",
+                    "option": "A presença do cerume geralmente é assintomática, mas acúmulo indevido pode  gerar perda auditiva, dor e interferir na avaliação da membrana timpânica.",
                     "isTrue": false
                 },
                 {
-                    "option": "A remoção de cerume é o procedimento comum na otorrinolaringologia e pode ser realizado na Atenção Primária à Saúde. ",
+                    "option": "A remoção de cerume é um procedimento comum na otorrinolaringologia e pode ser realizado na Atenção Primária à Saúde.",
                     "isTrue": false
                 },
                 {
@@ -59,7 +59,7 @@ export const comp2 ={
             ]
         },
         {
-            "title": "Menina de 5 anos trazida pela responsável em UBS com história de corpo estranho animado em ouvido direito, apresenta-se chorosa, referindo otalgia e zumbido. Qual é a conduta adequada?",
+            "title": "Menina de 5 anos, trazida pela responsável em UBS com história de corpo estranho animado em ouvido direito, apresenta-se chorosa, referindo otalgia e zumbido. Qual é a conduta adequada?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -68,11 +68,11 @@ export const comp2 ={
                 },
                 {
                     "option": "Instilar solução salina no conduto na tentativa de remoção.",
-                    "isTrue": false
+                    "isTrue": true
                 },
                 {
-                    "option": "Encaminhar e aguardar consulta eletiva co especialista. ",
-                    "isTrue": true
+                    "option": "Encaminhar e aguardar consulta eletiva com especialista.",
+                    "isTrue": false
                 },
                 {
                     "option": "Encaminhar para serviço de emergência.",
@@ -103,7 +103,7 @@ export const comp2 ={
             ]
         },
         {
-            "title": "Sobre corpos estranhos em Conduto auditivo externo:",
+            "title": "Sobre corpos estranhos em conduto auditivo externo:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -141,7 +141,7 @@ export const comp2 ={
                     "isTrue": false
                 },
                 {
-                    "option": "Corpo estranho visível e não aderido a membrana timpânica.",
+                    "option": "Corpo estranho visível e não aderido à membrana timpânica.",
                     "isTrue": true
                 }
             ]
@@ -177,15 +177,19 @@ export const comp2 ={
                     "isTrue": false
                 },
                 {
-                    "option": "Otorreia frequente",
+                    "option": "Otorreia frequente.",
                     "isTrue": true
                 },
                 {
-                    "option": "Labirintite traumática",
+                    "option": "Labirintite traumática.",
                     "isTrue": false
                 },
                 {
-                    "option": "Estenose do conduto auditivo externo",
+                    "option": "Fratura da base do crânio.",
+                    "isTrue": false
+                },
+                {
+                    "option": "Estenose do conduto auditivo externo.",
                     "isTrue": false
                 }
             ]

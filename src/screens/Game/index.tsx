@@ -32,7 +32,7 @@ import ArrowBack from '../../assets/arrow-back-white.svg'
 
 import BackArrow from '../../assets/backArrow.svg'
 import NextArrow from '../../assets/nextArrow.svg'
-import { View, Text, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, TouchableOpacity, ScrollView, ActivityIndicator } from 'react-native';
 import { Image } from 'expo-image';
 
 import Modal from "react-native-modal";
@@ -41,7 +41,7 @@ import LottieView from 'lottie-react-native';
 interface feedbackModalProps {
     status: 'correct' | 'incorrect'
 }
-import { questionsDB } from '../../hooks/questions';
+import { QuestionWithDevolutiva, getRandomQuestions } from '../../hooks/questions';
 import Toast from 'react-native-toast-message';
 import { Clock } from '../../components/Clock';
 import { StackNavigationProp } from '@react-navigation/stack';
@@ -50,15 +50,22 @@ import { doc, getFirestore, setDoc } from 'firebase/firestore';
 import { app } from '../../services/firebase';
 import { RFValue } from 'react-native-responsive-fontsize';
 
+import Check from '../../assets/check.svg';
+import Error from '../../assets/error.svg';
+
 interface userAnswersProps {
     compNumber: number; 
     isCorrect: boolean;
     answered: boolean;
     chosenOption: number | null;
+    description: string;
 }
 
 
 export function Game() {
+    const [isLoadingQuestions, setLoadingQuestions] = useState(true);
+    const [questionsDB, setQuestions] = useState<QuestionWithDevolutiva[]>([]);
+
     const [chosenOption, setChosenOption] = useState<number | null>(null);
     const [currentIndex, setCurrentIndex] = useState(0);
     const [userAnswers, setUserAnswers] = useState<userAnswersProps[]>([]);
@@ -73,6 +80,16 @@ export function Game() {
     const optionsLetters = ['A', 'B', 'C', 'D', 'E'];
 
     const scrollViewRef = useRef<ScrollView>(null);
+
+    useEffect(() => {
+        const fetchQuestions = async () => {
+          const newQuestions = getRandomQuestions();
+          setQuestions(newQuestions);
+          setLoadingQuestions(false);
+        };
+      
+        fetchQuestions();
+    }, []);
 
     useEffect(() => {
         if (scrollViewRef.current) {
@@ -115,7 +132,7 @@ export function Game() {
       
         setChosenOption(index);
       
-        const isAnswerCorrect = questionsDB[currentIndex].alternatives[index].isTrue;
+        const isAnswerCorrect = questionsDB[currentIndex].question.alternatives[index].isTrue;
       
         setUserAnswers((prevAnswers) => {
             const updatedAnswers = [...prevAnswers];
@@ -124,6 +141,7 @@ export function Game() {
               isCorrect: isAnswerCorrect,
               answered: true,
               chosenOption: index,
+              description: questionsDB[currentIndex].description
             };
             return updatedAnswers;
         });
@@ -252,266 +270,153 @@ export function Game() {
                 </HeaderContainer>
             </Header>
 
-            <Footer>
-
-                <ProgressIndicatorContainer>
-                    <ScrollView
-                        horizontal
-                        contentContainerStyle={{
-                            alignItems: 'center',
-                        }}
-                        ref={scrollViewRef}
-                    >
-                        {questionsDB.map((item, index) => {
-                            const userAnswer = userAnswers[index];
-
-                            return (
-                                <QuestionIncator
-                                    key={index}
-                                    isActive={index === currentIndex}
-                                    isCorrect={userAnswer?.isCorrect}
-                                    isAnswerd={userAnswer?.answered}
-                                >
-                                <QuestionIncatorText>
-                                    {index + 1}
-                                </QuestionIncatorText>
-                                </QuestionIncator>
-                            );
-                        })}
-                    </ScrollView>
-                </ProgressIndicatorContainer>
-
-                <QuizContainer>        
-                    <QuestionText>
-                        {  questionsDB[currentIndex].title }
-                    </QuestionText>
-
-                    { 
-                        questionsDB[currentIndex].imagePath === null ? null : 
-                                        <OpemModalPhotoButton
-                                            onPress={() => setModalImageVisible(!isModalImageVisible)}
-                                        >
-                                            <TextPhotoModal>
-                                                 ABRIR IMAGEM
-                                            </TextPhotoModal>
-                                        </OpemModalPhotoButton>
-                    }  
-                    <AlternativesContainer>
-                        {
-                            questionsDB[currentIndex].alternatives.map((item, index) => (
-                                <QuizAlternativeContainer
-                                    key={index}
-                                    onPress={() => handleOptionPress(index)}
-                                >
-                                    <QuizOption 
-                                        isActive={chosenOption === index || userAnswers[currentIndex]?.chosenOption === index} 
-                                    >
-                                        <QuizOptionText>
-                                            {optionsLetters[index]} 
-                                        </QuizOptionText>
-                                    </QuizOption>
-
-                                     
-
-                                    <QuizAlternative
-                                        isActive={chosenOption === index}
-                                        ellipsizeMode='tail'
-                                        numberOfLines={10}
-                                    >
-                                        {item.option}
-                                    </QuizAlternative>
-                                </QuizAlternativeContainer>
-                            ))
-                        }
-                    </AlternativesContainer>
-
-                    <FooterQuiz>
-                        <FooterButtonsContainer>
-                            <FooterQuizButton
-                                onPress={ () => {
-                                    if (currentIndex > 0) {
-                                        setCurrentIndex(currentIndex - 1);
-                                        setChosenOption(null); //
-                                    }
-                                }}
-                            >
-                                <BackArrow 
-                                    width={28}
-                                    height={28}
-                                    />
-                            </FooterQuizButton>
-
-                            <SubmitQuizButton
-                                onPress={() => calcularResultados()}
-                            >
-                                <SubmitQuizButtonTitle>
-                                    FINALIZAR
-                                </SubmitQuizButtonTitle>
-                                
-                            </SubmitQuizButton>
-
-                            <FooterQuizButton
-                                onPress={ () => {
-                                    if (currentIndex < questionsDB.length - 1) {
-                                        setCurrentIndex(currentIndex + 1);
-                                        setChosenOption(null); //
-                                    }
-                                }}       
-                            >
-                                <NextArrow 
-                                    width={28}
-                                    height={28}
-                                />
-                            </FooterQuizButton>
-                        </FooterButtonsContainer>
-                    </FooterQuiz>
-    
-                </QuizContainer>
-
-                <Modal 
-                    isVisible={isModalImageVisible}
-                    style={{
-                        alignItems: 'center'
-                    }}
-                >
-                   
-                        <View style={{ 
-                            width: RFValue(250),
-                            height: RFValue(300), 
-                            borderRadius: 10,
-                            backgroundColor: '#fff',
-                            padding: 20,
-                            alignItems: 'center',
-                            justifyContent: 'space-between'
-                        }}>
-
-                    <Image 
-                        style={{
-                            width: RFValue(200),
-                            height: RFValue(200)
-                        }}
-                        source={questionsDB[currentIndex].imagePath}
-                    />
-
-
-                        <TouchableOpacity 
-                            onPress={() => setModalImageVisible(!isModalImageVisible)}
-                            style={{
-                                width: 200,
-                                height: 45,
-                                borderRadius: 10,
-                                backgroundColor: '#B843F2',
-                                alignItems: 'center',
-                                justifyContent: 'center'
-                            }}
-                        >
-                            <Text
-                                style={{
-                                    color: '#fff',
-                                    fontWeight: 'bold'
-                                }}
-                            >
-                                FECHAR
-                            </Text>
-                        </TouchableOpacity>
-                    </View>
-                </Modal> 
-
-                <Modal 
-                    isVisible={isModalVisible}
-                    style={{
-                        alignItems: 'center'
-                    }}
-                >
-                   
-                        <View style={{ 
-                            width: RFValue(250),
-                            height: RFValue(250), 
-                            borderRadius: 10,
-                            backgroundColor: '#fff',
-                            padding: 20,
-                            alignItems: 'center',
-                            justifyContent: 'space-between'
-                        }}>
-                        {
-                            feedbackModalData.status === 'correct' ?  
-                                <Text style={{ fontSize: 20 }}>{randomDevolutivasPositivas}</Text> : 
-                                <Text style={{ fontSize: 20 }}>{randomDevolutivasNegativas}</Text>
-                        }   
-
-                            <View
-                                style={{
-                                    width: 150,
-                                    height: 150,
-                                    position: 'absolute',
+            {isLoadingQuestions ? (
+                // Renderize um indicador de carregamento aqui
+                <ActivityIndicator size="large" color="#0000ff" />
+                ) : (
+                    <Footer>
+                        <ProgressIndicatorContainer>
+                            <ScrollView
+                                horizontal
+                                contentContainerStyle={{
                                     alignItems: 'center',
-                                    justifyContent: 'center',
-                                    top: '50%',
-                                    left: '50%',
-                                    marginLeft: -60,
-                                    marginTop: -65,
                                 }}
+                                ref={scrollViewRef}
                             >
-                            
-                                <Image 
-                                    source={require('../../assets/avatares/1.png')}
-                                    style={{
-                                        height: 150,
-                                        width: 150,
-                                    }}
-                                    transition={1000}
-                                />
-                                
-                            </View>
+                                {questionsDB.map((item, index) => {
+                                    const userAnswer = userAnswers[index];
 
-                        {
-                            feedbackModalData.status === 'correct' ? 
-                                    <LottieView
-                                        autoPlay
-                                        style={{
-                                            width: 150,
-                                            height: 150,
+                                    return (
+                                        <QuestionIncator
+                                            key={index}
+                                            isActive={index === currentIndex}
+                                            isCorrect={userAnswer?.isCorrect}
+                                            isAnswerd={userAnswer?.answered}
+                                        >
+                                        <QuestionIncatorText>
+                                            {index + 1}
+                                        </QuestionIncatorText>
+                                        </QuestionIncator>
+                                    );
+                                })}
+                            </ScrollView>
+                        </ProgressIndicatorContainer>
+
+                        <QuizContainer>        
+                            <QuestionText>
+                                {  questionsDB[currentIndex].question.title }
+                            </QuestionText>
+
+                            { 
+                                questionsDB[currentIndex].question.imagePath === null ? null : 
+                                                <OpemModalPhotoButton
+                                                    onPress={() => setModalImageVisible(!isModalImageVisible)}
+                                                >
+                                                    <TextPhotoModal>
+                                                        ABRIR IMAGEM
+                                                    </TextPhotoModal>
+                                                </OpemModalPhotoButton>
+                            }  
+                            <AlternativesContainer>
+                                {
+                                    questionsDB[currentIndex].question.alternatives.map((item, index) => (
+                                        <QuizAlternativeContainer
+                                            key={index}
+                                            onPress={() => handleOptionPress(index)}
+                                        >
+                                            <QuizOption 
+                                                isActive={chosenOption === index || userAnswers[currentIndex]?.chosenOption === index} 
+                                            >
+                                                <QuizOptionText>
+                                                    {optionsLetters[index]} 
+                                                </QuizOptionText>
+                                            </QuizOption>
+
+                                            
+
+                                            <QuizAlternative
+                                                isActive={chosenOption === index}
+                                                ellipsizeMode='tail'
+                                                numberOfLines={10}
+                                            >
+                                                {item.option}
+                                            </QuizAlternative>
+                                        </QuizAlternativeContainer>
+                                    ))
+                                }
+                            </AlternativesContainer>
+
+                            <FooterQuiz>
+                                <FooterButtonsContainer>
+                                    <FooterQuizButton
+                                        onPress={ () => {
+                                            if (currentIndex > 0) {
+                                                setCurrentIndex(currentIndex - 1);
+                                                setChosenOption(null); //
+                                            }
                                         }}
-                                        source={require('./correct.json')}
-                                    />
-                            :
-                                   null
-                        }
+                                    >
+                                        <BackArrow 
+                                            width={28}
+                                            height={28}
+                                            />
+                                    </FooterQuizButton>
 
-                        {
-                            currentIndex === questionsDB.length - 1 ? 
-                                <TouchableOpacity 
-                                    onPress={() => {
-                                        calcularResultados()
-                                        setModalVisible(!isModalVisible)
-                                    }}
-                                    style={{
-                                        width: 200,
-                                        height: 45,
-                                        borderRadius: 10,
-                                        backgroundColor: '#B843F2',
-                                        alignItems: 'center',
-                                        justifyContent: 'center'
-                                    }}
-                                >
-                                <Text
-                                    style={{
-                                        color: '#fff',
-                                        fontWeight: 'bold'
-                                    }}
-                                >
-                                    FINALIZAR QUIZ!
-                                </Text>
-                                </TouchableOpacity>
-                            :
-                                <TouchableOpacity 
-                                    onPress={ () => {
+                                    <SubmitQuizButton
+                                        onPress={() => calcularResultados()}
+                                    >
+                                        <SubmitQuizButtonTitle>
+                                            FINALIZAR
+                                        </SubmitQuizButtonTitle>
+                                        
+                                    </SubmitQuizButton>
+
+                                    <FooterQuizButton
+                                        onPress={ () => {
                                             if (currentIndex < questionsDB.length - 1) {
                                                 setCurrentIndex(currentIndex + 1);
                                                 setChosenOption(null); //
                                             }
-                                            toggleModal()
-                                    }} 
+                                        }}       
+                                    >
+                                        <NextArrow 
+                                            width={28}
+                                            height={28}
+                                        />
+                                    </FooterQuizButton>
+                                </FooterButtonsContainer>
+                            </FooterQuiz>
+            
+                        </QuizContainer>
+
+                        <Modal 
+                            isVisible={isModalImageVisible}
+                            style={{
+                                alignItems: 'center'
+                            }}
+                        >
+                        
+                                <View style={{ 
+                                    width: RFValue(250),
+                                    height: RFValue(300), 
+                                    borderRadius: 10,
+                                    backgroundColor: '#fff',
+                                    padding: 20,
+                                    alignItems: 'center',
+                                    justifyContent: 'space-between'
+                                }}>
+
+                            <Image 
+                                style={{
+                                    width: RFValue(200),
+                                    height: RFValue(200)
+                                }}
+                                source={questionsDB[currentIndex].question.imagePath}
+                            />
+
+
+                                <TouchableOpacity 
+                                    onPress={() => setModalImageVisible(!isModalImageVisible)}
                                     style={{
                                         width: 200,
                                         height: 45,
@@ -521,19 +426,165 @@ export function Game() {
                                         justifyContent: 'center'
                                     }}
                                 >
-                                <Text
-                                    style={{
-                                        color: '#fff',
-                                        fontWeight: 'bold'
-                                    }}
-                                >
-                                    PRÓXIMA PERGUNTA
-                                </Text>
-                        </TouchableOpacity>
-                        }
-                    </View>
-                </Modal>  
-            </Footer>
+                                    <Text
+                                        style={{
+                                            color: '#fff',
+                                            fontWeight: 'bold'
+                                        }}
+                                    >
+                                        FECHAR
+                                    </Text>
+                                </TouchableOpacity>
+                            </View>
+                        </Modal> 
+
+                        <Modal 
+                            isVisible={isModalVisible}
+                            style={{
+                                alignItems: 'center'
+                            }}
+                        >
+                        
+                                <View style={{ 
+                                    width: RFValue(250), 
+                                    borderRadius: 10,
+                                    backgroundColor: '#fff',
+                                    padding: 20,
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                
+                                    flexDirection: 'column'
+                                }}>
+                                {
+                                    feedbackModalData.status === 'correct' ?  
+                                        <Text style={{ fontSize: 23, textAlign: 'center' }}>{randomDevolutivasPositivas}</Text> : 
+                                        <View
+                                            style={{
+                                                width: '100%',
+                                                flexDirection: 'row',
+                                                alignItems: 'center',
+                                                justifyContent: 'center'
+                                            }}
+                                        >
+                                            <Error 
+                                                width={30}
+                                                height={30}
+                                            />
+
+                                            <Text style={{ fontSize: 23, textAlign: 'center' }}>{randomDevolutivasNegativas}</Text>
+
+                                            <Error 
+                                                width={30}
+                                                height={30}
+                                            />
+                                        </View>
+                                }   
+
+                                    <View
+                                        style={{
+                                            width: 150,
+                                            height: 150,
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            marginBottom: 25,
+                                            marginTop: 25
+                                        }}
+                                    >
+                                    
+                                        <Image 
+                                            source={require('../../assets/avatares/1.png')}
+                                            style={{
+                                                height: 150,
+                                                width: 150,
+                                            }}
+                                            transition={1000}
+                                        />
+                                        
+                                    </View>
+                                    {
+                                        feedbackModalData.status === 'correct' ?  null : 
+                                            <Text style={{
+                                                fontSize: 17,
+                                                textAlign: 'center',
+                                                marginBottom: 20
+                                            }}>
+                                                {questionsDB[currentIndex].devolutiva}
+                                            </Text>
+                                    }       
+
+
+                                {
+                                    feedbackModalData.status === 'correct' ? 
+                                            <LottieView
+                                                autoPlay
+                                                style={{
+                                                    width: 250,
+                                                    height: 250,
+                                                    position: 'absolute',
+                                                }}
+                                                source={require('./correct.json')}
+                                            />
+                                    :
+                                        null
+                                }
+
+                                {
+                                    currentIndex === questionsDB.length - 1 ? 
+                                        <TouchableOpacity 
+                                            onPress={() => {
+                                                calcularResultados()
+                                                setModalVisible(!isModalVisible)
+                                            }}
+                                            style={{
+                                                width: 200,
+                                                height: 45,
+                                                borderRadius: 10,
+                                                backgroundColor: '#B843F2',
+                                                alignItems: 'center',
+                                                justifyContent: 'center'
+                                            }}
+                                        >
+                                        <Text
+                                            style={{
+                                                color: '#fff',
+                                                fontWeight: 'bold'
+                                            }}
+                                        >
+                                            FINALIZAR QUIZ!
+                                        </Text>
+                                        </TouchableOpacity>
+                                    :
+                                        <TouchableOpacity 
+                                            onPress={ () => {
+                                                    if (currentIndex < questionsDB.length - 1) {
+                                                        setCurrentIndex(currentIndex + 1);
+                                                        setChosenOption(null); //
+                                                    }
+                                                    toggleModal()
+                                            }} 
+                                            style={{
+                                                width: 200,
+                                                height: 45,
+                                                borderRadius: 10,
+                                                backgroundColor: '#B843F2',
+                                                alignItems: 'center',
+                                                justifyContent: 'center'
+                                            }}
+                                        >
+                                        <Text
+                                            style={{
+                                                color: '#fff',
+                                                fontWeight: 'bold'
+                                            }}
+                                        >
+                                            PRÓXIMA PERGUNTA
+                                        </Text>
+                                    </TouchableOpacity>
+                                }
+                            </View>
+                        </Modal>  
+                    </Footer>
+            )}
         </Container>
     );
 };

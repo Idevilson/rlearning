@@ -33,7 +33,14 @@ import { getFirestore, doc, setDoc } from "firebase/firestore";
 import { useAuth } from '../../hooks/auth';
 import { app } from '../../services/firebase';
 
-import { TouchableOpacity, Text, View, FlatList } from 'react-native';
+import { 
+    TouchableOpacity, 
+    Text, 
+    View, 
+    FlatList, 
+    TouchableWithoutFeedback,
+    Keyboard
+} from 'react-native';
 import Modal from "react-native-modal";
 
 interface dropDownprops {
@@ -143,188 +150,191 @@ export function SignUp() {
     const perildos = ["Primeiro", "Segundo", "Terceiro", "Quarto", "Juizes"]
 
     return(
+        <TouchableWithoutFeedback
+            onPress={() => Keyboard.dismiss()}
+        >
         <Container>
-            
-            <Header>
-                    <BackButtonContainer>
-                        <BackButton 
-                            onPress={() => navigation.goBack()}
-                        >
-                            <ArrowBack 
-                                width={40}
-                                height={40}
+                    <Header>
+                            <BackButtonContainer>
+                                <BackButton 
+                                    onPress={() => navigation.goBack()}
+                                >
+                                    <ArrowBack 
+                                        width={40}
+                                        height={40}
+                                    />
+                                </BackButton>
+                            </BackButtonContainer>
+                            <Image 
+                            style={{ height: 130, width: 200, marginTop: RFValue(10) }}
+                            source={require('../../assets/rLogo.png')}
+                            contentFit="cover"
+                            transition={1000}
                             />
-                        </BackButton>
-                    </BackButtonContainer>
-                    <Image 
-                       style={{ height: 130, width: 200, marginTop: RFValue(10) }}
-                       source={require('../../assets/rLogo.png')}
-                       contentFit="cover"
-                       transition={1000}
-                    />
-            </Header>
+                    </Header>
 
-            <Footer>
-                <FormContainer>
-                    <FormTitle>
-                        FAÇA SEU CADASTRO!
-                    </FormTitle>
+                    <Footer>
+                        <FormContainer>
+                            <FormTitle>
+                                FAÇA SEU CADASTRO!
+                            </FormTitle>
 
-                    <NameInput 
-                        placeholder='NOME'
-                        value={nome}
-                        onChangeText={setNome}
-                    />
-                    
-                    <EmailInput 
-                        placeholder='E-MAIL'
-                        value={email}
-                        onChangeText={setEmail}
-                    />
-                    <PasswordInput
-                        placeholder='Senha'
-                        secureTextEntry
-                        value={senha}
-                        onChangeText={setSenha}
-                    />
-
-                    <OpemModalAvatar
-                        onPress={() => setOpemModal(!modalIsOpem)}
-                    >
-                        <Text
-                            style={{
-                                fontSize: 20
-                            }}
-                        >
-                            SELECIONAR AVATAR
-                        </Text>
-
-                        {
-                            selectedAvatar !== null ? <MiniPhotoContainer>
-                                <Image 
-                                    style={{
-                                        width: RFValue(26),
-                                        height: RFValue(26)
-                                    }}
-                                    contentFit='contain' 
-                                    transition={1000}
-                                    source={selectedAvatar}
-                                />
-                            </MiniPhotoContainer>
-                            : null
-                        }
-
-                        
-                    </OpemModalAvatar>
-
-                    <SelectDropdown
-                        searchPlaceHolder='Teste'
-                        data={perildos}
-                        onSelect={(selectedItem, index) => {
-                            setSelectedItem({selectedItem, index})
-                        }}
-                        buttonTextAfterSelection={(selectedItem, index) => {
-                            // text represented after item is selected
-                            // if data array is an array of objects then return selectedItem.property to render after item is selected
-                            return selectedItem
-                        }}
-                        rowTextForSelection={(item, index) => {
-                            // text represented for each item in dropdown
-                            // if data array is an array of objects then return item.property to represent item in dropdown
-                            return item
-                        }}
-
-                        buttonStyle={{
-                            width: '100%', 
-                            height: RFValue(45),
-                            borderRadius: 10,
-                            marginTop: 10
-                        }}
-
-                        rowTextStyle={{
-                            fontSize: 20
-                        }}
-
-                        defaultButtonText='SELECIONE A CATEGORIA'
-                        buttonTextStyle={{
-                            fontWeight: 'bold', fontSize: 20
-                        }}
-                    />
-
-                    <Modal 
-                        isVisible={modalIsOpem}
-                        style={{
-                            alignItems: 'center'
-                        }}
-                    >
-                    
-                            <View style={{ 
-                                width: RFValue(300),
-                                height: RFValue(500), 
-                                borderRadius: 10,
-                                backgroundColor: '#fff',
-                                padding: 20,
-                                alignItems: 'center',
-                                justifyContent: 'space-between'
-                            }}>
-                           
-                           <FlatList
-                                data={avatarPaths}
-                                keyExtractor={(item, index) => index.toString()}
-                                renderItem={({ item }) => (
-                                    <TouchableOpacity onPress={() => handleAvatarPress(item)}>
-                                        <PhotoContainer
-                                            style={ selectedAvatar === item ? { borderColor: 'green', borderWidth: 3 } : null }
-                                        >
-                                            <Image 
-                                                style={{
-                                                    width: RFValue(100),
-                                                    height: RFValue(100)
-                                                }}
-                                                contentFit='contain' 
-                                                transition={1000}
-                                                source={item}
-                                            />
-                                        </PhotoContainer>
-                                    </TouchableOpacity>
-                                )}
-                                numColumns={2} // ou o número desejado de colunas
+                            <NameInput 
+                                placeholder='NOME'
+                                value={nome}
+                                onChangeText={setNome}
+                            />
+                            
+                            <EmailInput 
+                                placeholder='E-MAIL'
+                                value={email}
+                                onChangeText={setEmail}
+                            />
+                            <PasswordInput
+                                placeholder='Senha'
+                                secureTextEntry
+                                value={senha}
+                                onChangeText={setSenha}
                             />
 
-
-                            <TouchableOpacity 
+                            <OpemModalAvatar
                                 onPress={() => setOpemModal(!modalIsOpem)}
-                                style={{
-                                    width: RFValue(200),
-                                    height: RFValue(45),
-                                    borderRadius: 10,
-                                    backgroundColor: '#B843F2',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    marginTop: 20
-                                }}
                             >
                                 <Text
                                     style={{
-                                        color: '#fff',
-                                        fontWeight: 'bold'
+                                        fontSize: 20
                                     }}
                                 >
                                     SELECIONAR AVATAR
                                 </Text>
-                            </TouchableOpacity>
-                        </View>
-                    </Modal>  
 
-                    <SignUpButton
-                        onPress={onSubmit}
-                    >
-                        <ButtonText>
-                             CRIAR CONTA     
-                        </ButtonText>
-                    </SignUpButton>
-                </FormContainer>
-            </Footer>
+                                {
+                                    selectedAvatar !== null ? <MiniPhotoContainer>
+                                        <Image 
+                                            style={{
+                                                width: RFValue(26),
+                                                height: RFValue(26)
+                                            }}
+                                            contentFit='contain' 
+                                            transition={1000}
+                                            source={selectedAvatar}
+                                        />
+                                    </MiniPhotoContainer>
+                                    : null
+                                }
+
+                                
+                            </OpemModalAvatar>
+
+                            <SelectDropdown
+                                searchPlaceHolder='Teste'
+                                data={perildos}
+                                onSelect={(selectedItem, index) => {
+                                    setSelectedItem({selectedItem, index})
+                                }}
+                                buttonTextAfterSelection={(selectedItem, index) => {
+                                    // text represented after item is selected
+                                    // if data array is an array of objects then return selectedItem.property to render after item is selected
+                                    return selectedItem
+                                }}
+                                rowTextForSelection={(item, index) => {
+                                    // text represented for each item in dropdown
+                                    // if data array is an array of objects then return item.property to represent item in dropdown
+                                    return item
+                                }}
+
+                                buttonStyle={{
+                                    width: '100%', 
+                                    height: RFValue(45),
+                                    borderRadius: 10,
+                                    marginTop: 10
+                                }}
+
+                                rowTextStyle={{
+                                    fontSize: 20
+                                }}
+
+                                defaultButtonText='SELECIONE A CATEGORIA'
+                                buttonTextStyle={{
+                                    fontWeight: 'bold', fontSize: 20
+                                }}
+                            />
+
+                            <Modal 
+                                isVisible={modalIsOpem}
+                                style={{
+                                    alignItems: 'center'
+                                }}
+                            >
+                            
+                                    <View style={{ 
+                                        width: RFValue(300),
+                                        height: RFValue(500), 
+                                        borderRadius: 10,
+                                        backgroundColor: '#fff',
+                                        padding: 20,
+                                        alignItems: 'center',
+                                        justifyContent: 'space-between'
+                                    }}>
+                                
+                                <FlatList
+                                        data={avatarPaths}
+                                        keyExtractor={(item, index) => index.toString()}
+                                        renderItem={({ item }) => (
+                                            <TouchableOpacity onPress={() => handleAvatarPress(item)}>
+                                                <PhotoContainer
+                                                    style={ selectedAvatar === item ? { borderColor: 'green', borderWidth: 3 } : null }
+                                                >
+                                                    <Image 
+                                                        style={{
+                                                            width: RFValue(100),
+                                                            height: RFValue(100)
+                                                        }}
+                                                        contentFit='contain' 
+                                                        transition={1000}
+                                                        source={item}
+                                                    />
+                                                </PhotoContainer>
+                                            </TouchableOpacity>
+                                        )}
+                                        numColumns={2} // ou o número desejado de colunas
+                                    />
+
+
+                                    <TouchableOpacity 
+                                        onPress={() => setOpemModal(!modalIsOpem)}
+                                        style={{
+                                            width: RFValue(200),
+                                            height: RFValue(45),
+                                            borderRadius: 10,
+                                            backgroundColor: '#B843F2',
+                                            alignItems: 'center',
+                                            justifyContent: 'center',
+                                            marginTop: 20
+                                        }}
+                                    >
+                                        <Text
+                                            style={{
+                                                color: '#fff',
+                                                fontWeight: 'bold'
+                                            }}
+                                        >
+                                            SELECIONAR AVATAR
+                                        </Text>
+                                    </TouchableOpacity>
+                                </View>
+                            </Modal>  
+
+                            <SignUpButton
+                                onPress={onSubmit}
+                            >
+                                <ButtonText>
+                                    CRIAR CONTA     
+                                </ButtonText>
+                            </SignUpButton>
+                        </FormContainer>
+                    </Footer>
         </Container>
+        </TouchableWithoutFeedback>
     );
 };

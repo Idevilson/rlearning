@@ -2,7 +2,7 @@
 export const comp15 = {
     "lioto": [
         {
-            "title": "Paciente atendido em UBS com exame  otologico representado abaixo, assinale conduta mais indicada?",
+            "title": "Paciente atendido em UBS com exame  otológico representado abaixo, assinale conduta mais indicada?",
             "imagePath": require('./comp15/1.jpg'),
             "alternatives": [
                 {
@@ -18,7 +18,7 @@ export const comp15 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Encaminhar para avaliação especialista",
+                    "option": "Encaminhar para avaliação especialista.",
                     "isTrue": true
                 }
             ]
@@ -28,29 +28,25 @@ export const comp15 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Otorreia",
+                    "option": "Otorreia.",
                     "isTrue": false
                 },
                 {
-                    "option": "Perfuração timpanica",
+                    "option": "Perfuração timpânica.",
                     "isTrue": false
                 },
                 {
-                    "option": "Hipoacusia",
+                    "option": "Hipoacusia.",
                     "isTrue": false
                 },
                 {
-                    "option": "Exostose",
+                    "option": "Exostose.",
                     "isTrue": true
-                },
-                {
-                    "option": "Otalgia",
-                    "isTrue": false
                 }
             ]
         },
         {
-            "title": "Em relação às otites médias crônicas não colesteatomatosas, analise as seguintes assertivas: I. A timpanoplastia, nos casos de perfuração timpânica, está sempre indicada, mesmo em pacientes assintomáticos. II. Paciente com perdas condutivas significativas devem ser submetidos à revisão da cadeia ossicular. III. No manejo cirúrgico das retrações timpânicas, deve-se levar em consideração o risco de progressão para colesteatoma e o grau de perda auditiva. Quais estão corretas?", 
+            "title": "3-  Em relação às otites médias crônicas não colesteatomatosas, analise a alternativa correta: I. A timpanoplastia, nos casos de perfuração timpânica, está sempre indicada, mesmo em pacientes assintomáticos. II. Paciente com perdas condutivas significativas devem ser submetidos à revisão da cadeia ossicular. II. No manejo cirúrgico das retrações timpânicas, deve-se levar em consideração o risco de progressão para colesteatoma e o grau de perda auditiva.", 
             "imagePath": null,
             "alternatives": [
                 {
@@ -72,29 +68,29 @@ export const comp15 = {
             ]
         },
         {
-            "title": "Qual alteração presente na otoscopia abaixo? ",
+            "title": "Qual alteração está presente na otoscopia abaixo?",
             "imagePath": require('./comp15/8.png'),
             "alternatives": [
                 {
-                    "option": "Colesteatoma",
+                    "option": "Colesteatoma.",
                     "isTrue": true
                 },
                 {
-                    "option": "Perfuração timpânica",
+                    "option": "Perfuração timpânica.",
                     "isTrue": false
                 },
                 {
-                    "option": "Timpanoesclerose",
+                    "option": "Timpanoesclerose.",
                     "isTrue": false
                 },
                 {
-                    "option": "Exostose",
+                    "option": "Exostose.",
                     "isTrue": false
                 }
             ]
         },
         {
-            "title": "Sobre a otite média crônica, assinale a alternativa correta. ",
+            "title": "Sobre a otite média crônica, assinale a alternativa correta.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -106,7 +102,7 @@ export const comp15 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Compreende-se a existência de líquido na cavidade da orelha média sem evidências de infecção associada e com integridade da membrana timpânica.",
+                    "option": "É restrita a existência de líquido na cavidade da orelha média sem evidências de infecção associada e com integridade da membrana timpânica",
                     "isTrue": false
                 },
                 {
@@ -120,15 +116,15 @@ export const comp15 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Perfuração timpânica central seca",
+                    "option": "Perfuração timpânica central seca.",
                     "isTrue": false
                 },
                 {
-                    "option": "Presença de dor retroauricular ipsilateral",
+                    "option": "Presença de dor retroauricular ipsilateral.",
                     "isTrue": false
                 },
                 {
-                    "option": "Perda auditiva de condução progressiva. ",
+                    "option": "Perda auditiva progressiva.",
                     "isTrue": true
                 },
                 {

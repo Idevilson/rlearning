@@ -2,7 +2,7 @@
 export const comp9 = {
     "lioto": [
         {
-            "title": "É critério de risco para Deficiência Auditiva",
+            "title": "É critério de risco para Deficiência Auditiva?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -24,7 +24,7 @@ export const comp9 = {
             ]
         },
         {
-            "title": "Sobre a triagem auditiva neonatal, assinale a alternativa incorreta:",
+            "title": "Sobre a triagem auditiva neonatal, assinale a alternativa INCORRETA:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -46,7 +46,7 @@ export const comp9 = {
             ]
         },
         {
-            "title": "(CONCURSO PÚBLICO Nº 001/2022 - QOSPM) Os testes auditivos são de extrema importância no diagnóstico e na avaliação terapêutica dos pacientes com problemas da audição. Em relação aos testes auditivos, assinale a associação correta da doença e o padrão típico ao exame auditivo.",
+            "title": "Os testes auditivos são de extrema importância no diagnóstico e na avaliação terapêutica dos pacientes com problemas da audição. Em relação aos testes auditivos, assinale a associação correta da doença e o padrão típico ao exame auditivo.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -72,7 +72,7 @@ export const comp9 = {
             ]
         },
         {
-            "title": "CESPE/UnB – SESA/ES/2013) Para o diagnóstico da perda auditiva induzida pelo ruído, são essenciais:",
+            "title": "Para o diagnóstico da perda auditiva induzida pelo ruído, são essenciais:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -98,7 +98,7 @@ export const comp9 = {
             ]
         },
         {
-            "title": "Criança com problema no atraso da fala, só fala frases curtas aos 4 anos, com poucas palavras sem clareza e fluência, não atende bem aos comandos, pronunciando muitos sons. Mãe refere estar preocupada pois vê sua filha não está tendo um bom desempenho na escola, suspeitando de autismo. O médico examina e constata desenvolvimento neuropsicomotor adequado para a idade, exceto pelo aspecto da linguagem que se encontra atrasado. Sem demais queixas e sintomas. Qual a conduta inicial?",
+            "title": "Criança com problema no atraso da fala, só fala frases curtas aos 4 anos, com poucas palavras sem clareza e fluência, não atende bem aos comandos, pronunciando muitos sons. O médico examina e constata desenvolvimento neuropsicomotor adequado para a idade, exceto pelo aspecto da linguagem que se encontra atrasado. Sem demais queixas e sintomas. Qual a conduta inicial?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -160,10 +160,6 @@ export const comp9 = {
                 {
                     "option": "Avaliação da função vestibular em pacientes com labirintite.",
                     "isTrue": false
-                },
-                {
-                    "option": "Identificação da causa de vertigem periférica.",
-                    "isTrue": false
                 }
             ]
         },
@@ -204,7 +200,7 @@ export const comp9 = {
             ]
         },
         {
-            "title": "L.A.S, feminino, 8 dias de vida, comparece à UBS para a primeira consulta de puericultura. Parto normal sem intercorrênicas, peso AIG, APGA 1º e 5º minuto = 8. Sem histórico de infecções congênitas. Sem alterações no exame físico crânio-caudal. Coto umbilical ainda presente, sem sinais flogísticos. Ainda não realizou nenhuma triagem neonatal. AF: avó materna hipertensa, pai diabético, tio portador de implante coclear em orelha esquerda devido perda auditiva total bilateral. Sabendo que o fluxograma da Triagem Adutiva Neonatal (TAN) é inicialmente guiado pela presença de indicadores de risco para a deficiência auditiva, assinale a alterna que contém a melhor conduta para esse caso.",
+            "title": "L.A.S, feminino, 8 dias de vida, comparece à UBS para a primeira consulta de puericultura. Parto normal sem intercorrências, peso AIG, APGAR 1º e 5º minuto = 8. Sem histórico de infecções congênitas. Ainda não realizou nenhuma triagem neonatal. AF: tio portador de implante coclear em orelha esquerda devido perda auditiva total bilateral. Sabendo que o fluxograma da Triagem Auditiva Neonatal (TAN) é inicialmente guiado pela presença de indicadores de risco para a deficiência auditiva, assinale a alternativa que contém a melhor conduta para esse caso.",
             "imagePath": null,
             "alternatives": [
                 {

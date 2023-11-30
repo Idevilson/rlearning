@@ -2,7 +2,7 @@
 export const comp14 = {
     "lioto": [
         {
-            "title": "Mulher 41 anos com hiposmia, obstrução e congestão nasal, rinorreia mucopurulenta, dor facial e tosse,  com início há aproximadamente 12 semanas. Tem antecedentes de asma, no momento controlada. Rinoscopia anterior com hipertrofia  conchas nasais inferiores e palidez de mucosa nasal. A TC de seios da face, sugere:",
+            "title": "Mulher, 41 anos, com hiposmia, obstrução nasal, rinorreia mucopurulenta, dor facial e tosse,  de início há aproximadamente 12 semanas. Tem antecedentes de asma, no momento controlada. Rinoscopia anterior com hipertrofia  de conchas nasais inferiores e palidez de mucosa. A TC de seios da face, sugere:",
             "imagePath": require('./comp14/1.jpg'),
             "alternatives": [
                 {
@@ -24,7 +24,7 @@ export const comp14 = {
             ]
         },
         {
-            "title": "Homem de 42 anos queixa-se de obstrução e congestão nasal, rinorreia mucopurulenta e hiposmia, há aproximadamente 14 semanas. Refere que o quadro é frequente e tem melhora com remédios para gripe. Sem história pregressa importante. No exame físico observou-se discreto alargamento da pirâmide nasal. Solicitada TC de seios da face para melhor elucidação diagnóstica, sendo proposto:  ",
+            "title": "Homem, 42 anos,  queixa-se de obstrução nasal, rinorreia mucopurulenta e hiposmia, há aproximadamente 14 semanas. Refere que o quadro é frequente e tem melhora com medicação antigripal. No exame físico observou-se discreto alargamento da pirâmide nasal. Solicitada TC de seios da face para melhor elucidação diagnóstica, sendo proposto:",
             "imagePath": require('./comp14/2.jpg'),
             "alternatives": [
                 {
@@ -98,7 +98,7 @@ export const comp14 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Presença de sintomas nasais por mais de 12 semanas consecutivas com ou sem melhora",
+                    "option": "Presença de sintomas nasais por mais de 12 semanas consecutivas com ou sem melhora.",
                     "isTrue": true
                 },
                 {
@@ -106,17 +106,17 @@ export const comp14 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Presença de sintomas nasais por mais de 6 semanas consecutivas com ou sem melhora",
+                    "option": "Presença de sintomas nasais por mais de 6 semanas consecutivas com ou sem melhora.",
                     "isTrue": false
                 },
                 {
-                    "option": "Presença de sintomas nasais por mais de 8 semanas consecutivas com ou sem melhora",
+                    "option": "Presença de sintomas nasais por mais de 8 semanas consecutivas com ou sem melhora.",
                     "isTrue": false
                 }
             ]
         },
         {
-            "title": "Assinale principal complicação da rinossinusite crônica?",
+            "title": "Assinale a principal complicação da rinossinusite crônica?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -138,15 +138,15 @@ export const comp14 = {
             ]
         },
         {
-            "title": "Exame complementar comumente utilizado na avaliação e tratamento de pacientes com rinossinusites crônicas.",
+            "title": "Exame complementar comumente utilizado na avaliação de pacientes com rinossinusites crônicas.",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Radiografia seios da face ",
+                    "option": "Radiografia seios da face.",
                     "isTrue": false
                 },
                 {
-                    "option": "TC de seios da face ",
+                    "option": "TC de seios da face.",
                     "isTrue": true
                 },
                 {
@@ -154,8 +154,30 @@ export const comp14 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Videolaringoscopia ",
+                    "option": "Videolaringoscopia.",
                     "isTrue": false
+                }
+            ]
+        },
+        {
+            "title": "São fatores associados à rinossinusite crônica sem polipose nasal, exceto:",
+            "imagePath": null,
+            "alternatives": [
+                {
+                    "option": "Alergia.",
+                    "isTrue": false
+                },
+                {
+                    "option": "Sensibilidade à aspirina.",
+                    "isTrue": false
+                },
+                {
+                    "option": "Fatores Genéticos.",
+                    "isTrue": false
+                },
+                {
+                    "option": "Doenças Tireoidianas.",
+                    "isTrue": true
                 }
             ]
         }
