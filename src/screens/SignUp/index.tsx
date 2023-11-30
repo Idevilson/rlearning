@@ -147,7 +147,7 @@ export function SignUp() {
         await validarFormulario()
     }
 
-    const perildos = ["Primeiro", "Segundo", "Terceiro", "Quarto", "Juizes"]
+    const perildos = ["Nono", "Décimo", "Décimo Primeiro", "Décimo Segundo", "Juizes"]
 
     return(
         <TouchableWithoutFeedback
