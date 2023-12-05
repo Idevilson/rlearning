@@ -14,7 +14,7 @@ export const comp10 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Causa neurossensorial com perdas de células do Órgão de Corti.",
+                    "option": "Tem causa neurossensorial com perdas de células do Órgão de Corti.",
                     "isTrue": true
                 },
                 {
@@ -24,7 +24,7 @@ export const comp10 = {
             ]
         },
         {
-            "title": "Mulher 67 anos tem audiometria tonal compatível com limiares auditivos presentes em 50dBNA, sugerindo:",
+            "title": "Mulher 73 anos tem audiometria tonal sugestiva de presbiacusia, assinale a perda auditiva característica:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -32,15 +32,15 @@ export const comp10 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Perda Auditiva Leve.",
+                    "option": "Perda Auditiva Condutiva.",
                     "isTrue": false
                 },
                 {
-                    "option": "Perda Auditiva Moderada.",
+                    "option": "Perda Auditiva Neurossensorial.",
                     "isTrue": true
                 },
                 {
-                    "option": "Perda Auditiva Grave.",
+                    "option": "Perda Auditiva Mista.",
                     "isTrue": false
                 }
             ]
@@ -54,11 +54,11 @@ export const comp10 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Conssiste na atrofia dos neurônios cocleares manifesta-se audiologicamente como uma perda auditiva em graves.",
+                    "option": "Conssiste na atrofia dos neurônios supra cocleares manifesta-se audiologicamente como uma perda auditiva condutiva em graves.",
                     "isTrue": false
                 },
                 {
-                    "option": "Pode gerar relação de perda auditiva, depressão e déficit cognitivo.",
+                    "option": "A perda auditiva pode gerar depressão, isolamento social e déficit cognitivo.",
                     "isTrue": true
                 },
                 {
@@ -80,7 +80,7 @@ export const comp10 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Nesse distúrbio, há diminuição da audição, dificuldade na compreensão da fala, intolerância a sons altos, podendo ser acompanhada de zumbido.",
+                    "option": "Há perda auditiva, zumbido e dificuldade na compreensão da fala relacionados ao processo de envelhecimento.",
                     "isTrue": true
                 },
                 {
@@ -90,7 +90,7 @@ export const comp10 = {
             ]
         },
         {
-            "title": "Mulher de 65 anos hipoacusia bilateral progressiva, zumbido e dificuldade na compreensão de fala. Otoscopia preservada. Assinale principal hipótese diagnóstica.",
+            "title": "Mulher de 69 anos com hipoacusia bilateral progressiva, zumbido e dificuldade na compreensão de fala. A otoscopia está  preservada. Assinale a hipótese diagnóstica:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -134,23 +134,23 @@ export const comp10 = {
             ]
         },
         {
-            "title": "Homem 63 anos relata hipoacusia bilateral progressiva e zumbido. Tem antecedentes pessoais de diabetes. Otoscopia sem alterações. Qual a melhor conduta?",
+            "title": "Homem 69 anos relata hipoacusia bilateral progressiva e zumbido. Tem antecedentes pessoais de diabetes. Otoscopia sem alterações. Qual a melhor conduta?",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Solicitar audiometria.",
+                    "option": "Solicitar audiometria sob suspeita de presbiacusia.",
                     "isTrue": true
                 },
                 {
-                    "option": "Encaminhar ao especialista.",
+                    "option": "Encaminhar ao otorrinolaringologista.",
                     "isTrue": false
                 },
                 {
-                    "option": "Solicitar avaliação cirúrgica.",
+                    "option": "Solicitar avaliação neurologia.",
                     "isTrue": false
                 },
                 {
-                    "option": "Encaminhar para inserção de AASI.",
+                    "option": "Encaminhar para inserção de AASI..",
                     "isTrue": false
                 }
             ]
@@ -178,7 +178,7 @@ export const comp10 = {
             ]
         },
         {
-            "title": "A presbiacusia trata-se de perda auditiva que ocorre:",
+            "title": "A presbiacusia trata-se de perda auditiva gerada: ",
             "imagePath": null,
             "alternatives": [
                 {
@@ -200,6 +200,6 @@ export const comp10 = {
             ]
         }
     ],
-    "devolutiva": "Conhecer a clínica, os sinais/sintomas da presbiacusia, suspeitando do diagnóstico e solicitando a avaliação auditiva complementar. Lembre-se de encaminhar ao especialista para confirmação da hipótese e para avaliação na adaptação de Aparelho de amplificação sonoro individual.",
+    "devolutiva": "Conhecer a clínica, os sinais/sintomas da presbiacusia, suspeitando do diagnóstico e solicitando a avaliação auditiva complementar. Lembre-se de encaminhar ao especialista para confirmação da hipótese e para avaliação de adaptação de Aparelho de amplificação sonoro individual.",
     "description": "Ter conhecimento sobre a clínica, os sinais e os sintomas da presbiacusia, suspeitar do diagnóstico e solicitar a avaliação auditiva. Encaminhar para o especialista para estabelecimento do diagnóstico e dos critérios para adaptação de AASI(aparelho de amplificação sonora individual)."
 }

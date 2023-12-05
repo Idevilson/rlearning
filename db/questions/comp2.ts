@@ -15,7 +15,7 @@ export const comp2 ={
             ]
         },
         {
-            "title": "Na remoção de cerume são consideradas indicações, exceto:",
+            "title": "Na remoção de corpo estranho com instilação de soro, são consideradas contraindicações:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -27,33 +27,11 @@ export const comp2 ={
                     "isTrue": false
                 },
                 {
-                    "option": "Tosse crônica, diminuição importante da audição e desconforto auditivo. ",
+                    "option": "Tosse crônica, diminuição importante da audição e desconforto auditivo.",
                     "isTrue": false
                 },
                 {
                     "option": "Otalgia, tontura/vertigem severa e perfuração timpânica.",
-                    "isTrue": true
-                }
-            ]
-        },
-        {
-            "title": "Sobre lavagem auricular/retirada de cerume, assinale a incorreta.",
-            "imagePath": null,
-            "alternatives": [
-                {
-                    "option": "Presença de cerume é uma condição fisiológica  e confere proteção contra processos inflamatórios.",
-                    "isTrue": false
-                },
-                {
-                    "option": "A presença do cerume geralmente é assintomática, mas acúmulo indevido pode  gerar perda auditiva, dor e interferir na avaliação da membrana timpânica.",
-                    "isTrue": false
-                },
-                {
-                    "option": "A remoção de cerume é um procedimento comum na otorrinolaringologia e pode ser realizado na Atenção Primária à Saúde.",
-                    "isTrue": false
-                },
-                {
-                    "option": "Queixas de  plenitude aural, estalidos e diminuição da acuidade auditiva são sugestivos mas o diagnóstico de certeza é  feito através da  audiometria.",
                     "isTrue": true
                 }
             ]
@@ -67,15 +45,15 @@ export const comp2 ={
                     "isTrue": false
                 },
                 {
-                    "option": "Instilar solução salina no conduto na tentativa de remoção.",
+                    "option": "Acalmar criança e instilar solução salina no conduto na tentativa de remoção do corpo estranho.",
                     "isTrue": true
                 },
                 {
-                    "option": "Encaminhar e aguardar consulta eletiva com especialista.",
+                    "option": "Encaminhar e aguardar consulta eletiva com especialista. ",
                     "isTrue": false
                 },
                 {
-                    "option": "Encaminhar para serviço de emergência.",
+                    "option": "Sempre encaminhar para serviço de emergência após acalmar a criança.",
                     "isTrue": false
                 }
             ]
@@ -129,7 +107,7 @@ export const comp2 ={
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Há necessidade de sedação.",
+                    "option": "Criança ativa.",
                     "isTrue": false
                 },
                 {
@@ -151,7 +129,7 @@ export const comp2 ={
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Pinça de biópsia.",
+                    "option": "Remoção com pinça anatômica. ",
                     "isTrue": false
                 },
                 {
@@ -159,7 +137,7 @@ export const comp2 ={
                     "isTrue": true
                 },
                 {
-                    "option": "Aspiração com sonda de Frazier",
+                    "option": "Aspiração com sonda de Frazier.",
                     "isTrue": false
                 },
                 {
@@ -169,7 +147,7 @@ export const comp2 ={
             ]
         },
         {
-            "title": "Sinal mais comum de lacerações por corpo estranho em conduto auditivo externo?",
+            "title": "Sintoma mais comum de lacerações por corpo estranho em conduto auditivo externo?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -181,15 +159,11 @@ export const comp2 ={
                     "isTrue": true
                 },
                 {
-                    "option": "Labirintite traumática.",
+                    "option": "Vertigem.",
                     "isTrue": false
                 },
                 {
-                    "option": "Fratura da base do crânio.",
-                    "isTrue": false
-                },
-                {
-                    "option": "Estenose do conduto auditivo externo.",
+                    "option": "Otorreia.",
                     "isTrue": false
                 }
             ]

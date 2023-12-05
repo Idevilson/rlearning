@@ -24,7 +24,7 @@ export const comp13 = {
             ]
         },
         {
-            "title": "Clara, 6 anos, apresenta espirros, obstrução, prurido nasal e coriza. Mãe informa sintomas frequentes com duração de 2 dias por semana, sem repercussões durante o sono. Rinoscopia anterior com palidez e hipertrofia leve de conchas nasais inferiores. Assinale principal hipótese diagnóstica e tratamento",
+            "title": "Clara, 6 anos, apresenta espirros, obstrução, prurido nasal e coriza. Mãe informa sintomas frequentes com duração de 2 dias por semana, sem repercussões durante o sono. Na rinoscópia anterior observadas palidez e hipertrofia leve de conchas nasais inferiores.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -46,7 +46,7 @@ export const comp13 = {
             ]
         },
         {
-            "title": "Menina, 9 anos, com queixa de tosse noturna, obstrução nasal, prurido, coriza e espirros. Mãe refere que a criança apresenta roncos e despertares noturnos com dificuldade de concentração nas atividades escolares. Tem antecedente de asma, em uso frequente de salbutamol de resgate. Rinoscopia anterior com conchas nasais inferiores hipertrofiadas 3+/4+, hipocoradas, com presença de secreção hialina. Qual melhor conduta a indicar? ",
+            "title": "Menina, 9 anos, com queixa de tosse noturna, obstrução nasal, prurido, coriza e espirros. Mãe refere que a criança apresenta roncos e despertares noturnos com dificuldade de concentração nas atividades escolares. Tem antecedente de asma. Rinoscopia anterior com conchas nasais inferiores hipertrofiadas 3+/4+, hipocoradas, com presença de secreção hialina. Qual melhor conduta? ",
             "imagePath": null,
             "alternatives": [
                 {
@@ -62,13 +62,14 @@ export const comp13 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Iniciar anti-histaminico e encaminha para médico especialista.",
+                    "option": "Iniciar anti- histaminico e encaminha para médico especialista.",
                     "isTrue": true
                 }
             ]
         },
         {
-            "title": "Mulher 40 anos, queixa-se de plenitude aural e hipoacusia discreta à direita há cerca de 30 dias. Tem antecedente de rinite alérgica. Otoscopia com membrana timpânica direita íntegra, com discreta retração. Suspeitou-se de disfunção tubária, sobre esta hipótese, assinale a correta. I. A retração da membrana timpânica se deve ao aumento da pressão na orelha média por disfunção da tuba auditiva, podendo ser relacionada a rinite alérgica. II. Na impedanciometria espera-se  uma curva tipo D.",            "imagePath": null,
+            "title": "Mulher 40 anos, queixa-se de plenitude aural e hipoacusia discreta à direita há cerca de 30 dias. Tem antecedente de rinite alérgica. Otoscopia com membrana timpânica direita íntegra e discreta retração. Suspeitou-se de disfunção tubária, sobre esta hipótese, assinale a correta. I. A retração da membrana timpânica se deve ao aumento da pressão na orelha média por disfunção da tuba auditiva, podendo ser relacionada a rinite alérgica. II. Na impedanciometria espera-se  uma curva tipo D.",            
+            "imagePath": null,
             "alternatives": [
                 {
                     "option": "V e V",
@@ -93,7 +94,7 @@ export const comp13 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "O Montelucaste de Sódio e tratamento de primeira escolha para controle dos sintomas. ",
+                    "option": "O Montelucaste é o tratamento de primeira escolha para controle dos sintomas nasais.",
                     "isTrue": false
                 },
                 {
@@ -101,7 +102,7 @@ export const comp13 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Associar corticóide tópico nasal com anti-histamínicos orais é efetivo nos casos persistentes moderados-graves.",
+                    "option": "Associar corticóide tópico nasal com anti-histamínico oral é efetivo nos casos persistentes moderados-graves.",
                     "isTrue": true
                 },
                 {
@@ -111,7 +112,7 @@ export const comp13 = {
             ]
         },
         {
-            "title": "A sonolência excessiva referida ao uso dos Anti-histamínicos de 1ª geração, deve-se: ",
+            "title": "A sonolência excessiva referida ao uso dos Anti-histamínicos de 1ª geração, deve-se:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -133,7 +134,7 @@ export const comp13 = {
             ]
         },
         {
-            "title": "Menino, 5 anos, com rinorreia hialina, prurido nasal e ocular, espirros em salva e obstrução nasal. Queixas perduram em média 5 dias na semana, há seis semanas. A mãe refere despertares noturnos pela obstrução nasal, prejudicando seu desempenho escolar. Assinale hipótese diagnóstica.",
+            "title": "Menino, 5 anos, com rinorreia hialina, prurido nasal e ocular, espirros em salva e obstrução nasal. Sintomas perduram em média 5 dias na semana, há seis semanas. A mãe refere despertares noturnos pela obstrução nasal, prejudicando seu desempenho escolar. Assinale hipótese diagnóstica.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -155,15 +156,15 @@ export const comp13 = {
             ]
         },
         {
-            "title": "Sobre as Rinites, assinale a alternativa correta. ",
+            "title": "Sobre as Rinites, assinale a alternativa correta.",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "O aumento de IgE sérica total é um método com alta especificidade para o diagnóstico de Rinite Alérgica.",
+                    "option": "O aumento de IgE sérica total é um método com alta especificidade para confirmação diagnóstica.",
                     "isTrue": false
                 },
                 {
-                    "option": "A Rinite Gestacional é caracterizada por obstrução nasal principalmente no primeiro trimestre.",
+                    "option": "A Rinite Gestacional é caracterizada por obstrução nasal principalmente no primeiro trimestre da gestação.",
                     "isTrue": false
                 },
                 {
@@ -199,6 +200,6 @@ export const comp13 = {
             ]
         }
     ],
-    "devolutiva": "É necessário conhecer os diagnósticos diferenciais das rinites, enfatizando a identificação e  tratamento das rinites alérgicas intermitentes.",
+    "devolutiva": "É necessário conhecer os diagnósticos diferenciais das rinites alérgicas, enfatizando quadro clínico, classificação  e  tratamento, com destaque a rinite alérgica  intermitente.",
     "description": "Saber diagnosticar as rinites e saber tratar os casos de rinite intermitente e persistente leve. Encaminhar para atenção secundária os casos de rinite persistente moderada e grave."
 }

@@ -23,19 +23,19 @@ export const comp6 ={
             ]
         },
         {
-            "title": "Paciente com epistaxes recorrentes e obstrução nasal à direita, qual melhor conduta a ser adotada na unidade básica de saúde?",
+            "title": "Paciente com história de epistaxe recorrente e obstrução nasal à direita, qual melhor conduta a ser adotada na unidade básica de saúde?",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Encaminhar ao especialista em otorrinolaringologia para avaliação e investigação com endoscopia nasal.",
+                    "option": "Encaminhar para avaliação e investigação com endoscopia nasal em médico otorrinolaringologista.",
                     "isTrue": true
                 },
                 {
-                    "option": "Encaminhar ao especialista em otorrinolaringologia para realização de cauterização.",
+                    "option": "Encaminhar para realização de cauterização imediata em médico otorrinolaringologista.",
                     "isTrue": false
                 },
                 {
-                    "option": "Realizar tamponamento nasal para controle de epistaxe.",
+                    "option": "Realizar tamponamento nasal posterior para controle de epistaxe.",
                     "isTrue": false
                 },
                 {
@@ -45,23 +45,23 @@ export const comp6 ={
             ]
         },
         {
-            "title": "Paciente em Atenção primária com epistaxe. Realizadas as medidas cabíveis disponíveis na unidade sem controle do sangramento. Qual a conduta mais adequada?",
+            "title": "Paciente em Atenção primária com epistaxe, foram realizadas as medidas cabíveis disponíveis na unidade sem controle do sangramento. Qual a conduta mais adequada?",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Lavagem nasal.",
+                    "option": "Lavagem nasal no serviço de urgência",
                     "isTrue": false
                 },
                 {
-                    "option": "Aplicar novamente algodão com vasoconstritor.",
+                    "option": "Aplicar algodão com vasoconstritor durante transporte móvel para unidade de urgência.",
                     "isTrue": false
                 },
                 {
-                    "option": "Tamponamento nasal ou intervenção cirúrgica, com ligadura de vasos.",
+                    "option": "Tamponamento nasal ou intervenção cirúrgica em  médico especialista.",
                     "isTrue": true
                 },
                 {
-                    "option": "Cauterização.",
+                    "option": "Cauterização química pelo plantonista da UBS.",
                     "isTrue": false
                 }
             ]
@@ -75,7 +75,7 @@ export const comp6 ={
                     "isTrue": false
                 },
                 {
-                    "option": "Neoplasias hematológicas.",
+                    "option": "Neoplasias nasais.",
                     "isTrue": false
                 },
                 {
@@ -89,13 +89,9 @@ export const comp6 ={
             ]
         },
         {
-            "title": "A estrutura vascular responsável pela maior parte dos casos de epistaxe de grande monta de origem posterior é:",
+            "title": "A estrutura vascular responsável pela maior parte dos casos de epistaxe volumosa,  de origem posterior é:",
             "imagePath": null,
             "alternatives": [
-                {
-                    "option": "Área de Little.",
-                    "isTrue": false
-                },
                 {
                     "option": "Plexo de Kiesselbach.",
                     "isTrue": false
@@ -119,25 +115,25 @@ export const comp6 ={
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Acalmar a criança e usar na compressas.",
+                    "option": "Compressa e cauterização química com ATA na UBS.",
                     "isTrue": false
                 },
                 {
-                    "option": "Compressa e cauterização química com ácido tricloroacético.",
+                    "option": "Acalmar a criança e realizar compressão anterior.",
                     "isTrue": true
                 },
                 {
-                    "option": "Eletrocauterização.",
+                    "option": "Eletrocauterização em UBS.",
                     "isTrue": false
                 },
                 {
-                    "option": "Tamponamento nasal em dedo de luva..",
+                    "option": "Tamponamento nasal em dedo de luva.",
                     "isTrue": false
                 }
             ]
         },
         {
-            "title": "Criança com sangramento nasal intenso que iniciou poucas horas após trauma em cabeça. Ao exame físico: sangramento volumoso e ativo, de origem posterior. Médico plantonista solicitou TC de crânio que evidenciou fratura de base de crânio e acometimento do esfenóide. Qual conduta?",
+            "title": "Criança com sangramento nasal intenso que iniciou após TCE. Ao exame físico: sangramento volumoso e ativo. Qual conduta?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -145,7 +141,7 @@ export const comp6 ={
                     "isTrue": false
                 },
                 {
-                    "option": "Indicar Embolização.",
+                    "option": "Indicar tamponamento anterior com dedo de luva.",
                     "isTrue": false
                 },
                 {
@@ -153,13 +149,13 @@ export const comp6 ={
                     "isTrue": false
                 },
                 {
-                    "option": "Medidas de suporte geral com avaliação do especialista.",
+                    "option": "Medidas de suporte geral com referência para avaliação urgente do especialista.",
                     "isTrue": true
                 }
             ]
         },
         {
-            "title": "Medida inicial no suporte a paciente com epistaxe?",
+            "title": "Medida inicial em UBS para suporte de paciente com epistaxe?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -181,7 +177,7 @@ export const comp6 ={
             ]
         },
         {
-            "title": "Assinale a incorreta no diagnóstico e manejo das epistaxes.",
+            "title": "Relacionado ao diagnóstico e manejo das epistaxes, assinale a incorreta.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -189,15 +185,15 @@ export const comp6 ={
                     "isTrue": false
                 },
                 {
-                    "option": "A cauterização química com Ácido Tricloroacético (ATA) é utilizada para epistaxes anteriores de pequeno volume.",
+                    "option": "A cauterização química com Ácido Tricloroacético (ATA) é utilizada para epistaxis anteriores de pequeno volume, por médico especialista.",
                     "isTrue": false
                 },
                 {
-                    "option": "O tamponamento nasal é indicado em casos de sangramento difuso/não localizado, ou após falha na tentativa de cauterização.",
+                    "option": "O tamponamento nasal é indicado em casos de sangramento difuso/não localizado, ou após falha na tentativa de cauterização, por médico habilitado.",
                     "isTrue": false
                 },
                 {
-                    "option": "Embolização  arterial seletiva é preconizada em pacientes que recusarem realização  tamponamento anteroposterior.",
+                    "option": "Embolização  arterial nunca é realizada mesmo em situações em que o  tamponamento anteroposterior não controle o sangramento.",
                     "isTrue": true
                 }
             ]
@@ -207,11 +203,11 @@ export const comp6 ={
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Epistaxe anterior geralmente é autolimitada ou interrompida por medidas simples de controle local.",
+                    "option": "Epistaxe anterior pode ser autolimitada ou interrompida por medidas simples de controle local.",
                     "isTrue": false
                 },
                 {
-                    "option": "Epistaxes recorrentes unilaterais e obstrução nasal crônica ipsilateral devem realizar apenas medidas simples de controle local.",
+                    "option": "Epistaxes recorrentes unilaterais e obstrução nasal crônica ipsilateral devem contar apenas com medidas simples de controle local, como compressão digital.",
                     "isTrue": true
                 },
                 {

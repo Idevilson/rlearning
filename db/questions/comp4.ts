@@ -1,7 +1,7 @@
 export const comp4 = {
     "lioto": [
         {
-            "title": "Zumbido é queixa frequente e tem grande repercussão na qualidade de vida  dos pacientes. São orientações utilizadas em seu manejo,  exceto:",
+            "title": "Zumbido é uma queixa frequente e tem grande repercussão na qualidade de vida  dos pacientes. São orientações utilizadas em seu manejo,  exceto:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -13,7 +13,7 @@ export const comp4 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Pôde-se indicar terapia de adaptação ao zumbido em algumas situações.",
+                    "option": "Pode ser indicado terapia de adaptação ao zumbido em algumas situações. ",
                     "isTrue": false
                 },
                 {
@@ -23,24 +23,24 @@ export const comp4 = {
             ]
         },
         {
-            "title": "(ONISHI, E. T. et al., 2018) Em relação ao tinnitus, assinale a incorreta:",
+            "title": "Sobre eventuais causas de tinnitus. Assinale a alternativa correta. I - Perfuração de ouvido. II - Doença de Meniére. III - Disfunção da articulação temporomandibular.",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Pode ser contínuo ou flutuante, sincrônico ou assincrônico, uni ou bilateral.",
-                    "isTrue": false
-                },
-                {
-                    "option": "É muito frequente em atendimentos da otorrinolaringologia.",
-                    "isTrue": false
-                },
-                {
-                    "option": "Pode ser idiopático, primário (neurossensorial) ou secundário, associado a alguma causa orgânica.",
-                    "isTrue": false
-                },
-                {
-                    "option": "O zumbido pulsátil é sempre associado à hipertensão intracraniana.",
+                    "option": "I, II e III estão corretas.",
                     "isTrue": true
+                },
+                {
+                    "option": "I e II  estão corretas.",
+                    "isTrue": false
+                },
+                {
+                    "option": "I e  III estão corretas.",
+                    "isTrue": false
+                },
+                {
+                    "option": "II e III  estão corretas.",
+                    "isTrue": false
                 }
             ]
         },
@@ -75,10 +75,6 @@ export const comp4 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Síndrome de Menière.",
-                    "isTrue": false
-                },
-                {
                     "option": "Otossífilis.",
                     "isTrue": false
                 },
@@ -97,11 +93,11 @@ export const comp4 = {
             ]
         },
         {
-            "title": "Mulher, 57 anos,  comparece à UBS com queixa de zumbido bilateral de início súbito há algumas semanas. Refere diagnóstico confirmado de depressão, com uso regular de medição, e hipotiroidismo não tratado. Qual melhor conduta?",
+            "title": "Mulher, 57 anos,  comparece à UBS com queixa de zumbido bilateral há algumas semanas. Refere diagnóstico confirmado de depressão, com uso regular de medição, e hipotiroidismo não tratado. Qual melhor conduta?",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Encaminhar para o otorrinolaringologista.",
+                    "option": "Encaminhar para psiquiatria.",
                     "isTrue": false
                 },
                 {
@@ -119,19 +115,19 @@ export const comp4 = {
             ]
         },
         {
-            "title": "Mulher, 32 anos, caucasiana, comparece a atendimento com audiometria compatível a perda auditiva mista pior à esquerda. Refere  zumbido persistente. Otoscopia e exame neurológico de aspecto preservado. Está em investigação para doença autoimune. Qual melhor hipótese diagnóstica e  exame complementar?",
+            "title": "Mulher, 32 anos comparece a atendimento com queixa de perda auditiva com piora após ultima gestação e zumbido persistente. Otoscopia e exame neurológico de aspecto preservado. Está em investigação para doença autoimune. Qual melhor hipótese diagnóstica e  exame complementar ?",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Otoesclerose, TC de mastoide.",
+                    "option": "Otoesclerose, audiometria.",
                     "isTrue": true
                 },
                 {
-                    "option": "Otoesclerose, timpanometria.",
+                    "option": "Otoesclerose, Rx de mastoide.",
                     "isTrue": false
                 },
                 {
-                    "option": "Doença de Meniére, Tc de mastoíde. ",
+                    "option": "Doença de Meniére, Tc de mastoíde.",
                     "isTrue": false
                 },
                 {
@@ -157,7 +153,7 @@ export const comp4 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Fatores psicossociais devem ser considerados.",
+                    "option": "Fatores psicossociais também devem ser considerados.",
                     "isTrue": true
                 }
             ]
@@ -218,10 +214,6 @@ export const comp4 = {
                     "option": "Diabetes mellitus",
                     "isTrue": false
                 },
-                {
-                    "option": "Síndrome do túnel do carpo",
-                    "isTrue": false
-                }
             ]
         }
     ],

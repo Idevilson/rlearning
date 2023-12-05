@@ -2,7 +2,7 @@
 export const comp16 = {
     "lioto": [
         {
-            "title": "Queixa comum na Otite média por efusão em crianças:",
+            "title": "Queixa comum na Otite média por efusão em crianças, exceto:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -102,7 +102,7 @@ export const comp16 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Tratamento cirúrgico consiste na timpanotomia com tubo de ventilação.",
+                    "option": "Tratamento cirúrgico pode ser indicado após avaliação do médico especialista.",
                     "isTrue": false
                 },
                 {
@@ -156,6 +156,6 @@ export const comp16 = {
             ]
         }
     ],
-    "devolutiva": "É importante conhecer  a clínica com os sinais e os sintomas comuns na otite média serosa de crianças e adultos. Necessário encaminhar ao especialista os casos suspeitos para confirmação do diagnóstica e tratamento específico.",
+    "devolutiva": "É importante conhecer os sinais e os sintomas comuns na otite média serosa. Enfatizando a necessidade de  encaminhar ao especialista os casos suspeitos para confirmação diagnóstica e tratamento específico.",
     "description": "Ter conhecimento sobre a clínica, os sinais e os sintomas da otite média serosa em crianças e adultos. Encaminhar ao especialista os casos suspeitos para confirmação do diagnóstico e tratamento."
 }

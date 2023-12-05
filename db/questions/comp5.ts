@@ -1,7 +1,7 @@
 export const comp5 = {
     "lioto": [
         {
-            "title": "Assinale a alternativa incorreta relacionada às ações preventivas na atenção primária  do câncer de orofaringe:",
+            "title": "Relacionada às ações preventivas na atenção primária  do câncer de orofaringe, assinale a incorreta:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -9,7 +9,7 @@ export const comp5 = {
                     "isTrue": false
                 },
                 {
-                    "option": "O diagnóstico precoce permite que índices de cura girem próximo a 90% dos casos.",
+                    "option": "O diagnóstico precoce permite que os índices de cura cheguem próximo a 80% dos casos.",
                     "isTrue": false
                 },
                 {
@@ -35,7 +35,7 @@ export const comp5 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Atividade física regular.",
+                    "option": "Reduzir consumo de açúcares.",
                     "isTrue": true
                 },
                 {
@@ -75,15 +75,15 @@ export const comp5 = {
                     "isTrue": false
                 },
                 {
-                    "option": "A prática de sexo oral sem cuidado adequado permite infecção pelos vírus  HPV 17 e 18 principais causadores deste câncer.",
+                    "option": "A prática de sexo oral sem cuidado adequado permite infecção pelos vírus  HPV 17 e 18,  principais causadores deste câncer.",
                     "isTrue": true
                 },
                 {
-                    "option": "A sobrevida de pacientes com câncer de boca associados ao HPV é maior comparados àqueles em decorrência do uso de tabaco e do álcool.",
+                    "option": "A sobrevida de pacientes com câncer de boca associados ao HPV são maiores àqueles em decorrência do uso de tabaco e do álcool.",
                     "isTrue": false
                 },
                 {
-                    "option": "As mudanças sociais com a redução dos hábitos de fumar corroboram com o aumento da proporção deste câncer HPV relacionado.",
+                    "option": "Mudanças comportamentais efetivas, como a redução de hábitos como tabagismo e alcoolismo, podem refletir no aumento da proporção deste câncer HPV relacionado.",
                     "isTrue": false
                 }
             ]
@@ -92,10 +92,6 @@ export const comp5 = {
             "title": "Relacionado ao câncer de hipofaringe, assinale a incorreta.",
             "imagePath": null,
             "alternatives": [
-                {
-                    "option": "Sempre estão associados ao consumo de tabaco e álcool.",
-                    "isTrue": false
-                },
                 {
                     "option": "Podem provocar otalgia reflexa.",
                     "isTrue": false
@@ -159,15 +155,15 @@ export const comp5 = {
             ]
         },
         {
-            "title": "Medida preventiva de carcinoma de células escamosas em orofaringe na atenção primária?",
+            "title": "Assinale a principal medida preventiva do carcinoma de células escamosas em orofaringe, na atenção primária.",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Exame de imagem para diagnóstico precoce.",
+                    "option": "Tc de pescoço para diagnóstico precoce.",
                     "isTrue": false
                 },
                 {
-                    "option": "Idas anuais ao dentista.",
+                    "option": "Acompanhamento anual ao dentista.",
                     "isTrue": false
                 },
                 {
@@ -175,13 +171,13 @@ export const comp5 = {
                     "isTrue": true
                 },
                 {
-                    "option": "Exames médicos de rotina semestral",
+                    "option": "Exames de rotina semestral.",
                     "isTrue": false
                 }
             ]
         },
         {
-            "title": "Assinale a alternativa com relação adequada das medidas de prevenção para câncer de orofaringe na Atenção Primária à Saúde.",
+            "title": "Relacionada às medidas adequadas de prevenção para câncer de orofaringe na Atenção Primária à Saúde, assinale a correta.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -207,15 +203,15 @@ export const comp5 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Dificuldade de mastigação.",
+                    "option": "Úlcera persistente em mucosa.",
                     "isTrue": true
                 },
                 {
-                    "option": "Simetria facial.",
+                    "option": "Assimetria facial.",
                     "isTrue": false
                 },
                 {
-                    "option": "Inspeção da mucosa jugal, sem alterações significantes.",
+                    "option": "Mucosa jugal com hiperemia.",
                     "isTrue": false
                 },
                 {
@@ -225,7 +221,7 @@ export const comp5 = {
             ]
         },
         {
-            "title": "Assinale medida preventiva, relacionado ao HPV, para o câncer de orofaringe?",
+            "title": "Relacionado ao  vírus HPV e o câncer de orofaringe, assinale uma medida preventiva?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -247,7 +243,7 @@ export const comp5 = {
             ]
         },
         {
-            "title": "Qual tipo histológico é mais comum de câncer de boca?",
+            "title": "Qual tipo histológico mais comum de câncer de boca?",
             "imagePath": null,
             "alternatives": [
                 {

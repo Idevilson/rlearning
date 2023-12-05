@@ -18,7 +18,7 @@ export const comp9 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Normoacusia.",
+                    "option": "Neonato AIG. ",
                     "isTrue": false
                 }
             ]
@@ -28,25 +28,25 @@ export const comp9 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Deve-se realizar o teste até o 1º mês de vida dos neonatos.",
+                    "option": "Objetiva detecção precoce  de possíveis alterações auditivas abrangendo todos os neonatos, inclusive aqueles sem indicadores de risco para surdez.",
                     "isTrue": false
                 },
                 {
-                    "option": "O teste deve, preferencialmente, ser realizado nos primeiros dias de vida.",
+                    "option": "O triagem auditiva é indicada até o primeiro mês de vida, o diagnóstico até os. três meses e a intervenção precoce até os seis meses de idade.",
                     "isTrue": false
                 },
                 {
-                    "option": "O princípio do teste são as Emissões Otoacústicas Não Evocadas.",
+                    "option": "O teste de escolha é a audiometria comportamental com pesquisa de reflexo cócleo- pálpebral. ",
                     "isTrue": true
                 },
                 {
-                    "option": "Em pacientes de alto risco, pode-se dispor, preferencialmente, do teste de Peate.",
+                    "option": "Os protocolos a serem seguidos dependerão da presença ou não de indicadores de risco para deficiência auditiva",
                     "isTrue": false
                 }
             ]
         },
         {
-            "title": "Os testes auditivos são de extrema importância no diagnóstico e na avaliação terapêutica dos pacientes com problemas da audição. Em relação aos testes auditivos, assinale a associação correta da doença e o padrão típico ao exame auditivo.",
+            "title": "Em relação aos testes auditivos, assinale a associação correta da doença e o padrão típico do exame audiológico.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -64,10 +64,6 @@ export const comp9 = {
                 {
                     "option": "Schwannoma vestibular: disacusia neurossensorial bilateral à audiometria.",
                     "isTrue": false
-                },
-                {
-                    "option": "Disfunção de tuba auditiva: disacusia neurossensorial unilateral à audiometria.",
-                    "isTrue": false
                 }
             ]
         },
@@ -76,29 +72,25 @@ export const comp9 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "anamnese clínico-ocupacional; exame otorrinolaringológico básico; audiometria tonal e vocal.",
+                    "option": "anamnese clínico-ocupacional; otoscopia  adequada, solicitação exame audiométrico e avaliação especializada.",
                     "isTrue": true
                 },
                 {
-                    "option": "anamnese clínico-ocupacional; exame otorrinolaringológico básico; imitanciometria.",
+                    "option": "anamnese clínico-ocupacional; otoscopia adequada; imitanciometria e avaliação médico generalista.",
                     "isTrue": false
                 },
                 {
-                    "option": "anamnese clínico-ocupacional; exame otorrinolaringológico básico; teste das emissões otoacústicas",
+                    "option": "anamnese clínico-ocupacional; otoscopia adequada; teste das emissões otoacústicas e avaliação especializada.",
                     "isTrue": false
                 },
                 {
-                    "option": "exame otorrinolaringológico básico; audiometria tonal e vocal; vectoeletronistagmografia.",
-                    "isTrue": false
-                },
-                {
-                    "option": "exame otorrinolaringológico básico; audiometria tonal e vocal; potenciais evocados do tronco encefálico.",
+                    "option": "Otoscopia adequada; solicitação de exame audiométrico e tomográfico da orelha com avaliação de médico generalista. ",
                     "isTrue": false
                 }
             ]
         },
         {
-            "title": "Criança com problema no atraso da fala, só fala frases curtas aos 4 anos, com poucas palavras sem clareza e fluência, não atende bem aos comandos, pronunciando muitos sons. O médico examina e constata desenvolvimento neuropsicomotor adequado para a idade, exceto pelo aspecto da linguagem que se encontra atrasado. Sem demais queixas e sintomas. Qual a conduta inicial?",
+            "title": "Criança aos 4 anos com atraso da fala, verbalizando poucas palavras sem clareza e fluência. O médico examina e constata desenvolvimento neuropsicomotor adequado para a idade, exceto pelo aspecto da linguagem que se encontra atrasado. Sem outras queixas, qual melhor conduta inicial?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -114,17 +106,17 @@ export const comp9 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Solicitar audiometria tonal e vocal.",
+                    "option": "Solicitar avaliação otorrinolaringologista.",
                     "isTrue": true
                 }
             ]
         },
         {
-            "title": "NCD, 38 anos, feminino, professora do estado, vai ao médico da UBS pois sente que não está escutando bem. Refere hipoacusia com zumbido há poucos meses sem otalgia. Nega manipulação e durante a avaliação, a paciente referiu já ter se consultado a pouco tempo em outro médico que solicitou uma audiometria em que o laudo referia: “alteração na média tritonal entre 26 e 40 dB”. Qual a conduta?",
+            "title": "NCD, 38 anos, feminino, professora do estado, vai a UBS pois sente que não está escutando bem. Refere zumbido há poucos meses sem otalgia. Nega manipulação de orelha, e traz exame audiometria, realizado há 60 dias, com “perda auditiva neurossensorial moderada”. Qual a melhor conduta?",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Solicitar nova audiometria.",
+                    "option": "Solicitar  Tc de ouvido.",
                     "isTrue": false
                 },
                 {
@@ -132,17 +124,17 @@ export const comp9 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Encaminhar para o especialista.",
+                    "option": "Encaminhar para avaliação com otorrinolaringologista.",
                     "isTrue": true
                 },
                 {
-                    "option": "Pedir avaliação do cirurgião.",
+                    "option": "Repetir a audiometria e encaminhar para avaliação com otorrinolaringologia. ",
                     "isTrue": false
                 }
             ]
         },
         {
-            "title": "Qual é a principal indicação para a realização de uma audiometria?",
+            "title": "Assinale uma indicação para a realização de uma audiometria?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -154,7 +146,7 @@ export const comp9 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Detecção precoce de alterações auditivas em recém-nascidos.",
+                    "option": "Avaliação diagnóstica de queixas de hipoacusia.",
                     "isTrue": true
                 },
                 {
@@ -164,29 +156,29 @@ export const comp9 = {
             ]
         },
         {
-            "title": "Um trabalhador de 45 anos apresentou queixa de perda auditiva. Ao examiná-lo, o médico constatou que ele tinha dificuldade para ouvir sons agudos e que trabalhava em um ambiente com elevado nível de ruído. Após realizar a anamnese e o exame físico, o médico decidiu solicitar uma audiometria tonal limiar. Considerando a audiometria, assinale a alternativa correta.",
+            "title": "Relacionado aos exames audiológicos, assinale a alternativa correta.",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "A audiometria tonal limiar permite avaliar a audição em diferentes frequências sonoras e é indicada para detectar perda auditiva sensorioneural.",
+                    "option": "A audiometria tonal limiar permite avaliar a audição em diferentes frequências sonoras e é indicada para elucidar queixas de hipoacusias.",
                     "isTrue": true
                 },
                 {
-                    "option": "A audiometria vocal é um teste que avalia a habilidade do paciente para compreender a fala e é indicada para detectar perda auditiva condutiva.",
+                    "option": "A audiometria comportamental é um teste que avalia a habilidade do paciente para compreender a fala e é indicada para detectar perda auditiva condutiva.",
                     "isTrue": false
                 },
                 {
-                    "option": "A audiometria tonal limiar é um teste que avalia a habilidade do paciente para compreender a fala e é indicada para detectar perda auditiva condutiva.",
+                    "option": "A audiometria tonal infantil é teste utilizado na triagem auditiva neonatal.",
                     "isTrue": false
                 },
                 {
-                    "option": "A impedanciometria é um teste que avalia a mobilidade da membrana timpânica e é indicada para detectar perda auditiva mista.",
+                    "option": "A impedanciometria é um teste que avalia a mobilidade da membrana timpânica e é indicada nas avaliações das perdas auditivas mistas.",
                     "isTrue": false
                 }
             ]
         },
         {
-            "title": "Julgue a sentença a seguir como verdadeira ou falsa e justifique sua resposta: “Somente os recém-nascidos com indicador de risco para deficiência auditiva devem realizar a Triagem Auditiva Neonatal”",
+            "title": "Julgue a sentença a seguir como verdadeira ou falsa e justifique sua resposta.”",
             "imagePath": null,
             "alternatives": [
                 {
@@ -198,30 +190,8 @@ export const comp9 = {
                     "isTrue": true,
                 }
             ]
-        },
-        {
-            "title": "L.A.S, feminino, 8 dias de vida, comparece à UBS para a primeira consulta de puericultura. Parto normal sem intercorrências, peso AIG, APGAR 1º e 5º minuto = 8. Sem histórico de infecções congênitas. Ainda não realizou nenhuma triagem neonatal. AF: tio portador de implante coclear em orelha esquerda devido perda auditiva total bilateral. Sabendo que o fluxograma da Triagem Auditiva Neonatal (TAN) é inicialmente guiado pela presença de indicadores de risco para a deficiência auditiva, assinale a alternativa que contém a melhor conduta para esse caso.",
-            "imagePath": null,
-            "alternatives": [
-                {
-                    "option": "Dispensa-se a realização da TAN.",
-                    "isTrue": false
-                },
-                {
-                    "option": "O neonato apresenta apenas um indicar de risco para deficiência auditiva, o APGAR de 8 no primeiro e quinto minuto.",
-                    "isTrue": false
-                },
-                {
-                    "option": "O neonato apresenta um indicador de risco para deficiência auditiva, histórico familiar de surdez permanente, por isso recomenda-se a realização do exame de Emissões Otoacústicas Evocadas como primeira escolha na TAN.",
-                    "isTrue": false
-                },
-                {
-                    "option": "O neonato possui indicador de risco para deficiência auditiva, logo se justifica a realização de Peate-automático como primeira escolha na TAN.",
-                    "isTrue": true
-                }
-            ]
         }
     ],
-    "devolutiva": "Entender quando solicitar audiometria na atenção primária. Encaminhando para o especialista os casos alterados para investigação, diagnóstico e programação terapêutica.",
+    "devolutiva": "Entender quando solicitar e interpretar  a audiometria. Enfatizando a avaliação auditiva  na atenção primária. Encaminhar aos especialistas casos alterados para investigação, diagnóstico e programação terapêutica.",
     "description": "Solicitar audiometria na atenção primária. Encaminhar para o especialista os casos alterados para investigação, estabelecimento do diagnóstico e programação terapêutica."
 }

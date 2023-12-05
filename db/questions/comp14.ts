@@ -2,23 +2,23 @@
 export const comp14 = {
     "lioto": [
         {
-            "title": "Mulher, 41 anos, com hiposmia, obstrução nasal, rinorreia mucopurulenta, dor facial e tosse,  de início há aproximadamente 12 semanas. Tem antecedentes de asma, no momento controlada. Rinoscopia anterior com hipertrofia  de conchas nasais inferiores e palidez de mucosa. A TC de seios da face, sugere:",
+            "title": "Mulher, 41 anos, com hiposmia, obstrução nasal, rinorreia mucopurulenta, dor facial e tosse,  de início há aproximadamente 12 semanas. Tem antecedentes de asma, no momento controlada. Rinoscopia anterior com hipertrofia  de conchas nasais inferiores e palidez de mucosa. A respeito do exame de imagem, assinale:",
             "imagePath": require('./comp14/1.jpg'),
             "alternatives": [
                 {
-                    "option": "Papiloma nasal",
+                    "option": "Trata-se de uma TC de face com Pólipo nasal.",
                     "isTrue": false
                 },
                 {
-                    "option": "Rinossinusite crônica ",
+                    "option": "Trata-se de uma TC de face com sinais de Rinossinusite crônica.",
                     "isTrue": true
                 },
                 {
-                    "option": "Rinossinusite crônica com pólipo de Killian",
+                    "option": "Trata-se RNM de face compatível com Rinossinusite crônica e pólipo de Killian.",
                     "isTrue": false
                 },
                 {
-                    "option": "Fibrose cística",
+                    "option": "Trata-se RNM de face com achado patognomônico de Fibrose cística.",
                     "isTrue": false
                 }
             ]
@@ -28,7 +28,7 @@ export const comp14 = {
             "imagePath": require('./comp14/2.jpg'),
             "alternatives": [
                 {
-                    "option": "Encaminhar ao especialista.",
+                    "option": "Encaminhar ao especialista para diagnóstico e conduta",
                     "isTrue": true
                 },
                 {
@@ -36,11 +36,11 @@ export const comp14 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Iniciar antibioticoterapia.",
+                    "option": "Iniciar antibioticoterapia oral por 7 dias",
                     "isTrue": false
                 },
                 {
-                    "option": "Solicitar pré-operatório para sinusotomia.",
+                    "option": "Solicitar pré-operatório para investigação diagnóstica.",
                     "isTrue": false
                 }
             ]
@@ -54,11 +54,7 @@ export const comp14 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Imunodeficiência",
-                    "isTrue": false
-                },
-                {
-                    "option": "Doença de Kawasaki.",
+                    "option": "Imunodeficiência.",
                     "isTrue": false
                 },
                 {
@@ -72,15 +68,15 @@ export const comp14 = {
             ]
         },
         {
-            "title": "Sobre Rinossinusite Crônica, marque a incorreta:",
+            "title": "Sobre Rinossinusite Crônica, marque a correta:",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Tem duração superior a 12 semanas.",
+                    "option": "Tem duração inferior  a 9 semanas.",
                     "isTrue": false
                 },
                 {
-                    "option": "Pode ter sintomas agudos com exacerbação dos sintomas, geralmente relacionado a eventos infecciosos.",
+                    "option": " Pode ter quadros agudos com exacerbações dos sintomas, estando geralmente relacionados a eventos infecciosos.",
                     "isTrue": true
                 },
                 {

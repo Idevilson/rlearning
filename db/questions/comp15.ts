@@ -10,11 +10,11 @@ export const comp15 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Realizar limpeza e cauterização focal.",
+                    "option": "Realizar limpeza local.",
                     "isTrue": false
                 },
                 {
-                    "option": "Solicitar pré-operatório para timpanoplastia.",
+                    "option": "Iniciar antibioticoterapia sistêmica e corticoide tópico.",
                     "isTrue": false
                 },
                 {
@@ -40,29 +40,7 @@ export const comp15 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Exostose.",
-                    "isTrue": true
-                }
-            ]
-        },
-        {
-            "title": "3-  Em relação às otites médias crônicas não colesteatomatosas, analise a alternativa correta: I. A timpanoplastia, nos casos de perfuração timpânica, está sempre indicada, mesmo em pacientes assintomáticos. II. Paciente com perdas condutivas significativas devem ser submetidos à revisão da cadeia ossicular. II. No manejo cirúrgico das retrações timpânicas, deve-se levar em consideração o risco de progressão para colesteatoma e o grau de perda auditiva.", 
-            "imagePath": null,
-            "alternatives": [
-                {
-                    "option": "Apenas I.",
-                    "isTrue": false
-                },
-                {
-                    "option": "Apenas II",
-                    "isTrue": false
-                },
-                {
-                    "option": "Apenas I e II",
-                    "isTrue": false
-                },
-                {
-                    "option": "Apenas II e III",
+                    "option": "Otalgia.",
                     "isTrue": true
                 }
             ]
@@ -112,7 +90,7 @@ export const comp15 = {
             ]
         },
         {
-            "title": "Qual das seguintes opções é comum na otite média crônica colesteatomatosa?",
+            "title": "Qual das seguintes opções é comum na otite média crônica com  colesteatoma? ",
             "imagePath": null,
             "alternatives": [
                 {
@@ -132,8 +110,52 @@ export const comp15 = {
                     "isTrue": false
                 }
             ]
+        },
+        {
+            "title": "São classificações da Otite média crônica, exceto: ",
+            "imagePath": null,
+            "alternatives": [
+                {
+                    "option": "Otite média crônica simples.",
+                    "isTrue": false
+                },
+                {
+                    "option": "Otite média crônica colesteatomatosa.",
+                    "isTrue": false
+                },
+                {
+                    "option": "Otite média secretora.",
+                    "isTrue": false
+                },
+                {
+                    "option": "Otite média crônica fúngica.",
+                    "isTrue": true
+                }
+            ]
+        },
+        {
+            "title": "Relacionado ao controle da otorreia na otite média crônica, são orientações gerais, exceto:",
+            "imagePath": null,
+            "alternatives": [
+                {
+                    "option": "Proteção auricular da água.",
+                    "isTrue": false
+                },
+                {
+                    "option": "Higiene com lavagem auricular.",
+                    "isTrue": true
+                },
+                {
+                    "option": "Gotas tópicas.",
+                    "isTrue": false
+                },
+                {
+                    "option": "Antibioticoterapia..",
+                    "isTrue": false
+                }
+            ]
         }
     ],
-    "devolutiva": "É necessário que você tenha conhecimento sobre a clínica, os sinais e os sintomas da otite média crônica. Sabendo encaminhar os casos suspeitos à atenção secundária para confirmação diagnóstica e tratamento específico.",
+    "devolutiva": "É necessário que você tenha conhecimento sobre a clínica, os sinais e os sintomas da otite média crônica. Enfatizando a necessidade de encaminhar os casos suspeitos à atenção secundária para confirmação diagnóstica e tratamento específico.",
     "description": "Ter conhecimento sobre a clínica, os sinais e os sintomas da otite média crônica. Encaminhar os casos suspeitos para a atenção secundária para confirmação de diagnóstico e tratamento."
 }

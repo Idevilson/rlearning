@@ -2,23 +2,23 @@
 export const comp12 = {
     "lioto": [
         {
-            "title": "Homem de 25 anos com cefaléia, febre (38,5ºC), rinorreia mucóide, congestão nasal e hiposmia há 20 dias. Tem antecedente de resfriado recente e rinite alérgica persistente moderada sem tratamento. Baseado nos achados de  TC de seios paranasais abaixo, assinale.",
+            "title": "Homem com cefaléia, febre (38,5ºC), rinorreia, congestão nasal e hiposmia que piorou há 20 dias. Tem antecedente de IVAS recente e rinite alérgica persistente moderada sem tratamento. Baseado en TC de seios paranasais, assinale.",
             "imagePath": require('./comp12/1.jpg'),
             "alternatives": [
                 {
-                    "option": "Trata-se de rinossinusite aguda viral, é indicado o uso de sintomáticos.",
+                    "option": "Trata-se de rinossinusite aguda viral do seio frontal, sendo indicado o uso de sintomáticos.",
                     "isTrue": false
                 },
                 {
-                    "option": "Trata-se de rinossinusite aguda com sinais tomográfico de sinusopatia crônica, é indicado uso de antibioticoterapia e corticoterapia tópica nasal.",
+                    "option": "Trata-se de rinossinusite aguda com sinais tomográfico sugestivos de sinusopatia em seio maxilar e etmoidal.",
                     "isTrue": true
                 },
                 {
-                    "option": "Sugere Rinossinusite crônica complicada com indicação de cirurgia de urgência.",
+                    "option": "Sugere complicação  de Rinossinusite crônica de seio etmoidal.",
                     "isTrue": false
                 },
                 {
-                    "option": "Sugere Rinossinusite fúngica com indicação uso de Anfotericina B.",
+                    "option": "Sugere Rinossinusite fúngica de seio maxilar com indicação uso de Anfotericina B em serviço de urgência.",
                     "isTrue": false
                 }
             ]
@@ -32,7 +32,7 @@ export const comp12 = {
                     "isTrue": true
                 },
                 {
-                    "option": "Antitérmicos, corticoides oral/ tópicos e anti-histamínicos.",
+                    "option": "Antitérmicos, corticoides tópicos e anti-gripal.",
                     "isTrue": false
                 },
                 {
@@ -46,7 +46,7 @@ export const comp12 = {
             ]
         },
         {
-            "title": "A respeito das rinossinusites, assinale alternativa correta. ",
+            "title": "A respeito das rinossinusites, assinale alternativa correta.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -54,25 +54,25 @@ export const comp12 = {
                     "isTrue": false
                 },
                 {
-                    "option": "A rinossinusite fúngica invasiva ou fulminante afeta principalmente pacientes imunocomprometidos e tem evolução rápida.",
+                    "option": "A rinossinusite fúngica invasiva afeta principalmente pacientes imunocomprometidos e tem evolução rápida.",
                     "isTrue": true
                 },
                 {
-                    "option": "O exame citológico positivo e alterações sinusais em radiografia de face são suficientes para o diagnóstico de rinossinusite aguda bacteriana.",
+                    "option": "As alterações sinusais em radiografia de face são suficientes para o diagnóstico de rinossinusite aguda bacteriana.",
                     "isTrue": false
                 },
                 {
-                    "option": "O pólipo de Killian é característico das rinossinusites, tendo sua origem sempre no seio maxilar.",
+                    "option": "O pólipo nasal é o sintoma principal das rinossinusites crônicas,  tendo sua origem sempre no seio maxilar.",
                     "isTrue": false
                 }
             ]
         },
         {
-            "title": "O tratamento das rinites envolve medidas não farmacológicas e farmacológicas. As diretrizes visam atualizar os conhecimentos sobre a doença e os cuidados com os pacientes. Neste contexto, assinale a correta.",
+            "title": "O tratamento das rinites envolve medidas não farmacológicas e farmacológicas. Neste contexto, assinale a correta.",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "A Imunoterapia Específica (ITE) com extrato de alérgenos é o tratamento de escolha para pacientes com rinite que têm asma não controlada..",
+                    "option": "A Imunoterapia Específica  com  alérgenos é o tratamento de escolha para todos os pacientes com rinite e são iniciados pelo otorrinolaringologistas.",
                     "isTrue": false
                 },
                 {
@@ -80,25 +80,25 @@ export const comp12 = {
                     "isTrue": false
                 },
                 {
-                    "option": "O início da ação dos corticosteróides nasais ocorre em sete a doze horas após sua administração, vale ressaltar aos pacientes quanto efeito terapêutico final que será atingido com tempo mais prolongado de uso.",
+                    "option": "A ação desejada dos corticosteróides nasais  requerem uso regular e adequado das doses prescritas.",
                     "isTrue": true
                 },
                 {
-                    "option": "Os anti-histamínicos orais H-1 de segunda geração causam muita retenção urinária, alterações de sistema nervoso central e efeitos cardiovasculares e, por isso, deve-se dar preferência aos anti-histamínicos orais H-1 de primeira geração em pacientes de idosos.",
+                    "option": "Os anti-histamínicos orais H-1 de segunda geração causam muita retenção urinária, alterações de sistema nervoso central e efeitos cardiovasculares e, por isso, deve-se dar preferência aos anti-histamínicos orais H-1 de primeira geração em idosos.",
                     "isTrue": false
                 }
             ]
         },
         {
-            "title": "Relacionada a Rinossinusite Aguda em crianças, qual alternativa fortemente sugere infecção  bacteriana.",
+            "title": "Relacionada a Rinossinusite Aguda em crianças, qual alternativa melhor sugere infecção  bacteriana.",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Piora progressiva do quadro após fase inicial de sintomas leves.",
+                    "option": "Piora progressiva das queixas após fase inicial de sintomas leves.",
                     "isTrue": true
                 },
                 {
-                    "option": "Dor facial intensa.",
+                    "option": "Dor facial.",
                     "isTrue": false
                 },
                 {
@@ -146,33 +146,33 @@ export const comp12 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Rinorreia, tosse e hiposmia.",
+                    "option": "Rinorreia mucopurulenta, tosse e otorreia.",
                     "isTrue": false
                 },
                 {
-                    "option": "Rinorreia, obstrução nasal e tosse.",
+                    "option": "Rinorreia mucopurulenta, obstrução nasal e tosse.",
                     "isTrue": true
                 }
             ]
         },
         {
-            "title": "Relacionado às complicações de rinossinusite, assinale a alternativa incorreta:",
+            "title": "Relacionado à seus conhecimentos de complicações de rinossinusite, assinale a alternativa incorreta:",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "A investigação com tomografia computadorizada deve ser realizada somente se o paciente não responder a 48h de antibioticoterapia.",
+                    "option": "A investigação com tomografia computadorizada deve ser realizada somente se o paciente não responder a antibioticoterapia em 48 horas.",
                     "isTrue": true
                 },
                 {
-                    "option": "A realização de tomografia computadorizada é obrigatória para todos os casos com complicações orbitárias e o tratamento deve ser conduzido sempre junto com o oftalmologista.",
+                    "option": "A tomografia seios da face é obrigatória para todos os casos com complicações orbitárias e o tratamento deve ser conduzido pelo otorrinolaringologista junto ao oftalmologista.",
                     "isTrue": false
                 },
                 {
-                    "option": "O abscesso orbitário é a complicação orbitária mais grave e pode levar a amaurose em poucas horas.",
+                    "option": "O abscesso orbitário é a complicação orbitária mais grave e pode levar a amaurose em poucas horas, necessitando de acesso rápido pelo especialista.",
                     "isTrue": false
                 },
                 {
-                    "option": "A celulite orbitária é a complicação da sinusite mais comum na adolescência.",
+                    "option": "A celulite orbitária é a complicação da sinusite mais comum na adolescência, e deve ser manejado ambulatorialmente pelo médico generalista.",
                     "isTrue": false
                 }
             ]
@@ -186,7 +186,7 @@ export const comp12 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Quando o paciente apresentar sintomas por mais de 7 dias ou se houver suspeita de complicação. ",
+                    "option": "Quando o paciente apresentar sintomas por mais de 7 dias ou se houver suspeita de complicação.",
                     "isTrue": true,
                 },
                 {
@@ -200,6 +200,6 @@ export const comp12 = {
             ]
         }
     ],
-    "devolutiva": "Nesta situação espera-se que você consiga fazer diagnóstico e tratamento das rinossinusites agudas não complicadas.",
+    "devolutiva": "Nesta situação espera-se que você consiga fazer diagnóstico e tratamento das rinossinusites agudas não complicadas. Sugerindo encaminhamento ao especialista diante das complicações e/ou necessidade de  abordagem cirúrgica.",
     "description": "Diagnosticar e tratar rinossinusites agudas."
 }

@@ -58,10 +58,6 @@ export const comp8 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Otite média aguda supurativa",
-                    "isTrue": false
-                },
-                {
                     "option": "Corpo estranho do ouvido",
                     "isTrue": false
                 },
@@ -80,7 +76,7 @@ export const comp8 = {
                     "isTrue": true
                 },
                 {
-                    "option": "Meato acústico edemaciado, estreitado, úmido, pálido e hipersensível.",
+                    "option": "Meato acústico edemaciado, estreitado, úmido e doloroso.",
                     "isTrue": false
                 },
                 {
@@ -94,7 +90,7 @@ export const comp8 = {
             ]
         },
         {
-            "title": "Relacionada otite externa necrotizante corresponde ao agente etiológico e a população com  maior incidência, respectivamente:",
+            "title": "Relacionada  otite externa necrotizante corresponde ao agente etiológico e a população com  maior incidência, respectivamente:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -102,25 +98,21 @@ export const comp8 = {
                     "isTrue": false
                 },
                 {
-                    "option": "infecção mista de microrganismos gram + e gram - / portadores de AIDS.",
-                    "isTrue": false
-                },
-                {
                     "option": "microrganismo gram-negativo / portadores de AIDS.",
                     "isTrue": false
                 },
                 {
-                    "option": "microrganismo gram-positivo, normalmente Pseudomonas aeruginosa / portadores de diabetes melito.",
+                    "option": "microrganismo gram-positivo, comumente Pseudomonas aeruginosa / portadores de diabetes melito.",
                     "isTrue": false
                 },
                 {
-                    "option": "microrganismo gram-negativo, normalmente Pseudomonas aeruginosa / portadores de diabetes mellitus.",
-                    "isTrue": true
+                    "option": "microrganismo gram-negativo, comumente Pseudomonas aeruginosa / portadores de diabetes mellitus.",
+                    "isTrue": false
                 }
             ]
         },
         {
-            "title": "Criança com otite média serosa e perda condutiva moderada em orelha esquerda. Responda.",
+            "title": "Criança com  otite média serosa e perda condutiva moderada em orelha esquerda. Assinale a correta.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -128,15 +120,15 @@ export const comp8 = {
                     "isTrue": false
                 },
                 {
-                    "option": "O reflexo cócleo-palpebral está presente já em recém-nascidos, sendo a via aferente desse reflexo o nervo coclear e a eferente, o nervo oculomotor.",
+                    "option": "O reflexo cócleo-palpebral nesta situação está abolido, sendo a via aferente do reflexo o nervo coclear e a eferente, o nervo oculomotor.",
                     "isTrue": false
                 },
                 {
-                    "option": "As emissões otoacústicas estão presentes em casos de afecções da orelha média, uma vez que as células ciliadas externas têm função normal.",
+                    "option": "As emissões otoacústicas estão sempre preservadas em casos de afecções da orelha média, uma vez que as células ciliadas externas têm função normal.",
                     "isTrue": false
                 },
                 {
-                    "option": "São comuns história de atrasos na linguagem, dificuldade escolar e desatenção nas atividades do dia a dia.",
+                    "option": "São comuns histórias de atrasos na linguagem, dificuldade escolar e desatenção nas atividades do dia a dia.",
                     "isTrue": true
                 }
             ]
@@ -168,7 +160,7 @@ export const comp8 = {
             ]
         },
         {
-            "title": "Criança com atraso na linguagem, audiometria com perda  condutiva leve e  curva no timpanograma tipo B, é sugestivo: ",
+            "title": "Criança com atraso na linguagem, audiometria com perda  condutiva leve e  curva no timpanograma tipo B, sugere:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -184,17 +176,13 @@ export const comp8 = {
                     "isTrue": false
                 },
                 {
-                    "option": "rolha de cerume.",
-                    "isTrue": false
-                },
-                {
                     "option": "otite externa crônica",
                     "isTrue": false
                 }
             ]
         },
         {
-            "title": "Menor com febre, otalgia e hipoacusia. Otoscopia representada abaixo. Assinale hipótese diagnóstica:",
+            "title": "Criança com febre, otalgia e hipoacusia. Otoscopia representada abaixo. Assinale hipótese diagnóstica:",
             "imagePath": require('./comp8/8.jpg'),
             "alternatives": [
                 {
@@ -216,7 +204,7 @@ export const comp8 = {
             ]
         },
         {
-            "title": "Homem com otalgia na orelha direita há 2 dias após banho de imersão, nega febre e sintomas nasais associados. No exame físico, apresenta dor à mobilização da orelha, hiperemia e edema do conduto auditivo externo, com presença de secreção. Assinale a hipótese diagnóstica e o tratamento, respectivamente:",
+            "title": "Homem com otalgia na orelha direita há 2 dias após banho de imersão, nega febre e sintomas nasais associados. No exame físico, apresenta dor à mobilização da orelha, hiperemia e edema do conduto auditivo externo, com presença de secreção local. Assinale a hipótese diagnóstica e o tratamento, respectivamente:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -224,7 +212,7 @@ export const comp8 = {
                     "isTrue": true
                 },
                 {
-                    "option": "otite externa aguda; antibiótico tópico e sistêmico.",
+                    "option": "otite externa aguda; antibiótico tópico e corticoide oral.",
                     "isTrue": false
                 },
                 {
@@ -235,14 +223,10 @@ export const comp8 = {
                     "option": "otite média aguda; antibiótico tópico.",
                     "isTrue": false
                 },
-                {
-                    "option": "celulite; internação e antibiótico venoso.",
-                    "isTrue": false
-                }
             ]
         },
         {
-            "title": "Em crianças a OMA pode apresentar-se com irritabilidade, hiperemia e abaulamento de membrana timpânica em otoscopia. Na necessidade de antibioticoterapia, assinale o indicado:",
+            "title": "Em crianças a otite média aguda pode apresentar-se com irritabilidade, hiperemia e abaulamento de membrana timpânica em otoscopia. Na necessidade de antibioticoterapia, assinale o inicialmente indicado: ",
             "imagePath": null,
             "alternatives": [
                 {
@@ -264,6 +248,6 @@ export const comp8 = {
             ]
         }
     ],
-    "devolutiva": "Aqui é importante saber diferenciar e tratar otite média aguda e otite externa.",
+    "devolutiva": "Importante saber identificar e tratar as otite externas  e otites média aguda.",
     "description": "Saber diferenciar e saber tratar otite média aguda e otite externa."
 }

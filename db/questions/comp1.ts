@@ -13,17 +13,13 @@ export const comp1 = {
                     "isTrue": false
                 },
                 {
-                    "option": "É um procedimento exclusivo de otorrinolaringologista não sendo indicada a realização na Atenção Básica.",
-                    "isTrue": false
-                },
-                {
                     "option": "Na realização de remoção de cerume por irrigação, é fundamental realizar a otoscopia previamente e ao término do procedimento.",
                     "isTrue": true
                 },
                 {
                     "option": "Os critérios de indicação para a remoção de cerume são inspeção e palpação do ouvido.",
                     "isTrue": false
-                }
+                },
             ]
         },
         {
@@ -71,23 +67,23 @@ export const comp1 = {
             ]
         },
         {
-            "title": "Sobre a lavagem auricular, assinale:",
+            "title": "Sobre cuidados durante a remoção de cerume, é incorreto: ",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "O cerume impactado é diagnosticado pela otoscopia, mas o exame físico direcionador contém outros componentes, como a palpação.",
-                    "isTrue": false
-                },
-                {
-                    "option": "Quando possível, o paciente deve ser orientado a utilizar emolientes antes.",
+                    "option": "Sempre realizar com forte pressão  a instilação do soro aquecido para garantir remoção adequada.",
                     "isTrue": true
                 },
                 {
-                    "option": "A solução fisiológica deve estar em temperatura baixa e ser instilada sob leve pressão, a fim de evitar complicações.",
+                    "option": "A solução fisiológica deve ser aquecida até 37ºC para evitar tontura. ",
                     "isTrue": false
                 },
                 {
-                    "option": "Se a tentativa de remoção do cerume não for satisfatória, a conduta seguinte é proceder a remoção com pinça anatômica.",
+                    "option": "Não insistir no procedimento na vigência e/ou persistência da dor.",
+                    "isTrue": false
+                },
+                {
+                    "option": "A irrigação pode ser realizada em pacientes que tenham utilizado gota otológica.",
                     "isTrue": false
                 }
             ]
@@ -201,8 +197,30 @@ export const comp1 = {
                     "isTrue": false
                 }
             ]
+        },
+        {
+            "title": "Sobre lavagem auricular, assinale a incorreta.",
+            "imagePath": null,
+            "alternatives": [
+                {
+                    "option": "Presença de cerume é uma condição fisiológica  e confere proteção contra processos inflamatórios.",
+                    "isTrue": false
+                },
+                {
+                    "option": "A presença do cerume geralmente é assintomática, mas acúmulo indevido pode  gerar perda auditiva, dor e interferir na avaliação da membrana timpânica.",
+                    "isTrue": false
+                },
+                {
+                    "option": "A remoção de cerume é um procedimento comum na otorrinolaringologia e pode ser realizado na Atenção Primária à Saúde.",
+                    "isTrue": false
+                },
+                {
+                    "option": "Queixas de  plenitude aural, estalidos e diminuição da acuidade auditiva são sugestivos mas o diagnóstico de certeza é  feito através da  audiometria.",
+                    "isTrue": true
+                }
+            ]
         }
     ],
-    "devolutiva": "Nesta situação é necessário que saiba como realizar remoção de cerume durante seu atendimento na atenção primária.",
+    "devolutiva": "Nesta situação é necessário que saiba como e quando realizar remoção de cerumem  no atendimento na atenção primária.",
     "description": "Realizar remoção de cerume na atenção primária."
 }

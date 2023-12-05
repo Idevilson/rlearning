@@ -2,20 +2,6 @@
 export const comp17 = {
     "lioto": [
         {
-            "title": "A região mais afetada em desvios septais traumáticos obstrutivos é a parte  anterior da cartilagem quadrangular do septo nasal.",
-            "imagePath": null,
-            "alternatives": [
-                {
-                    "option": "Verdadeiro",
-                    "isTrue": true
-                },
-                {
-                    "option": "Falso",
-                    "isTrue": false
-                },
-            ]
-        },
-        {
             "title": "Os desvios septais localizados na região anterior estão  comumente associados a queixas obstrutivas nasais.",
             "imagePath": null,
             "alternatives": [
@@ -96,7 +82,7 @@ export const comp17 = {
             ]
         },
         {
-            "title": "O desvio obstrutivo de septo nasal gerar sintoma:",
+            "title": "O desvio obstrutivo de septo nasal pode gerar sintomas:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -112,7 +98,7 @@ export const comp17 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Durante todo o tempo, incluindo repouso e atividades diárias.",
+                    "option": "Persistente, incluindo repouso e atividades físicas.",
                     "isTrue": true
                 }
             ]
@@ -139,7 +125,7 @@ export const comp17 = {
             ]
         },
         {
-            "title": "Homem de 28 anos com queixa de ronco refere história de desvio do septo nasal para direita não obstrutivo. Paciente refere que o sintoma não impacta significativamente na sua qualidade de vida. Como médico assistente, qual melhor conduta para o caso?",
+            "title": "Homem de 28 anos com queixa de ronco refere história de desvio do septo nasal para direita não obstrutivo. Paciente informa que o sintoma não impacta em sua qualidade de vida. Como médico assistente, qual melhor conduta para o caso?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -147,7 +133,7 @@ export const comp17 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Encaminhamento para especialista com indicação de septoplastia.",
+                    "option": "Encaminhamento para especialista com indicação cirúrgica.",
                     "isTrue": false
                 },
                 {
@@ -183,29 +169,7 @@ export const comp17 = {
             ]
         },
         {
-            "title": "Mulher 45 anos com obstrução nasal e despertares noturnos, refere roncos e sonolência diurna excessiva. Na rinoscopia anterior é observado desvio de septo nasal obstrutivo para a esquerda. Neste caso, qual conduta indicada ?",
-            "imagePath": null,
-            "alternatives": [
-                {
-                    "option": "Prescrever descongestionantes nasais tópicos e observar ambulatorialmente",
-                    "isTrue": false
-                },
-                {
-                    "option": "Encaminhar ao otorrinolaringologista para avaliar  indicação de septoplastia.",
-                    "isTrue": true
-                },
-                {
-                    "option": "Indicar o uso de sprays nasais de corticosteroides, pois a obstrução tende a diminuir no primeiro mês.",
-                    "isTrue": false
-                },
-                {
-                    "option": "Realizar fisioterapia respiratória, já que provavelmente foi uma obstrução secundária à idade.",
-                    "isTrue": false
-                }
-            ]
-        },
-        {
-            "title": "A septoplastia na infância consiste na primeira opção de tratamento para correção de desvios septais leves a moderados.",
+            "title": "A correção cirúrgica dos desvios septais na infância consiste em primeira opção de tratamento para melhora das queixas obstrutivas.",
             "imagePath": null,
             "alternatives": [
                 {

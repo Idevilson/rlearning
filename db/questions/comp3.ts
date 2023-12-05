@@ -1,7 +1,7 @@
 export const comp3 = {
     "lioto": [
         {
-            "title": "Dentre as labirintopatias, qual delas provoca crises intensas com duração de dias e que podem necessitar de internação hospitalar:",
+            "title": "Dentre as labirintopatias, qual delas provoca crises intensas com duração de dias, podem simular Acidente Vascular Cerebral e geralmente necessitam de internação hospitalar:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -23,7 +23,7 @@ export const comp3 = {
             ]
         },
         {
-            "title": "Mulher de 37 anos queixando-se de vertigem de início há aproximadamente 1 hora, acompanhada de náuseas, vômitos e hipoacusia. Nega sintomas gripais recentes e afirma episódios prévios semelhantes. Assinale a hipótese diagnóstica e conduta adequadas:",
+            "title": "Mulher de 37 anos queixando-se de vertigem de início há 4 horas, acompanhada de zumbido e hipoacusia durante a crise. Nega sintomas gripais recentes e afirma episódios prévios semelhantes. Assinale a hipótese diagnóstica e conduta adequadas:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -31,7 +31,7 @@ export const comp3 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Vertigem posicional – paroxística benigna – betaistina.",
+                    "option": "Vertigem posicional paroxística benigna – antihistaminico",
                     "isTrue": false
                 },
                 {
@@ -41,15 +41,11 @@ export const comp3 = {
                 {
                     "option": "Labirintite – manobra de Epley.",
                     "isTrue": false
-                },
-                {
-                    "option": "Vertigem fóbica – flunarizina.",
-                    "isTrue": false
                 }
             ]
         },
         {
-            "title": "A vertigem postural paroxística benigna (VPPB) é caracterizada pelo aparecimento de vertigem rotatória com duração de segundos, desencadeada por determinados movimentos da cabeça, acomete principalmente o canal semicircular anterior, sendo diagnosticada  com  a manobra de Epley.",
+            "title": "A vertigem postural paroxística benigna (VPPB) é caracterizada pelo aparecimento de vertigem rotatória com duração de segundos, desencadeada por movimentos cefálicos, acomete principalmente o canal semicircular anterior, sendo diagnosticada  com  a manobra de Epley.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -58,28 +54,6 @@ export const comp3 = {
                 },
                 {
                     "option": "Falso.",
-                    "isTrue": true
-                }
-            ]
-        },
-        {
-            "title": "Fatores relacionados a recorrência de “crises” ou possíveis complicações das manobras de reposicionamento de otólitos , EXCETO:",
-            "imagePath": null,
-            "alternatives": [
-                {
-                    "option": "Vestibulopatia concomitante.",
-                    "isTrue": false
-                },
-                {
-                    "option": "Deficiência de vitamina D.",
-                    "isTrue": false
-                },
-                {
-                    "option": "Canalith Jam.",
-                    "isTrue": false
-                },
-                {
-                    "option": "Otorragia.",
                     "isTrue": true
                 }
             ]
@@ -115,13 +89,13 @@ export const comp3 = {
                     "isTrue": false
                 },
                 {
-                    "option": "A cirurgia do saco endolinfático é descrita como a principal escolha de tratamento.",
+                    "option": "A cirurgia do saco endolinfático é descrita como a única escolha de tratamento.",
                     "isTrue": true
                 }
             ]
         },
         {
-            "title": "(CESPE/UnB – SESA/ES/2013) Assinale a opção que apresenta a tríade de sintomas, eventualmente concomitantes, que podem sugerir síndrome de Menière.",
+            "title": "Assinale a opção que apresenta a tríade de sintomas, eventualmente concomitantes, que podem sugerir síndrome de Menière.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -139,15 +113,11 @@ export const comp3 = {
                 {
                     "option": "vertigem, zumbido e disacusia flutuante.",
                     "isTrue": true
-                },
-                {
-                    "option": "zumbido, plenitude aural e lipotimia.",
-                    "isTrue": false
                 }
             ]
         },
         {
-            "title": "Mulher de 60 anos refere vertigem de curta duração que se intensifica com movimentos cefálicos,relatando episódios prévios com melhora espontânea. A Manobra de Dix-Hallpike está positiva.Qual o tratamento indicado?",
+            "title": "Mulher de 60 anos refere vertigem de curta duração com piora aos movimentos cefálicos, relata episódios prévios com melhora espontânea. A Manobra de Dix-Hallpike está positiva. Qual o tratamento indicado?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -169,29 +139,29 @@ export const comp3 = {
             ]
         },
         {
-            "title": "Homem, 45 anos, branco queixa-se de vertigem intensa com duração de três dias. Os episódios duram minutos ou poucas horas, com náuseas associadas. Não se  intensificam com movimentos cefálicos e estão associadas ao sintoma de plenitude e hipoacusia. É  portador de doença autoimune. No exame físico nota-se nistagmo. Médico iniciou tratamento da causa base, com restrição dietética de sódio, cafeína e anticolinérgico. Porém sem melhora. Qual a conduta indicada?",
+            "title": "Homem, 45 anos, queixa-se de vertigem intensa com duração de três dias. Os episódios duram minutos ou poucas horas, com náuseas associadas, não se  intensificam aos movimentos cefálicos e estão associadas a zumbido e hipoacusia flutuante. É  Médico iniciou tratamento com restrição dietética de sódio. Porém sem melhora. Qual a conduta indicada?",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Manutenção da terapêutica inicial com associação de supressores vestibulares.",
+                    "option": "Solicitar uma RNM de crânio para afastar AVC.",
                     "isTrue": false
                 },
                 {
-                    "option": "Substitui os fármacos para novas classes como um agonista histamínico (beta-histidina).",
+                    "option": "Manutenção da terapêutica inicial com associação de supressores vestibulares, tratamento preconizado para VPPB.",
+                    "isTrue": false
+                },
+                {
+                    "option": "Substitui os fármacos para novas classes como um agonista histamínico (beta-histidina), pensando em Neuronite vestibular.",
                     "isTrue": false
                 },
                 {
                     "option": "Encaminhar para investigação  com o especialista.",
                     "isTrue": true
-                },
-                {
-                    "option": "Indicar labirintectomia.",
-                    "isTrue": false
                 }
             ]
         },
         {
-            "title": "A tontura é uma queixa muito comum na prática clínica e, na Atenção Primária, 54% desses casos correspondem a quadros de vertigem. Dentre esses, grande maioria são diagnosticados como vertigem posicional paroxística benigna (VPPB) através da manobra: ",
+            "title": "A tontura é uma queixa muito comum na prática clínica e na Atenção Primária. Dentre os quadros, a grande maioria são diagnosticados como vertigem posicional paroxística benigna (VPPB) através da manobra:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -204,7 +174,7 @@ export const comp3 = {
                 },
                 {
                     "option": "Romberg.",
-                    "isTrue": true
+                    "isTrue": false
                 },
                 {
                     "option": "Rechaço (Stewart-Holmes).",
@@ -213,7 +183,7 @@ export const comp3 = {
             ]
         },
         {
-            "title": "Episódios recorrentes com duração de minutos a várias horas, sem fator desencadeante ou sinais neurológicos, podendo ter diminuição da audição ou zumbido unilaterais”. Corresponde à:",
+            "title": "Episódios recorrentes com duração de minutos a várias horas, sem fator desencadeante ou sinais neurológicos, podendo ter diminuição da audição flutuante e/ ou zumbido”. Corresponde à:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -305,6 +275,6 @@ export const comp3 = {
             ]
         }
     ],
-    "devolutiva": "Há necessidade de conhecer os principais tipos de labirintopatias e saber tratar as mais comuns. Enfatizando o encaminhamento para a atenção secundária de situações mais complexas ou refratárias ao tratamento proposto no atendimento primário.",
+    "devolutiva": "Há necessidade de conhecer os principais tipos de labirintopatias e saber tratar as mais comuns. Entender o encaminhamento para a atenção secundária de situações mais complexas ou refratárias ao tratamento proposto no atendimento primário.",
     "description": "Conhecer os principais tipos de labirintopatias e saber tratar as mais simples. Encaminhar para atenção secundária as mais complexas ou refratárias ao tratamento proposto na atenção primária."
 }

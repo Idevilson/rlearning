@@ -46,7 +46,7 @@ export const comp7 = {
             ]
         },
         {
-            "title": "Na otoscopia com presença de perfuração timpânica, pode- se encontrar os seguintes achados, EXCETO:",
+            "title": "Na otoscopia com presença de perfuração timpânica, pode- se encontrar,  EXCETO:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -58,11 +58,11 @@ export const comp7 = {
                     "isTrue": true
                 },
                 {
-                    "option": "Debris celulares.",
+                    "option": "Perda auditiva condutiva.",
                     "isTrue": false
                 },
                 {
-                    "option": "Tecido de granulação.",
+                    "option": "Zumbido.",
                     "isTrue": false
                 }
             ]
@@ -72,19 +72,19 @@ export const comp7 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Perda auditiva condutiva",
+                    "option": "Membrana timpânica com mobilidade diminuída.",
                     "isTrue": false
                 },
                 {
-                    "option": "Zumbido",
+                    "option": "Zumbido.",
                     "isTrue": false
                 },
                 {
-                    "option": "Otorreia",
+                    "option": "Otorreia.",
                     "isTrue": false
                 },
                 {
-                    "option": "Perda auditiva Neurossensorial ",
+                    "option": "Perda auditiva Neurossensorial.",
                     "isTrue": true
                 }
             ]
@@ -94,11 +94,11 @@ export const comp7 = {
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "A perfuração da membrana timpânica é um achado comum em história de traumatismos otológicos.",
+                    "option": "A perfuração da membrana timpânica é um achado comum em história de traumas otológicos.",
                     "isTrue": false
                 },
                 {
-                    "option": "As perfuração traumática podem esta  relacionada a atos de agressão como exemplo de tapa em pavilhão auditivo.",
+                    "option": "As perfurações traumáticas podem estar  relacionadas a atos de agressão, como a exemplo de tapa em pavilhão auditivo.",
                     "isTrue": false
                 },
                 {
@@ -106,7 +106,7 @@ export const comp7 = {
                     "isTrue": false
                 },
                 {
-                    "option": "A conduta cirúrgica, como timpanoplastia  para correção de perfuração timpânica, é considerada o tratamento inicial e tem melhor resultado quando realizado precocemente.",
+                    "option": "A conduta cirúrgica, como timpanoplastia  para correção de perfuração timpânica, é sempre indicada como tratamento inicial em UBS.",
                     "isTrue": true
                 }
             ]
@@ -156,7 +156,7 @@ export const comp7 = {
             ]
         },
         {
-            "title": "Paciente refere história de otorreia na vigência de episódios gripais e banhos de imersão associada à hipoacusia. Assinale achado de sua otoscopia:",
+            "title": "Paciente referiu história de otorreia na vigência de episódio gripal. Assinale achado de sua otoscopia:",
             "imagePath": require('./comp7/8.png'),
             "alternatives": [
                 {
@@ -178,7 +178,7 @@ export const comp7 = {
             ]
         },
         {
-            "title": "Assinale a principal estrutura avaliada na otoscopia de rotina?",
+            "title": "Assinale a principal estrutura avaliada em otoscopia de rotina?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -186,7 +186,7 @@ export const comp7 = {
                     "isTrue": true
                 },
                 {
-                    "option": "Tubo auditivo.",
+                    "option": "Tuba auditiva.",
                     "isTrue": false
                 },
                 {

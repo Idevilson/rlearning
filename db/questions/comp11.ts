@@ -2,7 +2,7 @@
 export const comp11 = {
     "lioto": [
         {
-            "title": "Menor de 10 anos com história de infecções respiratórias de repetição, com 5 episódios nos últimos 6 meses. Mãe informa respiração oral e roncos. Assinale melhor descrição para exame complementar solicitado:",
+            "title": "Criança de 10 anos com infecções respiratórias de repetição, 5 episódios nos últimos 4 meses. Mãe refere respiração oral e roncos. Assinale melhor descrição para exame complementar solicitado:",
             "imagePath": require('./comp11/1.png'),
             "alternatives": [
                 {
@@ -10,7 +10,7 @@ export const comp11 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Rx de seios da face com presenca de cisto em seio maxilar.",
+                    "option": "Rx de seios da face com presença de cisto de retenção no seio maxilar.",
                     "isTrue": false
                 },
                 {
@@ -18,13 +18,13 @@ export const comp11 = {
                     "isTrue": true
                 },
                 {
-                    "option": "Rx de seios da face com presenca de hipertrofia adenoideana obstruindo mais de 70% do rinofaringe.",
+                    "option": "Rx de seios da face com presenca de hipertrofia adenoideana obstruindo mais de 90% do rinofaringe. ",
                     "isTrue": false
                 }
             ]
         },
         {
-            "title": "Homem 28 anos comparece a  UBS com queixa de amigdalite recorrente, halitose e ronco. Otoscopia e rinoscopia sem alterações. Relacionada ao exame das amigdalas, qual classificação de Brodsky ?",
+            "title": "Na oroscopia,  relacionada a classificação de Brodsky para amígdalas, assinale a correta:",
             "imagePath": require('./comp11/2.png'),
             "alternatives": [
                 {
@@ -46,7 +46,7 @@ export const comp11 = {
             ]
         },
         {
-            "title": "Criança de cinco anos de idade, com histórico de ronco e apneia obstrutiva do sono, tem radiografia do cavum com redução acentuada da coluna aérea por hipertrofia das adenoides tem indicação de adenoidectomia.",
+            "title": "Criança com cinco anos de idade, história de ronco e apneia obstrutiva do sono, traz radiografia de cavum com redução acentuada da coluna aérea por hipertrofia das adenoides; a conduta deve incluir a  avaliação por especialista para indicação de adenoidectomia.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -60,7 +60,7 @@ export const comp11 = {
             ]
         },
         {
-            "title": "Hipertrofia adenoamigdaliana, desvio septal e rinopatias inflamatórias são causas de sintomas obstrutivos nasais.",
+            "title": "Hipertrofia adenoideana, desvio septal e rinopatias inflamatórias são causas de sintomas obstrutivos nasais.",
             "imagePath": null,
             "alternatives": [
                 {
@@ -74,7 +74,7 @@ export const comp11 = {
             ]
         },
         {
-            "title": "Na oroscopia, assinale a estrutura em destaque e sua descrição .",
+            "title": "Na oroscopia, assinale a estrutura em destaque e sua alteração.",
             "imagePath": require('./comp11/7.jpg'),
             "alternatives": [
                 {
@@ -96,7 +96,7 @@ export const comp11 = {
             ]
         },
         {
-            "title": "Qual principal exame indicado na confirmação da hipertrofia de adenoideana?",
+            "title": "Qual principal exame complementar indicado na confirmação da hipertrofia de adenoideana?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -118,7 +118,7 @@ export const comp11 = {
             ]
         },
         {
-            "title": "Assinale a indicação mais frequente do tratamento cirúrgico em pacientes com hipertrofia de adenóide?",
+            "title": "Assinale a indicação mais frequente do encaminhamento ao especialista para tratamento cirúrgico de pacientes com hipertrofia de adenóide?",
             "imagePath": null,
             "alternatives": [
                 {
@@ -152,10 +152,6 @@ export const comp11 = {
                     "isTrue": true
                 },
                 {
-                    "option": "Rinoscopia com nasofibroscópio.",
-                    "isTrue": false
-                },
-                {
                     "option": "Laringoscopia com espelho laríngeo.",
                     "isTrue": false
                 },
@@ -166,7 +162,7 @@ export const comp11 = {
             ]
         },
         {
-            "title": "Assinale diagnóstico comumente relacionado à hipertrofia amigdaliana em crianças:",
+            "title": "Assinale diagnóstico comumente relacionado à hipertrofia adenoamigdaliana em crianças:",
             "imagePath": null,
             "alternatives": [
                 {
@@ -188,6 +184,6 @@ export const comp11 = {
             ]
         }
     ],
-    "devolutiva": "É necessário que você saiba identificar a hipertrofia de adenoide e/ou amígdala, seu quadro clínico e possíveis repercussões no paciente. ",
+    "devolutiva": "É necessário que você saiba identificar a hipertrofia de adenóide e/ou amígdala, os quadros clínicos relacionados e as  repercussões na qualidade de vida dos pacientes acometidos.",
     "description": "Identificar hipertrofia de adenoide e/ou amígdala."
 }
