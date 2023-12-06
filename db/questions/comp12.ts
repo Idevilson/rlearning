@@ -186,7 +186,7 @@ export const comp12 = {
                     "isTrue": false
                 },
                 {
-                    "option": "Quando o paciente apresentar sintomas por mais de 7 dias ou se houver suspeita de complicação.",
+                    "option": "Em falhas terapêuticas ou na suspeita de complicações.",
                     "isTrue": true,
                 },
                 {
