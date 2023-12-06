@@ -178,7 +178,7 @@ export const comp9 = {
             ]
         },
         {
-            "title": "Julgue a sentença a seguir como verdadeira ou falsa e justifique sua resposta.”",
+            "title": "Julgue a sentença a seguir como verdadeira ou falsa e justifique sua resposta: \“Somente os recém-nascidos com indicador de risco para deficiência auditiva devem realizar a Triagem Auditiva Neonatal.\””",
             "imagePath": null,
             "alternatives": [
                 {
