@@ -43,28 +43,33 @@ const competences: Competence[] = [comp1, comp2, comp3, comp4, comp5, comp6, com
 
 type GetRandomQuestions = () => QuestionWithDevolutiva[];
   
-  const getRandomQuestions: GetRandomQuestions = () => {
-    const numQuestions = competences.length; 
-    const randomQuestions: QuestionWithDevolutiva[] = [];
-  
-    for (let i = 0; i < numQuestions; i++) {
-      const randomCompetenceIndex = getRandomIndex(competences.length);
-      const selectedCompetence = competences[randomCompetenceIndex];
-      const randomQuestionIndex = getRandomIndex(selectedCompetence.lioto.length);
-      const selectedQuestion = selectedCompetence.lioto[randomQuestionIndex];
-  
-      randomQuestions.push({
-        question: {
-          title: selectedQuestion.title,
-          imagePath: selectedQuestion.imagePath,
-          alternatives: selectedQuestion.alternatives,
-        },
-        description: selectedCompetence.description,
-        devolutiva: selectedCompetence.devolutiva,
-      });
-    }
-  
-    return randomQuestions;
-  };
+const shuffleArray = (array: Question[]) => {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+};
+
+const getRandomQuestions: GetRandomQuestions = () => {
+  // Crie uma cópia do array original para preservar a posição
+  const shuffledCompetences = [...competences];
+
+  // Embaralhe aleatoriamente as perguntas dentro de cada competência
+  shuffledCompetences.forEach((competence) => {
+    competence.lioto = shuffleArray(competence.lioto);
+  });
+
+  // Retorne o array resultante
+  return shuffledCompetences.map((competence) => ({
+    question: {
+      title: competence.lioto[0].title,
+      imagePath: competence.lioto[0].imagePath,
+      alternatives: competence.lioto[0].alternatives,
+    },
+    description: competence.description,
+    devolutiva: competence.devolutiva,
+  }));
+};
   
 export { getRandomQuestions };

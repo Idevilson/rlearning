@@ -67,23 +67,23 @@ export const comp1 = {
             ]
         },
         {
-            "title": "Sobre cuidados durante a remoção de cerume, é incorreto: ",
+            "title": "Sobre a lavagem auricular, assinale: ",
             "imagePath": null,
             "alternatives": [
                 {
-                    "option": "Sempre realizar com forte pressão  a instilação do soro aquecido para garantir remoção adequada.",
+                    "option": "O cerume impactado é diagnosticado pela otoscopia, mas o exame físico direcionador contém outros componentes, como a palpação.",
+                    "isTrue": false
+                },
+                {
+                    "option": "Quando possível, o paciente deve ser orientado a utilizar emolientes antes.",
                     "isTrue": true
                 },
                 {
-                    "option": "A solução fisiológica deve ser aquecida até 37ºC para evitar tontura. ",
+                    "option": "A solução fisiológica deve estar em temperatura baixa e ser instilada sob leve pressão, a fim de evitar complicações.",
                     "isTrue": false
                 },
                 {
-                    "option": "Não insistir no procedimento na vigência e/ou persistência da dor.",
-                    "isTrue": false
-                },
-                {
-                    "option": "A irrigação pode ser realizada em pacientes que tenham utilizado gota otológica.",
+                    "option": "Se a tentativa de remoção do cerume não for satisfatória, a conduta seguinte é proceder a remoção com pinça anatômica. ",
                     "isTrue": false
                 }
             ]
