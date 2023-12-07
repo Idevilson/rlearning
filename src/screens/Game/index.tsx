@@ -50,7 +50,6 @@ import { doc, getFirestore, setDoc } from 'firebase/firestore';
 import { app } from '../../services/firebase';
 import { RFValue } from 'react-native-responsive-fontsize';
 
-import Check from '../../assets/check.svg';
 import Error from '../../assets/error.svg';
 
 interface userAnswersProps {
@@ -325,7 +324,9 @@ export function Game() {
                                             onPress={() => handleOptionPress(index)}
                                         >
                                             <QuizOption 
-                                                isActive={chosenOption === index || userAnswers[currentIndex]?.chosenOption === index} 
+                                                isActive={userAnswers[currentIndex]?.chosenOption === index} 
+                                                isCorrect={!userAnswers[currentIndex]?.isCorrect === item.isTrue}
+                                                isAnswered={userAnswers[currentIndex]?.answered}
                                             >
                                                 <QuizOptionText>
                                                     {optionsLetters[index]} 

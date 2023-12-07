@@ -107,13 +107,23 @@ export const QuestionText = styled.Text`
 
 interface quizOptionProps {
     isActive: boolean;
+    isCorrect?: boolean;
+    isAnswered?: boolean;
 }
+
 
 export const QuizOption = styled.View<quizOptionProps>`
     width: ${RFValue(40)}px;
     height: ${RFValue(40)}px;;
 
-    background-color: ${(props) => props.isActive ? '#B843F2' : '#D4D4D4' } ;
+    background-color: ${(props) => {
+        if (props.isAnswered) {
+        
+            return props.isCorrect ? "green" :  "red" ;
+        } else {
+            return '#D4D4D4';
+        }
+    }};
 
     align-items: center;
     justify-content: center;
