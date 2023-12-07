@@ -117,9 +117,10 @@ export const QuizOption = styled.View<quizOptionProps>`
     height: ${RFValue(40)}px;;
 
     background-color: ${(props) => {
+        console.log(props.isAnswered, props.isCorrect)
+
         if (props.isAnswered) {
-        
-            return props.isCorrect ? "green" :  "red" ;
+            return props.isCorrect ? "green" : (props.isActive ? "red" : '#D4D4D4');
         } else {
             return '#D4D4D4';
         }

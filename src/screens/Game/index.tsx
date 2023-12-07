@@ -60,6 +60,9 @@ interface userAnswersProps {
     description: string;
 }
 
+import * as Animatable from 'react-native-animatable';
+
+import useRandomAvatar from '../../hooks/avatar';
 
 export function Game() {
     const [isLoadingQuestions, setLoadingQuestions] = useState(true);
@@ -245,6 +248,8 @@ export function Game() {
         }    
     };
 
+    const { getRandomAvatar } = useRandomAvatar();
+
     return(
         <Container>
             <Header>
@@ -319,13 +324,20 @@ export function Game() {
                             <AlternativesContainer>
                                 {
                                     questionsDB[currentIndex].question.alternatives.map((item, index) => (
+                                        <Animatable.View
+                                        key={index}
+                                        animation={(userAnswers[currentIndex]?.answered && item.isTrue) ? "pulse" : ""}
+                                        easing="ease-out"
+                                        iterationCount="infinite"
+                                        style={{ flex: 1 }}
+                                    >
                                         <QuizAlternativeContainer
                                             key={index}
                                             onPress={() => handleOptionPress(index)}
                                         >
                                             <QuizOption 
                                                 isActive={userAnswers[currentIndex]?.chosenOption === index} 
-                                                isCorrect={!userAnswers[currentIndex]?.isCorrect === item.isTrue}
+                                                isCorrect={item.isTrue}
                                                 isAnswered={userAnswers[currentIndex]?.answered}
                                             >
                                                 <QuizOptionText>
@@ -343,6 +355,7 @@ export function Game() {
                                                 {item.option}
                                             </QuizAlternative>
                                         </QuizAlternativeContainer>
+                                        </Animatable.View>
                                     ))
                                 }
                             </AlternativesContainer>
@@ -493,7 +506,7 @@ export function Game() {
                                     >
                                     
                                         <Image 
-                                            source={require('../../assets/avatares/1.png')}
+                                            source={getRandomAvatar()}
                                             style={{
                                                 height: 150,
                                                 width: 150,

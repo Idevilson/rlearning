@@ -69,7 +69,7 @@ export const comp16 = {
         },
         {
             "title": "Menino, 9 anos, apresentando otalgia leve e hipoacusia após episódio de infecção de via aérea superior. Qual provável diagnóstico com base na otoscopia abaixo ?",
-            "imagePath": null,
+            "imagePath": require('./comp16/5.png'),
             "alternatives": [
                 {
                     "option": "Otite externa",
